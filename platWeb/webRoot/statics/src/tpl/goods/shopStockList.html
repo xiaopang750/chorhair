@@ -1,0 +1,19 @@
+<!-- 店铺库存列表 -->
+{{if list}}
+	{{each list}}
+		<tr list>
+			<td>{{$value.productname}}</td>
+			<td>{{$value.brand}}</td>
+			<td>{{$value.series}}</td>
+			<td>{{$value.itemno}}</td>
+			<td productnum>{{$value.productnum}}</td>
+			<td>{{$value.capacity}}</td>
+			<td>{{$value.unit}}</td>
+			<td productprice>{{$value.productprice}}</td>
+		</tr>
+	{{/each}}
+{{else}}
+	<tr>
+		<td colspan="8">暂无数据</td>
+	</tr>
+{{/if}}

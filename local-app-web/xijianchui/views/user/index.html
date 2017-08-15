@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="../../statics/src/css/core/rockstar.css">
+<link rel="stylesheet" href="../../statics/src/css/main/customer/user/index.css">
+</head>
+
+<body>
+	
+	<!-- header -->
+	<header class="index-header" search-head>
+		<div class="col-11 ba-auto ba-clearfix">
+			<div class="header-wrap ba-clearfix">
+				<div class="search-area ba-fl" search-area>
+					<span class="icon icon-search ba-font-18"></span>
+					<form search-form class="ba-in-bl">
+						<input type="text" placeholder="最热" search-input>
+						<input class="ba-none" type="submit">
+					</form>
+				</div>
+				<div class="ba-fr my-beauty">
+					<a href="#" class="search-btn" search-btn>我要美</a>
+				</div>		
+			</div>
+		</div>
+	</header>
+
+	<!-- banner -->
+	<section class="focus">
+		<div widget-role="focus-wrap" widget-width="750" widget-height="459" widget-scale="1" style="margin:0 auto;">
+			<img src="data:image/jpg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAPAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAAwAFAwERAAIRAQMRAf/EAEoAAQAAAAAAAAAAAAAAAAAAAAcBAQAAAAAAAAAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAARAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AHwH/9k=" width="100%" focus-holder>
+			<div class="focus_wrap" widget-role="focus-data-wrap">
+				<div>
+					<img src="{{imgPath}}test/banner1.png">
+				</div>
+				<div>
+					<img src="{{imgPath}}test/banner2.jpg">
+				</div>
+				<div>
+					<img src="{{imgPath}}test/banner3.png">
+				</div>
+			</div>
+			<div class="dot_wrap" widget-role="focus-dot-wrap">
+				
+			</div>
+		</div>
+	</section>
+
+	<!-- content -->
+	<section class="col-11 ba-auto main-content">
+		<div class="level1-content ba-clearfix">
+			<ul falls-wrap></ul>
+			<ul falls-wrap></ul>
+		</div>
+	</section>
+	
+	<!-- loading -->
+	<section class="falls-loading falls-loading-first" get-more><img src="{{imgPath}}lib/loading/btn_loading_r.gif" alt=""></section>
+	
+	<!-- search-list -->
+	<section class="search-list" search-list>
+		<ul></ul>
+	</section>
+
+	<!-- index-footer -->
+	<footer class="index-footer" index-footer></footer>
+
+
+<script src="../../statics/seajs/sea.js"></script>	
+<script src="../../statics/seajs/config.js"></script>
+<script>
+	seajs.use('main/user/index');
+</script>
+</body>
+</html>

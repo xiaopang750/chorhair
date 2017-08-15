@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+</head>
+
+<body pageLevel="{{pageLevel}}">
+
+	{{include '../include/header'}}
+	
+	<div class="step1" step1>
+		<form>
+			<div class="ui-input-wrap line-full ba-mt-20">
+				<input type="number" placeholder="请输入手机号" telphone class="form-control ba-fl">
+			</div>
+
+			<div class="ui-input-wrap line-full ba-mb-20">
+				<input type="number" class="ba-fl col-7 form-control" placeholder="请输入验证码" code>
+				<button class="btn btn-yellow ba-fr code-btn ba-mt-9 ba-mr-5" get-check-code>
+					获取
+					<span class="count" cutdown>(60)</span>
+				</button>
+			</div>
+			
+			<section class="col-11 ba-auto">
+				<input type="submit" class="btn btn-pink btn-lg col-12" next-btn value="下一步">
+			</section>
+		</form>
+	</div>
+
+	<div class="step2 ba-none" step2>
+		<form>
+			<div class="ui-input-wrap line-full ba-mt-20">
+				<input type="password" placeholder="输入新密码" newPass class="form-control ba-fl">
+			</div>
+			<div class="ui-input-wrap line-full ba-mb-20">
+				<input type="password" placeholder="确认新密码" reNew class="form-control ba-fl">
+			</div>
+			<section class="col-11 ba-auto">
+				<input class="btn btn-pink btn-lg col-12" confirm-pass value="确认">
+			</section>
+		</form>
+	</div>	
+
+
+	{{include '../include/siteConfig'}}
+
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/hairer/user/forget');
+</script>
+</body>
+</html>

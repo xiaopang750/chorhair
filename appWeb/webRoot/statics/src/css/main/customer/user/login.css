@@ -1,0 +1,68 @@
+/**
+ *description:登录
+ *author:fanwei
+ *date:2015/01/09
+ */
+/**
+ *description:网站全局less变量-配置
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* use-most-var */
+/* color */
+/* a-link */
+/* font-family */
+/* h-size */
+/* btn */
+/* layer */
+/* site-config */
+/**
+ *description:网站全局less函数-pc
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* line-height */
+/* font-size */
+/* margin */
+/* padding */
+/* opacity */
+/* trangle */
+/**
+ *description:css3-pc
+ *author:fanwei
+ *date:2014/10/31
+ */
+[login-btn] {
+  letter-spacing: 4px;
+}
+.other-login div {
+  float: left;
+}
+.other-login .line-left {
+  width: 35%;
+  height: 0;
+  border-bottom: 1px solid #ccc;
+  margin-top: 10px;
+}
+.other-login .line-right {
+  width: 35%;
+  height: 0;
+  border-bottom: 1px solid #ccc;
+  margin-top: 10px;
+}
+.other-login .other-login-title {
+  width: 30%;
+  text-align: center;
+  font-size: 1.5em;
+  color: #757474;
+}
+.other-login .other-login-logo div {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  font-size: 1.5em;
+  color: #757474;
+}
+.other-login .other-login-logo div img {
+  width: 60%;
+}

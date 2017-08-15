@@ -1,0 +1,4 @@
+/*TMODJS:{"version":97,"md5":"cc3f60336d186a5d571467aa9be255e3"}*/
+define(function(require) {
+    return require("../../templates")("shop/user/dosage", ' <div class="dialog-box dosage-dialog"> <span class="fa ba-fr fa-close" sc="close"></span> <ul class="good-list"> <li dosage-list> <select class="form-control" combo-goods> <option value="">请选择商品</option> </select> <span class="multiply">X</span> <input class="form-control" type="text" combo-goods-num> <span class="unit" combo-goods-unit></span> <div class="func-btn" dosage-handle> <button class="btn btn-primary ba-fl ba-mr-5" sub-add><span class="fa fa-plus"></span></button> <button class="btn btn-danger ba-fl" sub-reduce><span class="fa fa-minus"></span></button> </div> </li> </ul> <div class="ba-tc ba-mt-30"> <a class="btn btn-primary ba-mr-10" href="javascript:;" sc="confirm">确定</a> <a class="btn btn-danger" href="javascript:;" sc="close">取消</a> </div> </div>');
+});

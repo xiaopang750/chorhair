@@ -1,0 +1,60 @@
+/**
+ *description: 我的预约
+ *author:fanwei
+ *date:2015/01/21
+ */
+/**
+ *description:网站全局less变量-配置
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* use-most-var */
+/* color */
+/* a-link */
+/* font-family */
+/* h-size */
+/* btn */
+/* layer */
+/* site-config */
+/**
+ *description:网站全局less函数-pc
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* line-height */
+/* font-size */
+/* margin */
+/* padding */
+/* opacity */
+/* trangle */
+/**
+ *description:css3-pc
+ *author:fanwei
+ *date:2014/10/31
+ */
+.appoint-list li {
+  background: #fff;
+  border: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  position: relative;
+  margin-bottom: 2em;
+}
+.appoint-list .list-head {
+  height: 3em;
+  line-height: 3em;
+  font-size: 1.2em;
+  border-bottom: 1px solid #dddddd;
+  color: #757474;
+}
+.appoint-list table td {
+  padding: 2px 0;
+  line-height: 1.5em;
+  color: #757474;
+}
+.appoint-list .icon {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  margin-top: -10px;
+}

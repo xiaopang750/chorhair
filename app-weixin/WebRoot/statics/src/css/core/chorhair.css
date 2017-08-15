@@ -1,0 +1,265 @@
+/**
+ *description:网站重置样式
+ *author:wangwc
+ *date:2015/4/02
+ */
+/**
+ *description:网站全局less变量-配置
+ *author:wangwc
+ *date:2015/4/2
+ */
+/* color */
+/* site-config */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+}
+body {
+  font-family: 'Microsoft Yahei';
+  font-size: 14px;
+  background: #ebf0f3;
+  color: #444444;
+  overflow-x: hidden;
+  padding: 10px;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #444444;
+}
+input {
+  -webkit-user-select: auto;
+}
+/**
+ *description:网站基础样式
+ *author:wangwc
+ *date:2015/4/03
+ */
+/* text-align-mode */
+.ba-tc {
+  text-align: center;
+}
+.ba-tl {
+  text-align: left;
+}
+.ba-tr {
+  text-align: right;
+}
+/* clear-mode */
+.ba-clear {
+  clear: both;
+}
+.ba-clearfix {
+  zoom: 1;
+}
+.ba-clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+/* display */
+.ba-none {
+  display: none;
+}
+/* float-mode */
+.ba-fl {
+  float: left;
+}
+.ba-fr {
+  float: right;
+}
+/* margin-mode */
+.ba-mt-2 {
+  margin-top: 3px;
+}
+.ba-mt-3 {
+  margin-top: 3px;
+}
+.ba-mt-4 {
+  margin-top: 4px;
+}
+.ba-mt-5 {
+  margin-top: 5px;
+}
+.ba-mt-10 {
+  margin-top: 10px;
+}
+.ba-mt-15 {
+  margin-top: 15px;
+}
+.ba-mt-20 {
+  margin-top: 20px;
+}
+.ba-mb-2 {
+  margin-bottom: 2px;
+}
+.ba-mb-3 {
+  margin-bottom: 3px;
+}
+.ba-mb-4 {
+  margin-bottom: 4px;
+}
+.ba-mb-5 {
+  margin-bottom: 5px;
+}
+.ba-mb-10 {
+  margin-bottom: 10px;
+}
+.ba-mb-15 {
+  margin-bottom: 15px;
+}
+.ba-mb-20 {
+  margin-bottom: 20px;
+}
+.ba-mr-2 {
+  margin-right: 2px;
+}
+.ba-mr-3 {
+  margin-right: 3px;
+}
+.ba-mr-4 {
+  margin-right: 4px;
+}
+.ba-mr-5 {
+  margin-right: 5px;
+}
+.ba-mr-10 {
+  margin-right: 10px;
+}
+.ba-mr-15 {
+  margin-right: 15px;
+}
+.ba-mr-20 {
+  margin-right: 20px;
+}
+.ba-ml-2 {
+  margin-left: 2px;
+}
+.ba-ml-3 {
+  margin-left: 3px;
+}
+.ba-ml-4 {
+  margin-left: 4px;
+}
+.ba-ml-5 {
+  margin-left: 5px;
+}
+.ba-ml-10 {
+  margin-left: 10px;
+}
+.ba-ml-15 {
+  margin-left: 15px;
+}
+.ba-ml-20 {
+  margin-left: 20px;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-appearance: none;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+}
+.btn-yellow {
+  background: #f0b627;
+  color: #fff;
+}
+.btn-pink {
+  background: #d84466;
+  color: #fff;
+}
+.btn-purple {
+  color: #9d8289;
+  background-color: transparent;
+  border-color: #9d8289;
+}
+.btn-purple:active,
+.btn-purple.active {
+  color: #aa8d95;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #9d8289;
+}
+.btn-group {
+  display: inline-block;
+}
+.btn-group .btn {
+  float: left;
+  border-right-width: 0;
+  border-radius: 0 !important;
+}
+.btn-group .btn:first-child {
+  border-top-left-radius: 3px !important;
+  border-bottom-left-radius: 3px !important;
+}
+.btn-group .btn:last-child {
+  border-right-width: 1px;
+  border-top-right-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
+}
+.btn-group .btn:active,
+.btn-group .btn.active {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #9d8289;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('http://static.chorhair.com/assets/fonts/iconfont.eot');
+  src: url('http://static.chorhair.com/assets/fonts/iconfont.eot') format('embedded-opentype'), url('http://static.chorhair.com/assets/fonts/iconfont.woff') format('woff'), url('http://static.chorhair.com/assets/fonts/iconfont.ttf') format('truetype'), url('http://static.chorhair.com/assets/fonts/iconfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*.icon-user:before { content: "\e632"; }
+.icon-shop:before { content: "\e61b"; }
+.icon-fairer:before { content: "\e8e5"; }
+.icon-ziwojieshaoline:before { content: "\e6e6"; }
+.icon-phone:before { content: "\e789"; }
+.icon-address:before { content: "\e61f"; }
+.icon-see:before { content: "\e604"; }
+.icon-appoint:before { content: "\e645"; }
+.icon-erweima:before { content: "\f010a"; }
+.icon-order:before { content: "\e60d"; }
+.icon-quanbubankuai:before { content: "\e614"; }*/

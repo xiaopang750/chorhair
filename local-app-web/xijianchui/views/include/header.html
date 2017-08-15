@@ -1,0 +1,22 @@
+<header class="header">
+	<section class="header-left">
+		{{if pageLevel != 1}}
+		<a href="{{pageInfo.backUrl}}">
+			<span class="icon icon-left"></span>
+			返回
+		</a>
+		{{/if}}
+		{{if title == '我的账户' || title == '消息'}}
+		<a href="javascript:;" class="ba-none" back-btn>
+			<span class="icon icon-left"></span>
+			返回
+		</a>
+		{{/if}}
+	</section>
+	<section class="header-center">
+		{{pageInfo.title}}
+	</section>
+	<section class="header-right">
+		<a href="{{pageInfo.rightUrl}}" uilink right-func>{{pageInfo.rightText}}</a>
+	</section>
+</header>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/customer/user/login.css">
+</head>
+
+
+<body pageLevel="{{pageLevel}}">
+	{{include '../include/header'}}
+
+	<form>
+		<section class="ba-mb-20 ba-mt-20">
+			
+			<div class="ui-input-wrap">
+				<label>
+					<span class="icon icon-info ba-light-gray ba-font-20"></span>
+				</label>
+				<input type="number" class="form-control" placeholder="请输入手机号" username>
+			</div>
+			<div class="ui-input-wrap line-full">
+				<label>
+					<span class="icon icon-lock ba-light-gray ba-font-18"></span>
+				</label>
+				<input type="password" class="form-control" placeholder="请输入密码" password>
+			</div>
+		</section>
+
+		<section class="col-11 ba-auto ba-mb-50">
+			<input type="submit" class="btn btn-pink btn-lg col-12" login-btn value="登录">	
+			<div class="ba-clearfix">
+				<a href="{{views['user/forget'].url}}" class="ba-fr ba-mt-10 ba-font-14" forget-pass>忘记密码</a>
+			</div>
+		</section>
+	</form>
+	
+	<!-- <section class="col-11 ba-auto other-login">
+		<div class="ba-clearfix col-12 ba-mb-30">
+			<div class="line-left"></div>
+			<div class="other-login-title">一键登录</div>
+			<div class="line-right"></div>
+		</div>
+
+		<div class="other-login-logo col-12">
+			<div class="qq" qq>
+				<img src="{{imgPath}}lib/icon/qq.png" alt="qq" qq>
+				<p>
+					QQ
+				</p>
+			</div>
+			<div class="weixin" weixin>
+				<img src="{{imgPath}}lib/icon/weibo.png" alt="微信" weixin>
+				<p>
+					微博
+				</p>
+			</div>
+			<div class="weibo" weibo>
+				<img src="{{imgPath}}lib/icon/weixin.png" alt="微博" weibo>
+				<p>
+					微信
+				</p>
+			</div>
+		</div>
+	</section> -->
+
+
+
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/customer/user/login');
+</script>
+</body>
+</html>

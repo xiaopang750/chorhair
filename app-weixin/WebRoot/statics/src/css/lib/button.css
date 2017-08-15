@@ -1,0 +1,80 @@
+/**
+ *description:网站全局less变量-配置
+ *author:wangwc
+ *date:2015/4/2
+ */
+/* color */
+/* site-config */
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-appearance: none;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+}
+.btn-yellow {
+  background: #f0b627;
+  color: #fff;
+}
+.btn-pink {
+  background: #d84466;
+  color: #fff;
+}
+.btn-purple {
+  color: #9d8289;
+  background-color: transparent;
+  border-color: #9d8289;
+}
+.btn-purple:active,
+.btn-purple.active {
+  color: #aa8d95;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #9d8289;
+}
+.btn-group {
+  display: inline-block;
+}
+.btn-group .btn {
+  float: left;
+  border-right-width: 0;
+  border-radius: 0 !important;
+}
+.btn-group .btn:first-child {
+  border-top-left-radius: 3px !important;
+  border-bottom-left-radius: 3px !important;
+}
+.btn-group .btn:last-child {
+  border-right-width: 1px;
+  border-top-right-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
+}
+.btn-group .btn:active,
+.btn-group .btn.active {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #9d8289;
+}

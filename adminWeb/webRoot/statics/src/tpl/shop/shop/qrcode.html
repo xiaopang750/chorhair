@@ -1,0 +1,49 @@
+<!-- 店铺二维码 -->
+<thead>
+	<tr>
+		<td width="10%">二维码图片</td>
+		<td width="10%">二维码类型</td>
+		<td width="10%">领取对象</td>
+		<td width="10%">描述</td>
+		<td width="10%">扫描次数</td>
+		<td width="20%">扫描并关注数量</td>
+		<td width="20%">成为会员数量</td>
+		<td width="10%">管理</td>
+	</tr>
+</thead>
+<tbody>
+	{{each list}}
+	<tr>
+		<td>
+			<img height="50px" src="{{$value.qrcodeUrls}}" alt="" code-url>
+		</td>
+		<td>
+			{{if $value.actionName == 'QR_LIMIT_SCENE'}}
+			永久二维码
+			{{else}}
+			临时二维码
+			{{/if}}
+		</td>
+		<td>
+			{{if $value.operateobject == '1'}}
+			店铺
+			{{else if $value.operateobject == '2'}}
+			理发师
+			{{else if $value.operateobject == '3'}}
+			消费者
+			{{else if $value.operateobject == '4'}}
+			平台
+			{{else if $value.operateobject == '5'}}
+			订单
+			{{else if $value.operateobject == '6'}}
+			其他
+			{{/if}}
+		</td>
+		<td>{{$value.userDefined}}</td>
+		<td>{{$value.count}}</td>
+		<td>{{$value.count}}</td>
+		<td>{{$value.count}}</td>
+		<td><a class="btn btn-normal" download-code>下载二维码</a></td>
+	</tr>
+	{{/each}}
+</tbody>

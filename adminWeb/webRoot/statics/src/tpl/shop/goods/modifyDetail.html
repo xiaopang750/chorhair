@@ -1,0 +1,13 @@
+{{if list}}
+	{{each list}}
+	<tr>
+		<td>{{$value.edittime}}</td>
+		<td>{{$value.editor}}</td>
+		<td>{{$value.editcontent}}</td>
+	</tr>
+	{{/each}}
+{{else}}
+	<tr>
+		<td colspan="3">暂无数据</td>
+	</tr>
+{{/if}}

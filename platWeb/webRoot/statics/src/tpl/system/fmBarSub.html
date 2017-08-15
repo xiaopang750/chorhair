@@ -1,0 +1,13 @@
+{{each data}}
+<li list-sub pid="{{$value.pkPrice}}" pname="{{$value.servicerank}}" price="{{$value.price}}">
+	<div class="item" hover-list>
+		<span class="hover-item" look>
+			{{$value.servicerank}}
+		</span>
+		<span class="func-icon" func-icon>
+			<span class="hover-item fa fa-edit" title="编辑" edit></span>
+			<!-- <span class="hover-item fa fa-remove" title="禁用" aid="" remove></span> -->
+		</span>
+	</div>
+</li>
+{{/each}}

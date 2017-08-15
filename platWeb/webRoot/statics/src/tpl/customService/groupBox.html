@@ -1,0 +1,65 @@
+<!-- 分组弹框 -->
+<div class="dialog-box group-box" group-box script-bound="form-check">
+	<span class="fa ba-fr fa-close" sc="close"></span>
+	<div class="ba-mt-20 ba-clearfix">
+		<span class="item-title">沟通组名称：</span>
+		<input class="form-control w-200" type="text" group-name>
+	</div>
+	<div class="ba-mt-20 ba-clearfix">
+		<span class="item-title">成员类型：</span>
+		<select class="form-control w-200" user-type>
+			<option value="1">消费者</option>
+			<option value="2">理发师</option>
+		</select>
+	</div>
+	<div class="select-area ba-clearfix ba-mt-20">
+		<span class="item-title">选择店铺：</span>
+		<div class="related-select" area-wrap>
+			<select class="form-control" province name="province" pkArea="" areaname="">
+				<option value="">请选择省</option>
+			</select>
+		</div>
+		<div class="related-select" area-wrap>
+			<select class="form-control" city name="city" pkArea="" areaname="">
+				<option value="">请选择市</option>
+			</select>
+		</div>
+		<div class="related-select" area-wrap>
+			<select class="form-control" area name="county" pkArea="" areaname="">
+				<option value="">请选择区</option>
+			</select>
+		</div>
+		<div class="shop-select">
+			<select class="form-control" shop>
+				<option value="">请选择店铺</option>
+			</select>
+		</div>
+	</div>
+	<div class="ba-clearfix ba-mt-20">
+		<span class="item-title">用户查询：</span>
+		<input type="text" class="form-control ba-fl w-200 ba-mr-10" user-name="">
+		<a href="javascript:;" class="btn btn-primary" search-user-btn="">查询</a>
+	</div>
+	<div class="ba-clearfix ba-mt-15 ba-ml-10">
+		<input class="ba-mr-2" type="checkbox" all-select>
+		<span class="all-select" all-select-text>全选</span>
+		<span class="selected-member">已选择用户</span>
+	</div>
+	<div class="ba-clearfix ba-rel">
+		<!-- <button class="user-add-btn btn btn-primary" user-add-btn>
+			<span class="fa fa-plus"></span>
+		</button> -->
+		<div class="user-list-wrap">
+			<ul class="user-list" user-list></ul>
+		</div>
+		<div class="user-select-wrap">
+			<ul class="user-select" user-select>
+				<!-- <li pkmember>cheng</li> -->
+			</ul>
+		</div>
+	</div>	
+	<div class="ba-tc ba-mt-10 ba-clear">
+		<a class="btn btn-primary ba-mr-10" href="javascript:;" group-confirm sc="confirm" script-role="confirm-btn">确定</a>
+		<a class="btn btn-danger" href="javascript:;" sc="close">取消</a>
+	</div>
+</div>

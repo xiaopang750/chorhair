@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>99400F3C-5CC4-4D3C-9A2B-57D25DEE9C76</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ChorHair</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>28ca0caa-6aa0-41ad-b6ed-0ff5ba22aff6</key>
+		<string>svn://192.168.11.146/xijianchui</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>code/ios-app/hairer/main/ChorHair.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>28ca0caa-6aa0-41ad-b6ed-0ff5ba22aff6</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>28ca0caa-6aa0-41ad-b6ed-0ff5ba22aff6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>28ca0caa-6aa0-41ad-b6ed-0ff5ba22aff6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>xijianchui</string>
+		</dict>
+	</array>
+</dict>
+</plist>

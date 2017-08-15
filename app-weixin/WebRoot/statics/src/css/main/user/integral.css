@@ -1,0 +1,51 @@
+/**
+ *description:网站全局less变量-配置
+ *author:wangwc
+ *date:2015/4/2
+ */
+/* color */
+/* site-config */
+.user-img {
+  width: 30%;
+  margin: 30px auto 15px auto;
+  border: 5px solid #d3d8da;
+  border-radius: 50%;
+  background: #fff;
+}
+.user-img img {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+}
+.user-name {
+  text-align: center;
+  color: #a0a0a0;
+  font-size: 16px;
+}
+.user-integral {
+  margin: 30px auto 10px auto;
+  text-align: center;
+  font-size: 16px;
+  color: #848484;
+}
+.user-integral .unit {
+  font-size: 16px;
+  font-weight: normal;
+}
+.user-integral .integral-num {
+  color: #e75245;
+  font-size: 30px;
+}
+.user-promotion {
+  text-align: center;
+  color: #848484;
+  font-size: 16px;
+}
+.user-promotion .unit {
+  font-size: 16px;
+  font-weight: normal;
+}
+.user-promotion .promotion-num {
+  color: #545454;
+  font-size: 30px;
+}

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{contenttopic}}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="http://static.chorhair.com/css/swiper.css">
+<style>
+* {margin: 0;padding: 0;outline: 0;-webkit-tap-highlight-color: transparent;-webkit-user-select: none;}
+body {padding:10px; font-family: 'Microsoft Yahei';font-size: 14px;background: #ebf0f3;color: #444444;overflow-x: hidden;}
+ul,ol,li {list-style: none;}
+a {text-decoration: none;color: #444444;}
+
+@font-face {
+  font-family: 'song';
+  src: url('http://static.chorhair.com/fonts/iconfont.eot');
+  src: url('http://static.chorhair.com/fonts/iconfont.eot') format('embedded-opentype'), 
+       url('http://static.chorhair.com/fonts/iconfont.woff') format('woff'), 
+       url('http://static.chorhair.com/fonts/iconfont.ttf') format('truetype'), 
+       url('http://static.chorhair.com/fonts/iconfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  font-family:"song" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before { content: "\e632"; }
+.icon-shop:before { content: "\e62d"; }
+.icon-fairer:before { content: "\e8e5"; }
+.icon-ziwojieshaoline:before { content: "\e6e6"; }
+.icon-phone:before { content: "\e706"; }
+.icon-address:before { content: "\e61f"; }
+.icon-see:before { content: "\e604"; }
+.icon-appoint:before { content: "\e645"; }
+.icon-erweima:before { content: "\f010a"; }
+
+/*内容页*/
+.swiper-container{
+  height: 300px;
+  background: #ddd;
+  overflow: hidden;
+}
+
+.swiper-slide img{
+  display: block;
+  width: 100%;
+}
+.info-title{
+  background: #fff;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-family: 'Microsoft Yahei';
+  font-size: 16px;
+}
+.info-detail{
+  border-top: 1px solid #ededed;
+  background: #fff;
+  padding: 10px;
+}
+.shop-info{
+  position: relative;
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.shop-info .time{
+  color: #909090;
+}
+
+.shop-address{
+  padding: 10px;
+  background: #fff;
+}
+
+.shop-address table{
+  width: 100%;
+}
+.shop-address .text{
+    width: 74%;
+    font-size: 16px;
+}
+
+.shop-address .icons{
+  position: relative;
+  top: -2px;
+  width: 26%;
+  /*text-align: right;*/
+}
+.shop-address .icon{
+  font-size: 24px;
+}
+
+.shop-address .line{
+
+}
+.shop-address .icon-address{
+  color: #1fc9f4;
+  margin-right: 5px;
+}
+.shop-address .icon-phone{
+  color: #44d8ba;
+}
+
+.shop-address .icon-phone span{
+  font-size: 16px;
+  font-family: 'Microsoft Yahei';
+  color: #444;
+  margin-left: 5px;
+}
+.fairer-list li{
+  position: relative;
+  margin-top: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.fairer-list li .img{
+  width: 25%;
+  float: left;
+  overflow: hidden;
+  background: #ccc;
+  margin-right: 15px;
+}
+
+.fairer-list li .img img{
+  display: block;
+  width: 100%;
+}
+
+.fairer-list li .name{
+  margin-top: 4.5%;
+  font-size: 16px;
+  margin-bottom: 2%;
+}
+
+.fairer-list li .skills{
+  width: 85%;
+}
+
+.fairer-list li .rankname{
+  color:#7c7c7c;
+  margin-left: 10px;
+}
+
+.fairer-list li .arrow {
+  position: absolute;
+  right: 7%;
+  top: 50%;
+  margin-top: -10px;
+  border: #dadada solid 2px;
+  display: block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(225deg);
+}
+.fairer-title{
+  margin-top: 10px;
+  background: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #ededed
+}
+.fairer-title .icon{
+  font-size: 20px;
+  color: #d84466;
+  margin-right: 2px;
+}
+</style>
+
+</head>
+
+<body>
+	<!-- swiper -->
+	<div class="swiper-container">
+      <div class="swiper-wrapper">
+      	{{each modelPicList}}
+      	<div class="swiper-slide"><img src="{{$value.url}}" alt=""></div>
+      	{{/each}}
+      </div>
+      {{if modelPicList.length > 1}}
+      <div class="swiper-pagination"></div>
+      {{/if}}
+  </div>
+	<!-- info -->
+
+  <!-- 店铺 -->
+	{{if contentType == 'shop'}}
+  <section class="shop-address">
+    <table>
+      <tr>
+        <td class="text"><span id="openLocation"><span class="icon icon-address"></span>{{address}}</span></td>
+      </tr>
+      <tr>
+         <td style="padding-top: 5px;"><a class="icon icon-phone" href="tel:{{phone}}"><span>{{phone}}</span></a></td>
+      </tr>
+    </table>  
+  </section>
+  <!-- <section class="shop-info">
+    <span class="time">营业时间：{{time}}</span>
+  </section> -->
+  {{else}}
+    <section class="info-title">
+      {{contenttopic}}
+    </section>
+  {{/if}}
+
+	<section class="info-detail">
+		{{=contentbody}}
+	</section>
+  
+  <section class="fairer-list">
+    <ul></ul>
+  </section>
+
+  <input type="hidden" fairerlist val="{{fairList}}">
+  <input type="hidden" address val="{{address}}">
+  <input type="hidden" shopname val="{{shopname}}">
+  <input type="hidden" location val="{{location}}">
+ 
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://static.chorhair.com/js/swiper.js"></script>
+<script src="http://static.chorhair.com/js/hammer.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+var signature;
+var urlStr = window.location.toString();
+var timeUrl = new Date().getTime().toString();
+
+var shopname;
+var address;
+var latitude;
+var longitude;
+
+
+$(function() {
+
+  $.ajax({
+       url: 'http://chwx.rs07.com/wx/wxjs/getinfo.php?noncestr=Wm3WZYTPz0wzccnW&timestamp='+timeUrl+'&url='+urlStr+'',
+       dataType: "jsonp",
+       jsonp: "jsonpcallback",
+       success: function(data){
+          signature = data.sign;
+
+          shopname = $('[shopname]').attr('val');
+          address = $('[address]').attr('val');
+          latitude = parseFloat($('[location]').attr('val').split(',')[1]);
+          longitude = parseFloat($('[location]').attr('val').split(',')[0]);
+
+          wx.config({
+              debug: false,
+              appId: 'wx04bf3ce7725466d1',
+              timestamp: timeUrl,
+              nonceStr: 'Wm3WZYTPz0wzccnW',
+              signature: signature,
+              jsApiList: [
+                'openLocation',
+                'previewImage'
+              ]
+          });
+
+          wx.ready(function () {
+             //导航
+            $('#openLocation').hammer().on('tap', function() {
+
+              wx.openLocation({
+                  latitude: latitude,
+                  longitude: longitude,
+                  name: shopname,
+                  address: address,
+                  scale: 14
+                  //infoUrl: 'http://weixin.qq.com'
+              });
+            });
+
+            //图片预览
+            $('.swiper-container').hammer().on('tap', '.swiper-slide img', function() {
+
+              var current = $('.swiper-slide-active img').attr('src');
+              var urls = [];
+
+              $('.swiper-slide').each(function() {
+                urls.push($(this).find('img').attr('src'));
+              });
+
+              wx.previewImage({
+                current: current,
+                urls: urls
+              });
+     
+            });
+          
+          });
+
+         /* wx.error(function (res) {
+            alert(res.errMsg);
+          });*/
+       }
+  });
+
+	 var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        loop: false,
+        autoplay: 3500,
+        autoplayDisableOnInteraction: false
+    });
+
+    $('.swiper-pagination').show();
+
+    var fairData = $('[fairerlist]').attr('val');
+
+    if(fairData != 'null'){
+      var json = JSON.parse(fairData);
+      var fairerArr = json.data.list;
+     
+      for(var i=0;i<fairerArr.length;i++){
+
+        var skillArr = [];
+        var skillStr = '';
+
+        for(var j=0;j<fairerArr[i].skills.length;j++){
+          skillArr.push(fairerArr[i].skills[j].skillname);
+        }
+
+        for(var k=0;k<skillArr.length;k++){ 
+          skillStr += skillArr[k]+'&nbsp;&nbsp;';
+        }
+
+         var oLi = $('<li>'+
+              '<a href="'+fairerArr[i].url+'">'+
+              '<div class="img">'+
+                '<img src="'+fairerArr[i].firstpage+'">'+
+              '</div>'+
+              '<p class="name">'+fairerArr[i].fairername+'<span class="rankname">'+fairerArr[i].rankname+'</span></p>'+
+              '<p class="skills">擅长：'+skillStr+'</p>'+
+              '<i class="arrow"></i>'+
+              '</a>'+
+            '</li>');
+
+        $('.fairer-list ul').append(oLi);  
+      }
+    }
+    
+});
+
+function bodyParse() {  
+
+  var str,
+    arr,
+    newArr,
+    num,
+    num2,
+    i,
+    j,
+    newJson;
+
+  if(window.location.search) {
+
+    str = decodeURIComponent(window.location.search.split('?')[1]);
+
+    arr = str.split('&');
+
+    num = arr.length;
+
+    newJson = {};
+
+    for (i=0; i<num; i++) {
+
+      newArr = arr[i].split('=');
+
+      num2 = newArr.length;
+
+      newJson[newArr[0]] = newArr[1];
+    }
+
+    return newJson;
+  }
+  else {
+
+    return {};
+  }
+
+}	
+</script>
+
+</body>
+</html>

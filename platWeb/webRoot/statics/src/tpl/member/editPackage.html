@@ -1,0 +1,115 @@
+<!-- 套餐编辑弹框 -->
+<div class="edit-box" script-bound="package-wrap">
+	<table class="no-border table ba-tl" width="100%">
+		<tr>
+			<td width="90">
+				选择套餐名称：
+			</td>
+			<td colspan="3" width="300">
+				<div script-role="check-wrap">
+					<input type="text" class="form-control col-8 {{if nowWay == 'edit'}}noInput{{/if}}" form_check="sys" ischeck="true" name="comboname" tip="此项为必填" wrong="此项为必填" re="(.+)" comboname value="{{comboname}}" {{if nowWay == 'edit'}}infoDisabled="infoDisabled"{{/if}}>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td width="90">
+				套餐次数：
+			</td>
+			<td colspan="3">
+				<input type="text" class="form-control col-8 {{if nowWay == 'edit'}}noInput{{/if}}" value="{{totalcount}}" disabled="disabled" pack-count>
+			</td>
+		</tr>
+		<!-- <tr>
+			<td width="90">
+				购买时间：
+			</td>
+			<td colspan="3">
+				<input type="text" class="form-control combobuytime" name="combobuytime" value="{{combobuytime}}" disabled="disabled">
+			</td>
+		</tr>
+		<tr>
+			<td width="90">
+				开卡时间：
+			</td>
+			<td>
+				<div script-role="check-wrap">
+					<input type="text" class="form-control" box-start name="combobegintime" value="{{combobegintime}}" disabled="disabled">
+				</div>
+			</td>
+			<td>
+				结束时间：
+			</td>
+			<td>
+				<div script-role="check-wrap">
+					<input type="text" class="form-control" box-end name="comboendtime" value="{{comboendtime}}" disabled="disabled">
+				</div>
+			</td>
+		</tr> -->
+		<tr>
+			<td width="90" style="vertical-align:top;">
+				提成方式：
+			</td>
+			<td colspan="3">
+				<div script-role="check-wrap">
+					<!-- <input type="text" class="form-control col-8 {{if nowWay == 'edit'}}noInput{{/if}}" form_check="sys" ischeck="true" name="fairername" tip="此项为必填" wrong="此项为必填" re="(.+)" fairer readonly="readonly" value="{{fairername}}" {{if nowWay == 'edit'}}infoDisabled="infoDisabled"{{/if}}> -->
+					{{if nowWay != 'edit'}}
+						<ul class="ba-clearfix" ticheng-list-wrap>
+							
+						</ul>
+					{{else}}
+						{{if commissionpeople.length}}
+						{{each commissionpeople}}
+						<li class="form-group ba-fl col-3 ba-mr-20" ticheng-item>
+							<label class="ba-mb-2 ba-mr-5 ba-fl">{{$value.awardname}}:</label>
+							<input type="text" class="form-control noInput" readonly="readonly" value="{{$value.fairername}}">
+						</li>
+						{{/each}}
+						{{/if}}
+					{{/if}}
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td width="90">
+				优惠金额：
+			</td>
+			<td colspan="3">
+				<div script-role="check-wrap">
+					<input type="text" class="form-control col-6 {{if nowWay == 'edit'}}noInput{{/if}}" sale form_check="sys" ischeck="free" name="discount" tip="此项为必填" wrong="优惠金额格式不正确" re="((\d|\.)+)" value="{{discount}}" {{if nowWay == 'edit'}}disabled="disabled"{{/if}}>
+				</div>
+			</td>
+		</tr>
+		<tr sale-wrap class="ba-none">
+			<td width="90">
+				选择抵用券：
+			</td>
+			<td colspan="3">
+				<div script-role="check-wrap">
+					<select sale-list-wrap class="form-control">
+						
+					</select>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td width="90">
+				合计：
+			</td>
+			<td colspan="3">
+				<span sum>
+					{{if combomoney}}
+						{{combomoney}}
+					{{else}}
+						0
+					{{/if}}
+				</span>元
+			</td>
+		</tr>
+	</table>
+	<div class="ba-tc">
+		<a href="javascript:;" class="btn btn-primary" script-role="package-btn" money="{{combomoney}}" pkShopCombo="{{pkShopCombo}}" fairerStr="{{commissionpeople}}" pkCustomerCombo="{{pkCustomerCombo}}">
+			确定
+		</a>
+		<a href="javascript:;" class="btn btn-danger" sc="close">取消</a>
+	</div>
+</div>

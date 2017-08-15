@@ -1,0 +1,86 @@
+/**
+ *description: 我的预约
+ *author:fanwei
+ *date:2015/01/21
+ */
+/**
+ *description:网站全局less变量-配置
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* use-most-var */
+/* color */
+/* a-link */
+/* font-family */
+/* h-size */
+/* btn */
+/* layer */
+/* site-config */
+/**
+ *description:网站全局less函数-pc
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* line-height */
+/* font-size */
+/* margin */
+/* padding */
+/* opacity */
+/* trangle */
+/**
+ *description:css3-pc
+ *author:fanwei
+ *date:2014/10/31
+ */
+.appoint-list {
+  margin-bottom: 2.5rem;
+}
+.appoint-list li {
+  background: #fff;
+  border: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  position: relative;
+  margin-bottom: 1.2em;
+  color: #585858;
+}
+.appoint-list li:active {
+  background: #f5f5f5;
+}
+.appoint-list .list-head {
+  height: 2.8em;
+  line-height: 2.8em;
+  font-size: 1.3em;
+  border-bottom: 1px solid #dddddd;
+}
+.appoint-list dl {
+  padding: 0.8em 0;
+}
+.appoint-list dt {
+  width: 30%;
+}
+.appoint-list dt img {
+  width: 100% !important;
+  height: auto !important;
+}
+.appoint-list dd {
+  font-size: 1.2em;
+}
+.appoint-list dd table td {
+  float: left;
+  padding: 0.2em 0;
+  vertical-align: top;
+  line-height: 1.3em;
+}
+.appoint-list .btn {
+  position: absolute;
+  right: 15px;
+  bottom: 1em;
+}
+.appoint-list .icon {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  font-size: 1.4em;
+  color: #bdbdbd;
+}

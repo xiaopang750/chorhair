@@ -1,0 +1,22 @@
+{
+    "$schema": "commissionpeople#",
+    "description": "订单提成人",
+    "type": "object",
+    "properties": {
+        "datas":
+         {
+            "type": "array",
+            "items":{
+	                "type":"object",
+	                "properties":{
+		                "awardmoney":{"required":true},
+		                "israte":{"required":true},
+		                "pkFairer":{"required":true},
+		                "fairerName":{"required":true}
+		            }
+	         },
+	         "minItems":1,
+	         "maxItems":4
+         }
+    }
+}

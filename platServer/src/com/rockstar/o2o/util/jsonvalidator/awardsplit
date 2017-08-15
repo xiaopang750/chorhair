@@ -1,0 +1,23 @@
+{
+    "$schema": "awardsplit#",
+    "description": "套餐提成",
+    "type": "object",
+    "properties": {
+        "datas":
+         {
+            "type": "array",
+            "items":{
+	                "type":"object",
+	                "properties":{
+		                "awardmoney":{"required":true},
+		                "israte":{"required":true},
+		                "pkFairer":{"required":true},
+		                "fairername":{"required":true},
+		                "awardname":{"required":true}
+		            }
+	         },
+	         "minItems":1,
+	         "maxItems":4
+         }
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+{{include '../include/meta'}}
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+</head>
+
+<body>
+	{{include '../include/header'}}
+	<div class="main-content">
+		{{include '../include/nav'}}
+		{{include '../include/msg'}}
+		<div class="center-bar">
+			<div class="bar-title ba-clearfix">
+				<span class="ba-intro">{{title}}</span>
+				<a href="{{views['goods/stockList'].url}}" class="btn btn-primary back-btn">返回</a>
+			</div>
+			<div class="main-content">
+				<table class="table bordered" width="100%" list-wrap>
+					<thead>
+						<tr>
+							<td width="20%">修改日期</td>
+							<td width="20%">修改人员</td>
+							<td width="60%">修改内容</td>
+						</tr>
+					</thead>
+					<tbody data-ele="data-wrap">
+						
+					</tbody>
+				</table>
+			</div>	
+		</div>	
+	</div>	
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/goods/stockRecord');
+</script>
+</body>
+</html>

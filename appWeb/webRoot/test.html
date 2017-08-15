@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>test</title>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+
+<body>
+<select id="url">
+	<option value="/main/customer/goods/all">获取所有商品</option>
+	<option value="/main/customer/goods/getGood">根据商品主键查询赞</option>
+	<option value="/main/customer/goods/good">商品赞</option>
+	<option value="/main/customer/search/list">搜索列表</option>
+	<option value="/main/customer/user/getPackage">查询当前用户下的套餐</option>
+	<option value="/main/customer/appoint/list">查询订单列表</option>
+	<option value="/main/customer/appoint/detail">根据订单主键查询订单详情</option>
+	<option value="/main/customer/appoint/arg">订单详情评论回复</option>
+	<option value="/main/customer/message/all">获取系统消息</option>
+	<option value="/main/customer/message/ignore">忽略消息</option>
+	<option value="/main/customer/record/list">美丽记录</option>
+	<option value="/main/customer/record/upload">上传美丽记录</option>	
+	<option value="/main/customer/user/getInfo">获取账户信息</option>
+	<option value="/main/customer/user/getPackage">退出登录</option>
+	<option value="/main/customer/user/getPackage">上传头像</option>
+</select>
+
+<br>
+<input type="text" style="width:500px;" value="" id="param">
+<br>
+<button id="confirm">确定</button>
+<br>
+<textarea id="show" style="width:500px;height:400px;"></textarea>
+
+<script>
+	var oUrl = document.getElementById('url');
+	var oParam = document.getElementById('param');
+	var oConfirm = document.getElementById('confirm');
+	var oShow = document.getElementById('show');
+
+	oConfirm.onclick = function() {
+
+		var sUrl = oUrl.value;
+		var sParam = oParam.value || '{}';
+
+		$.post(sUrl, JSON.parse(sParam), function(data){
+
+			oShow.value = data;
+
+		});
+
+	};
+</script>
+</body>
+</html>

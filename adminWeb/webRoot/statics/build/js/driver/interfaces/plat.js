@@ -1,0 +1,2 @@
+/*! company 罗格斯达 version 1.0.0 2015-06-17 */
+define("driver/interfaces/plat",[],function(e,t,i){i.exports={platCode:R.uri.reqPrefix+"plat/platCode",publishCode:R.uri.reqPrefix+"plat/publishCode",downloadCode:R.uri.reqPrefix+"plat/downloadCode"}});

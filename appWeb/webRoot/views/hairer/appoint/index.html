@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/hairer/appoint/index.css">
+</head>
+
+<body pageLevel="{{pageLevel}}">
+
+	{{include '../include/header'}}
+
+	<!-- loading -->
+	<section class="page-loading" page-loading>
+		<img src="{{imgPath}}lib/loading/btn_loading_r.gif">
+	</section>
+
+	<!-- loading-wrap -->
+	<section class="loading-wrap" loading-wrap>
+		<section class="message-type ba-tc ba-mt-15 ba-mb-12">
+			<div class="btn-group ba-clearfix">
+				<button class="btn btn-purple active" msg-type="0">服务中</button>
+				<button class="btn btn-purple" msg-type="1">已完成</button>
+			</div>
+		</section>
+
+		<section class="appoint-list">
+			<ul></ul>
+		</section>
+	</section>	
+
+	{{include '../include/indexFooter'}}	
+
+	{{include '../include/siteConfig'}}
+
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/hairer/appoint/index');
+</script>
+</body>
+</html>

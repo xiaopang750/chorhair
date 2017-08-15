@@ -1,0 +1,2 @@
+/*! company 罗格斯达 version 1.0.0 2015-06-17 */
+define("util/time/getNowTime",["../string/toDouble"],function(e){function t(e,t,i){var n,o,a,s,o,c,l,u;return i=i||"-",n=e.getFullYear(),month=e.getMonth()+1,a=e.getDate(),s=e.getHours(),o=e.getMinutes(),c=e.getSeconds(),l=t?n+i+r(month)+i+r(a)+" "+r(s)+":"+r(o)+":"+r(c):n+i+r(month)+i+r(a),u=l.replace(/\-/gi,"/"),{time:l,timer:new Date(u).getTime()}}var r=e("../string/toDouble");return t}),define("util/string/toDouble",[],function(){function e(e){return 10>e?"0"+e:e}return e});

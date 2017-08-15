@@ -1,0 +1,16 @@
+<!-- 新增评论 -->
+<li class="ba-mb-5" comment-item>
+	<dl class="ba-clearfix">
+		<dd>
+			<div class="ba-clearfix ba-mb-5">
+				{{if replyman}}
+				<h5 spitslotor-id={{spitslotorid}}  class="ba-fl namer">{{spitslotor}}</h5><span class="ba-fl ba-ml-5 ba-mr-5">回复</span><h5 replyman-id={{replymanid}} class="ba-fl namer">{{replyman}}</h5>
+				{{else}}
+				<h5 spitslotor-id={{spitslotorid}} class="ba-fl namer">{{spitslotor}}</h5>
+				{{/if}}
+				<span class="comment-time ba-fr">{{ts}}</span>
+			</div>
+			<p>{{spitslotcontent}}</p>
+		</dd>
+	</dl>
+</li>

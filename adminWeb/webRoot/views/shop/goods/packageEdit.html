@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+{{include '../include/meta'}}
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/shop/goods/packageEdit.css">
+</head>
+
+<body>
+	{{include '../include/header'}}
+	<div class="main-content">
+		{{include '../include/nav'}}
+		{{include '../include/msg'}}
+		<div class="center-bar">
+			<div class="bar-title ba-clearfix">
+				<span class="ba-intro">{{title}}</span>
+			</div>
+			<div class="main-content">
+				<div class="package-edit-wrap" script-bound = "form-check">
+					<table width="100%" class="table no-bg no-border">
+						<tr>
+							<td width="20%">套餐名称：</td>
+							<td width="30%">
+								{{pageInfo.comboname}}
+							</td>
+							<td width="25%"></td>
+							<td width="25%"></td>
+						</tr>
+						<tr>
+							<td width="10%">标准价格：</td>
+							<td width="40%">
+								<div script-role="check-wrap">
+									<input type="text" class="form-control" form_check="sys" ischeck="true" name="shopmoney" tip="此项为必填" wrong="请填写数字" re="([0-9]\d*)" value="{{pageInfo.shopmoney}}" disabled="disabled">
+								</div>
+							</td>
+							<td width="25%"></td>
+							<td width="25%"></td>
+						</tr>
+						<tr>
+							<td width="10%">套餐提成组：</td>
+							<td width="40%">
+								<div script-role="check-wrap">
+									<select type="text" class="form-control" name="pkServicegroup" form_check="sys" ischeck="true" tip="请选择" wrong="" re=".+">
+										<option value="">请选择</option>
+										{{each pageInfo.service}}
+										<option value="{{$value.pkShopGroup}}" id="{{$value.pkShopGroup}}" {{if $value.pkShopGroup == pageInfo.pkServicegroup}}selected="selected"{{/if}}>	{{$value.groupname}}
+										</option>
+										{{/each}}
+									</select>
+								</div>
+							</td>
+							<td width="25%"></td>
+							<td width="25%"></td>
+						</tr>
+						<tr>
+							<td width="10%">附加项目组：</td>
+							<td width="40%">
+								<div script-role="check-wrap">
+									<select type="text" class="form-control" name="pkAdditiongroup" form_check="sys" tip="请选择" wrong="" re=".+">
+										<option value="">请选择</option>
+										{{each pageInfo.addtion}}
+										<option value="{{$value.pkShopGroup}}" id="{{$value.pkShopGroup}}" {{if $value.pkShopGroup == pageInfo.pkAdditiongroup}}selected="selected"{{/if}}>{{$value.groupname}}</option>
+										{{/each}}
+									</select>
+								</div>
+							</td>
+							<td width="25%"></td>
+							<td width="25%"></td>
+						</tr>
+						<tr>
+							<td width="10%">备注：</td>
+							<td width="40%">
+								<div script-role="check-wrap">
+									<textarea class="form-control" form_check="sys" ischeck="free" name="combonote" tip="" wrong="请填写100字以内的备注" re="((.|\n){1,100})">{{pageInfo.combonote}}</textarea>
+								</div>
+							</td>
+							<td width="25%"></td>
+							<td width="25%"></td>
+						</tr>
+						<tr>
+							<td colspan="4" class="ba-tl">
+								<ul class="commission" awards-wrap>
+									{{each pageInfo.awards}}
+									<li class="ba-clearfix ba-mb-20" awards-list>
+										<div script-role="check-wrap">
+											<label>提成名称:</label>
+											<input type="text" class="form-control" sub-name="awardname" ischeck="true" form_check="sys" re="(.{1,10})" tip="请填写提成名称" wrong="提成名称不能超过10个字符" value="{{$value.awardname}}">
+										</div>
+										<div script-role="check-wrap">
+											<label>提成方式:</label>
+											<select type="text" class="form-control" ischeck="true" form_check="sys" sub-name="israte" re="(.+)" tip="请选择提成方式" msg="请选择提成方式">
+												<option value="">请选择</option>
+												<option value="1" {{if $value.israte == '1'}}selected="selected"{{/if}}>固定额度</option>
+												<option value="2" {{if $value.israte == '2'}}selected="selected"{{/if}}>比例提成</option>
+											</select>
+										</div>
+										<div script-role="check-wrap">
+											<label>值:</label>
+											<input type="text" class="form-control" ischeck="true" form_check="sys" sub-name="awardmoney" re="^\d+$" tip="请填写提成值" wrong="提成值为数字" {{if $value.israte == 1}}re="^\d+$" msg="固定额度只能为数字" tip="固定额度只能为数字" wrong="固定额度只能为数字"{{else if $value.israte == 2}}re="(^([1-9]\d?)|100$)" msg="提成比例为100以内的数字" tip="提成比例为100以内的数字" wrong="提成比例为100以内的数字"{{else}}ignorecheck="yes"{{/if}} value="{{$value.awardmoney}}">
+										</div>
+										<span class="ba-none" sub-name="pkFaireraward" ignorecheck="yes">{{$value.pkFaireraward}}</span>
+									</li>
+									{{/each}}
+								</ul>
+								<div class="func-btn" func-btn style="display:none">
+									<button class="btn btn-primary" sub-add>
+										<span class="fa fa-plus"></span>
+									</button>
+									<button class="btn btn-danger" sub-reduce>
+										<span class="fa fa-minus"></span>
+									</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<a href="javascript:;" class="btn btn-primary" script-role = "confirm-btn">确定</a>
+								<a href="{{views['goods/list'].url}}" class="btn btn-danger">取消</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>	
+		</div>	
+	</div>
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/shop/goods/packageEdit');
+</script>
+</body>
+</html>

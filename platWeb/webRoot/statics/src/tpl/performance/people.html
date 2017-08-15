@@ -1,0 +1,66 @@
+{{if data.length}}
+<thead>
+    <tr>
+        <td>消费者图片</td>
+        {{each data}}
+        <td>第{{$value.dates}}周</td>
+        {{/each}}
+        <td>当月总计</td>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>本周到店人数</td>
+        {{each data}}
+        <td>{{$value.customercount}}</td>
+        {{/each}}
+        <td sum="customercount"></td>
+    </tr>
+    <tr>
+        <td>本周新增会员数</td>
+        {{each data}}
+        <td>{{$value.addcustomercount}}</td>
+        {{/each}}
+        <td sum="addcustomercount"></td>
+    </tr>
+    <tr>
+        <td>本周单次体验用户数</td>
+        {{each data}}
+        <td>{{$value.comboonecount}}</td>
+        {{/each}}
+        <td sum="comboonecount"></td>
+    </tr>
+    <tr>
+        <td>本周会员服务总数</td>
+        {{each data}}
+        <td>{{$value.servicecount}}</td>
+        {{/each}}
+        <td sum="servicecount"></td>
+    </tr>
+    <tr>
+        <td>截止本周累计会员数</td>
+        {{each data}}
+        <td>{{$value.totalcustomercount}}</td>
+        {{/each}}
+        <td sum="totalcustomercount"></td>
+    </tr>
+    <tr>
+        <td>本周套餐包个数</td>
+        {{each data}}
+        <td>{{$value.combocount}}</td>
+        {{/each}}
+        <td sum="combocount"></td>
+    </tr>
+    <tr>
+        <td>截止本周累计总套餐包个数</td>
+        {{each data}}
+        <td>{{$value.totalcombocount}}</td>
+        {{/each}}
+        <td sum="totalcombocount"></td>
+    </tr>
+</tbody>
+{{else}}
+<tr>
+    <td>暂无数据</td>
+</tr>
+{{/if}}

@@ -1,0 +1,2 @@
+/*! company 罗格斯达 version 1.0.0 2015-06-17 */
+define("util/array/indexof",[],function(){Array.prototype.indexOf||(Array.prototype.indexOf=function(e){var t=this.length>>>0,r=Number(arguments[1])||0;for(r=0>r?Math.ceil(r):Math.floor(r),0>r&&(r+=t);t>r;r++)if(r in this&&this[r]===e)return r;return-1})});

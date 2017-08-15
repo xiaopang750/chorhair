@@ -1,0 +1,106 @@
+/**
+ *description: 详情页模板
+ *author:fanwei
+ *date:2015/01/22
+ */
+
+@import "../../../config/config.less";
+@import "../../../config/func.less";
+@import "../../../extend/css3.less";
+
+.info {
+
+	text-align: center;
+	background: #fff;
+	padding:1.2em 0;
+	border-bottom: 1px solid @input-border-color;
+
+	& .sale {
+		display: inline-block;
+		background: #ff9829;
+		border-radius: 5px;
+		padding:1px 3px;
+	}
+
+	& .icon{
+		font-size: 1.5em;
+
+		&.icon-message{
+			position: relative;
+			top: 2px;
+		}
+	}
+
+}
+
+.info-detail{
+	background: #fff;
+	padding:1em 1.2em;
+	border-bottom: 1px solid @input-border-color;
+	font-size: 1.2em;
+}
+
+.info-comment{
+	background: #fff;
+	padding:0.8em 1.2em;
+	font-size: 1.2em;
+
+	& .arg-list-wrap {
+
+		& li {
+			
+			border-bottom:1px solid @input-border-color;
+
+			& dl {
+				padding:0.7em 0 0.4em 0;
+			}
+
+			& dt {
+				
+				width: 15%;
+
+				& img {
+					border-radius: 50%;
+					width: 100%@i;
+					height:auto@i;
+				}
+				
+			}
+
+			& dd {
+				width: 80%;
+
+				& .comment-time {
+					font-size: 0.8em;
+					float: right;
+					color: #666;
+				}
+			}
+
+			&.get-more{
+				color: #666;
+			}
+
+		}
+
+		& :last-child{
+			border-bottom: none;
+		}
+	}
+}
+
+.arg-input {
+	width: 100%;
+	padding:1em 0;
+	background: #f9f9f9;
+	border-top:1px solid @input-border-color;
+
+	& input {
+		background: none;
+		border:1px solid @input-border-color;
+		border-radius: 5px;
+		padding: 8px 5px;
+		width: 85%;
+	}
+}
+

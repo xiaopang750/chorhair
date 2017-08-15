@@ -1,0 +1,104 @@
+/**
+ *description: 美丽记录
+ *author:fanwei
+ *date:2015/01/22
+ */
+
+@import "../../../config/config.less";
+@import "../../../config/func.less";
+@import "../../../extend/css3.less";
+@import "../../../extend/css3.less";
+@import "../../../widget/dom/gallery.less";
+
+.record-list-wrap {
+
+	margin-bottom: 2.2rem;
+		
+	&.no-bottom{
+		margin-bottom: 1.2em;
+	}
+
+	& li.record-list {
+		background: #fff;
+		border-bottom:1px solid @input-border-color;
+		border-top:1px solid @input-border-color;
+		margin-top: 1.2em;
+		padding:0.8em 0 0.5em 0;
+
+		& dt {
+			width: 18%;
+		}
+
+		& dd {
+			width: 82%;
+
+			& .photo-list div {
+				width: 32%;
+				float: left;
+				margin-right:2%;
+				margin-bottom: 2%;
+
+				&:nth-child(3n) {
+					margin-right:0;
+				}
+
+				& img {
+					display: block;
+					width: 100%@i;
+					height: auto@i;
+				}
+			}
+
+			& .bar{
+				
+			}
+
+			.arg-area {
+				font-size: 1.2em;
+				
+				& li {
+					color:@light-gray;
+					
+					/*&:active{
+						background: #f9f9f9;
+					}*/
+					& dd{
+						width: 100%;
+						border-bottom: 1px solid @input-border-color;
+						padding-bottom: 7px;
+						
+						.comment-time{
+							font-size: 0.8em;
+							color: #666;
+						}
+
+						& .namer {
+							color:#d0365c;
+						}
+
+						& p{
+							font-size: 1em;
+							word-break: break-all;
+						}
+					}
+
+				}
+			}
+
+			.arg-input {
+				width: 100%;
+				padding:0.4em 0 0.7em 0;
+				//border-top:1px solid @input-border-color;
+
+				& input {
+					background: none;
+					border:1px solid @input-border-color;
+					border-radius: 5px;
+					padding: 5px;
+					width: 80%;
+					-webkit-appearance: none;
+				}
+			}
+		}
+	}
+}

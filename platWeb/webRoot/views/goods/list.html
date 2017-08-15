@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+{{include '../include/meta'}}
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/goods/list.css">
+</head>
+
+<body>
+	{{include '../include/header'}}
+	<div class="main-content">
+		{{include '../include/nav'}}
+		{{include '../include/msg'}}
+		<div class="center-bar">
+			<div class="bar-title ba-clearfix">
+				<span class="ba-intro">{{title}}</span>
+				<a href="{{views['goods/addCombo'].url}}" class="btn btn-primary bar-right-btn">新增套餐</a>
+			</div>
+			<div class="main-content">
+				<div class="ba-clearfix">
+					<label class="ba-fl ba-mt-2 control-label">套餐查询：</label>
+					<input type="text" class="goods form-control ba-fl ba-mr-10" goods-name>
+					<a href="javascript:;" class="btn btn-primary" search-btn>查询</a>
+				</div>
+				<table class="table bordered striped ba-mt-15" width="100%" list-wrap data-ele="data-wrap">
+					<!-- tpl/goods/goodsList.html -->
+				</table>
+				<!-- fenye -->
+				{{include '../include/fenye'}}
+			</div>	
+		</div>	
+	</div>
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/goods/list');
+</script>
+</body>
+</html>

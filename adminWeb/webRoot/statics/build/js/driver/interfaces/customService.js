@@ -1,0 +1,2 @@
+/*! company 罗格斯达 version 1.0.0 2015-06-17 */
+define("driver/interfaces/customService",[],function(e,t,i){i.exports={msgAll:R.uri.reqPrefix+"customService/msgAll",sendMsg:R.uri.reqPrefix+"customService/sendMsg",historyMsg:R.uri.reqPrefix+"customService/historyMsg",getCustomer:R.uri.reqPrefix+"customService/getCustomer"}});

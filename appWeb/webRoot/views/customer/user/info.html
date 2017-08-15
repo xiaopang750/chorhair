@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/customer/user/info.css">
+</head>
+
+<body pageLevel="{{pageLevel}}">
+
+	{{include '../include/header'}}
+	
+	<!-- loading -->
+	<section class="page-loading" page-loading><img src="{{imgPath}}lib/loading/btn_loading_r.gif" alt=""></section>
+
+	<!-- loading-wrap -->
+	<section class="loading-wrap" loading-wrap>
+		<!-- content -->
+		<section class="main-list level1-content">
+			<form>
+				<div class="ba-none ui-input-wrap line-full ba-mb-20" edit-nickname>
+					<input type="text" class="ba-fl col-9 form-control" name-edit placeholder="请输入新昵称">
+					<input type="submit" class="btn btn-yellow ba-fr code-btn ba-mt-9 ba-mr-5" save value="保存">
+				</div>
+			</form>
+			<ul>
+				<li class="show-active ba-tc">
+					<a href="{{views['login/out'].url}}">退出登录</a>
+				</li>
+			</ul>
+		</section>
+	</section>
+	
+	<!-- 图片浏览 -->
+	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+	    <div class="slides"></div>
+	    <ol class="indicator"></ol>
+	</div>
+
+	<!-- footer -->
+	{{include '../include/indexFooter'}}
+
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/customer/user/info');
+</script>
+</body>
+</html>

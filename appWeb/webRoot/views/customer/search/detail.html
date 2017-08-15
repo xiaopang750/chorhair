@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/customer/search/detail.css">
+</head>
+
+<body pageLevel="{{pageLevel}}">
+		
+	{{include './searchHeader'}}
+	
+	<section class="result-list col-11 ba-auto">
+		<ul></ul>
+	</section>
+
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/customer/search/detail');
+</script>
+</body>
+</html>

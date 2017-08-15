@@ -1,0 +1,2 @@
+/*! company 罗格斯达 version 1.0.0 2015-06-17 */
+define("util/string/charlen",[],function(){function e(e){var t,r,i,n,o,a;for(r=e.length,n=0,i=/[\u4e00-\u9fa5]/,t=0;r>t;t++)o=e.charAt(t),a=i.test(o),a?n+=2:n++;return n}return e});

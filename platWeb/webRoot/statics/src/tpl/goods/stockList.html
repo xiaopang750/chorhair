@@ -1,0 +1,24 @@
+<!-- 库存列表 -->
+{{if list}}
+	{{each list}}
+		<tr list>
+			<td>{{$value.productname}}</td>
+			<td>{{$value.brand}}</td>
+			<td>{{$value.series}}</td>
+			<td>{{$value.itemno}}</td>
+			<td productnum>{{$value.productnum}}</td>
+			<td>{{$value.capacity}}</td>
+			<td>{{$value.unit}}</td>
+			<td productprice>{{$value.productprice}}</td>
+			<td>
+				<a class="btn btn-normal" href="javascript:;" modify-price pkProduct="{{$value.pkProduct}}">修改</a>
+				<a class="btn btn-normal" href="javascript:;" add-num pkProduct="{{$value.pkProduct}}">新增</a>
+				<a class="btn btn-normal" href="{{getRoute ['goods/stockRecord']}}?pkProduct={{$value.pkProduct}}">变更记录</a>
+			</td>
+		</tr>
+	{{/each}}
+{{else}}
+	<tr>
+		<td colspan="9">暂无数据</td>
+	</tr>
+{{/if}}

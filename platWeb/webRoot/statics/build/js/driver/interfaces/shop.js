@@ -1,0 +1,2 @@
+/*! company 罗格斯达 version 1.0.0 2015-06-17 */
+define("driver/interfaces/shop",[],function(e,t,i){i.exports={shopList:R.uri.reqPrefix+"shop/shopList",shopInfo:R.uri.reqPrefix+"shop/shopInfo",editShop:R.uri.reqPrefix+"shop/editShop",saveShop:R.uri.reqPrefix+"shop/saveShop",qrCode:R.uri.reqPrefix+"shop/qrCode",downloadQrcode:R.uri.reqPrefix+"shop/downloadQrcode",shopAccount:R.uri.reqPrefix+"shop/shopAccount",editAccount:R.uri.reqPrefix+"shop/editAccount",addAccount:R.uri.reqPrefix+"shop/addAccount"}});

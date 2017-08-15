@@ -1,0 +1,140 @@
+/**
+ *description:我的账户
+ *author:fanwei
+ *date:2015/01/20
+ */
+/**
+ *description:网站全局less变量-配置
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* use-most-var */
+/* color */
+/* a-link */
+/* font-family */
+/* h-size */
+/* btn */
+/* layer */
+/* site-config */
+/**
+ *description:网站全局less函数-pc
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* line-height */
+/* font-size */
+/* margin */
+/* padding */
+/* opacity */
+/* trangle */
+/**
+ *description:css3-pc
+ *author:fanwei
+ *date:2014/10/31
+ */
+/**
+ *description:底部弹出选择框
+ *author:wangweicheng
+ *date:2015/2/6
+ */
+.upload-type {
+  position: fixed;
+  bottom: -300px;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  background: #ededed;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.upload-type.show {
+  -webkit-transform: translateY(-300px);
+  transform: translateY(-300px);
+}
+.upload-type ul {
+  padding: 1.5em;
+}
+.upload-type ul li {
+  height: 2.5em;
+  line-height: 2.5em;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  margin-bottom: 0.6em;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 0.5rem;
+}
+.upload-type ul li:active {
+  background: #ccc;
+  border: 1px solid #bbb;
+}
+.upload-type ul :last-child {
+  margin-bottom: 0;
+}
+.body-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background: #000000;
+  opacity: 0.5;
+}
+.main-list {
+  width: 100%;
+}
+.main-list ul li {
+  width: 100%;
+  border-bottom: 1px solid #dddddd;
+  background: #fff;
+  color: #585858;
+  font-size: 1.3em;
+}
+.main-list ul li:active {
+  background: #f9f9f9;
+}
+.main-list ul li dl {
+  padding: 12px 10px;
+}
+.main-list ul li dt {
+  width: 30%;
+}
+.main-list ul li dd {
+  width: 70%;
+}
+.main-list ul li .header-pic {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.main-list ul li img {
+  vertical-align: middle;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 100%;
+}
+.main-list ul li .data {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: right;
+  width: 90%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-list ul li .icon {
+  color: #bdbdbd;
+}
+.main-list ul li:last-child {
+  margin-top: 1em;
+  border-top: 1px solid #dddddd;
+}
+.main-list ul li:last-child a {
+  padding: 12px 10px;
+  display: block;
+}
+.level1-content {
+  margin-bottom: 3rem;
+}

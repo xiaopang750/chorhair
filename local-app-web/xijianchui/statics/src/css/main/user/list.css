@@ -1,0 +1,107 @@
+/**
+ *description:网站全局less变量-配置
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* use-most-var */
+/* color */
+/* a-link */
+/* font-family */
+/* h-size */
+/* btn */
+/* layer */
+/* site-config */
+/**
+ *description:网站全局less函数-pc
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* line-height */
+/* font-size */
+/* margin */
+/* padding */
+/* opacity */
+/* trangle */
+/**
+ *description:css3-pc
+ *author:fanwei
+ *date:2014/10/31
+ */
+.layer-main {
+  border: 1px solid #ccc;
+  height: 600px;
+  overflow: hidden;
+}
+.computer-list {
+  width: 600px;
+  border-right: 1px solid #cccccc;
+  padding-bottom: 2000px;
+  margin-bottom: -2000px;
+}
+.computer-list .inner {
+  width: 580px;
+  margin: 0 auto;
+}
+.computer-list .head {
+  height: 40px;
+  border-bottom: 1px solid #cccccc;
+}
+.computer-list ul {
+  margin-top: 20px;
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.computer-list ul li {
+  width: 98%;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #cccccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: .5s;
+  -moz-transtion: .5s;
+  -webkit-transtion: .5s;
+  -o-transtion: .5s;
+  -ms-transtion: .5s;
+}
+.computer-list ul li span {
+  margin-left: 5px;
+}
+.computer-list ul li:nth-child(odd) {
+  -webkit-transtion: 1s;
+  background: #5cb85c;
+}
+.computer-list ul li:nth-child(odd):hover,
+.computer-list ul li:nth-child(odd).active {
+  background: #f5f5f5;
+  border: 1px solid red;
+}
+.computer-list ul li:nth-child(even) {
+  background: #f0ad4e;
+  color: #333;
+}
+.computer-list ul li:nth-child(even):hover,
+.computer-list ul li:nth-child(even).active {
+  background: #f5f5f5;
+  border: 1px solid red;
+}
+.commond {
+  width: 394px;
+}
+.commond textarea {
+  height: 100px;
+  margin-top: 7px;
+}
+.out-put {
+  height: 380px !important;
+  background: rgba(0, 0, 0, 0.8);
+  color: yellow;
+  font-size: 16px;
+}
+.tip {
+  height: 20px;
+  line-height: 20px;
+}

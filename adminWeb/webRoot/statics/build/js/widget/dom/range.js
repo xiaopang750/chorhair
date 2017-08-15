@@ -1,0 +1,2 @@
+/*! company 罗格斯达 version 1.0.0 2015-06-17 */
+define("widget/dom/range",[],function(){function e(e,t,r){var i=e[0];if(i.setSelectionRange)i.select(),i.setSelectionRange(t,r);else{var n=i.createTextRange();n.collapse(!0),n.moveStart("character",t),n.moveEnd("character",r-t),n.select()}}return e});

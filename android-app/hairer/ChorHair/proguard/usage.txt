@@ -1,0 +1,1538 @@
+com.alipay.android.app.IAlixPay$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_Pay
+    static final int TRANSACTION_test
+    static final int TRANSACTION_registerCallback
+    static final int TRANSACTION_unregisterCallback
+    static final int TRANSACTION_prePay
+    19:21:public IAlixPay$Stub()
+    39:39:public android.os.IBinder asBinder()
+com.alipay.android.app.IAlixPay$Stub$a:
+    112:112:private static java.lang.String a()
+com.alipay.android.app.IRemoteServiceCallback$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_startActivity
+    static final int TRANSACTION_payEnd
+    static final int TRANSACTION_isHideLoadingScreen
+com.alipay.android.app.IRemoteServiceCallback$Stub$a:
+    105:105:private static java.lang.String a()
+com.alipay.mobilesecuritysdk.MainHandler
+com.alipay.mobilesecuritysdk.constant.ConfigConstant
+com.alipay.mobilesecuritysdk.constant.ConfigNameEnum
+com.alipay.mobilesecuritysdk.constant.LocationNameEnum
+com.alipay.mobilesecuritysdk.datainfo.AppInfo
+com.alipay.mobilesecuritysdk.datainfo.GeoResponseInfo
+com.alipay.mobilesecuritysdk.datainfo.LocationInfo
+com.alipay.mobilesecuritysdk.datainfo.SdkConfig
+com.alipay.mobilesecuritysdk.datainfo.UploadInfo
+com.alipay.mobilesecuritysdk.datainfo.WifiCollectInfo
+com.alipay.mobilesecuritysdk.deviceID.CollectDeviceInfo:
+    99:101:public java.lang.String getResolution(android.content.Context)
+    105:108:public java.lang.String getNetworkType(android.content.Context)
+com.alipay.mobilesecuritysdk.deviceID.DataShare
+com.alipay.mobilesecuritysdk.deviceID.DeviceIdModel:
+    public static final java.lang.String PREFS_NAME
+    public static final java.lang.String PRIVATE_NAME
+    public static final java.lang.String SERVICEID
+    public static final java.lang.String VER
+    public static final java.lang.String mah1
+    public static final java.lang.String mah2
+    public static final java.lang.String mah3
+    public static final java.lang.String mah4
+    public static final java.lang.String mah5
+    public static final java.lang.String mah6
+    public static final java.lang.String mah7
+    public static final java.lang.String mah8
+    public static final java.lang.String mah9
+    public static final java.lang.String mah10
+    public static final java.lang.String mas1
+    public static final java.lang.String mas2
+    public static final java.lang.String mas3
+    public static final java.lang.String mas4
+    public static final java.lang.String mtid
+    public static final java.lang.String mutdid
+    public static final java.lang.String mAppId
+    public static final java.lang.String mDeviceInfo
+    public static final java.lang.String mDeviceId
+    public static final java.lang.String mPriDeviceId
+    public static final java.lang.String mtime
+    public static final java.lang.String mApdtk
+    public static final java.lang.String mRule
+    public static final java.lang.String mCheckCode
+    243:250:public java.util.Map GetLocalInfo()
+    283:283:public java.util.Map GetShareData(android.content.Context)
+com.alipay.mobilesecuritysdk.deviceID.DeviceMetaData:
+    public static final java.lang.String AUTH
+    public static final java.lang.String DATABASE_NAME
+    public static final int DATABASE_VER
+    public static final java.lang.String DEVICE_TABLE_NAME
+    private java.lang.String mcheckCode
+    55:55:public java.lang.String getMcheckCode()
+    59:60:public void setMcheckCode(java.lang.String)
+com.alipay.mobilesecuritysdk.deviceID.IdResponseInfo:
+    private java.lang.String merrorcode
+    private java.util.List arrList
+    20:20:public java.lang.String getFuction()
+    26:26:public java.util.List getArrList()
+    29:30:public void setArrList(java.util.List)
+    54:54:public java.lang.String isMerrorcode()
+    57:58:public void setMerrorcode(java.lang.String)
+    60:60:public java.lang.String getMversion()
+com.alipay.mobilesecuritysdk.deviceID.LOG:
+    30:30:public LOG()
+com.alipay.mobilesecuritysdk.deviceID.Profile:
+    public static final java.lang.String devicever
+com.alipay.mobilesecuritysdk.deviceID.SecurityUtils:
+    public static final java.lang.String TAG
+    11:11:public SecurityUtils()
+    91:91:public static java.lang.String toHex(java.lang.String)
+    95:95:public static java.lang.String fromHex(java.lang.String)
+com.alipay.mobilesecuritysdk.face.SecurityClientMobile:
+    private static java.lang.Thread workThread
+    15:15:public SecurityClientMobile()
+    32:87:public static synchronized void start(android.content.Context,java.util.List,boolean)
+    91:104:public static void stop()
+    107:108:public static void setError(boolean)
+    111:112:public static void setDebug(boolean)
+    115:115:public static boolean isDebug()
+    25:25:static synthetic boolean access$0()
+com.alipay.mobilesecuritysdk.face.SecurityClientMobile$1
+com.alipay.mobilesecuritysdk.model.CollectedInfo
+com.alipay.mobilesecuritysdk.model.DataProfile
+com.alipay.mobilesecuritysdk.model.SecLocationListener
+com.alipay.mobilesecuritysdk.model.Upload
+com.alipay.mobilesecuritysdk.util.CommonUtils:
+    30:30:public CommonUtils()
+    36:44:public static boolean outOfDate(long,long,int)
+    62:63:public static java.lang.String convertDate2String(java.util.Date)
+    121:135:public static boolean isBlankCollection(java.util.List)
+    157:161:public static boolean equalsIgnoreCase(java.lang.String,java.lang.String)
+    178:184:public static int string2int(java.lang.String)
+    201:207:public static long string2long(java.lang.String)
+    237:237:public static org.json.JSONObject GetJsonFromFile(java.lang.String)
+com.alipay.sdk.BuildConfig
+com.alipay.sdk.app.AuthTask:
+    private android.app.Activity a
+    20:22:public AuthTask(android.app.Activity)
+    25:26:public synchronized java.lang.String auth(java.lang.String)
+com.alipay.sdk.app.H5AuthActivity:
+    161:169:private static void a()
+    173:209:private void b()
+    389:413:private void c()
+    416:427:private void d()
+    430:439:private void a(java.lang.String)
+    443:470:private void a(com.alipay.sdk.authjs.CallInfo)
+com.alipay.sdk.app.H5PayActivity:
+    158:166:private static void a()
+    474:477:private void b()
+    480:483:private void c()
+com.alipay.sdk.app.PayTask:
+    96:96:public java.lang.String getVersion()
+    100:107:public boolean checkAccountIfExist()
+    312:342:private void a(java.lang.String,java.lang.String,java.lang.String,com.alipay.sdk.protocol.ActionType[],java.lang.String,com.alipay.sdk.protocol.ActionType[])
+    345:362:private void a(com.alipay.sdk.protocol.ActionType[])
+    473:521:private void d()
+com.alipay.sdk.app.Result:
+    10:10:public Result()
+com.alipay.sdk.app.ResultStatus:
+    18:19:private void b(int)
+    26:27:private void a(java.lang.String)
+com.alipay.sdk.auth.APAuthInfo
+com.alipay.sdk.auth.AlipaySDK
+com.alipay.sdk.auth.AuthActivity:
+    static final java.lang.String a
+    static final java.lang.String b
+    157:201:private void a()
+    328:342:private boolean a(java.lang.String)
+    346:370:private void b()
+    373:384:private void c()
+    387:396:private void b(java.lang.String)
+    400:427:private void a(com.alipay.sdk.authjs.CallInfo)
+com.alipay.sdk.auth.AuthHelper:
+    private static final java.lang.String a
+    private static final int b
+    19:19:public AuthHelper()
+    26:37:private static boolean a(android.content.Context)
+    71:77:public static void a(android.app.Activity,com.alipay.sdk.auth.APAuthInfo)
+    80:93:private static void b(android.app.Activity,com.alipay.sdk.auth.APAuthInfo)
+    96:115:private static void c(android.app.Activity,com.alipay.sdk.auth.APAuthInfo)
+com.alipay.sdk.authjs.CallInfo:
+    public static final java.lang.String a
+    public static final java.lang.String b
+    public static final java.lang.String c
+    public static final java.lang.String d
+    public static final java.lang.String e
+    public static final java.lang.String f
+    public static final java.lang.String g
+    public static final java.lang.String h
+    29:45:private static java.lang.String a(com.alipay.sdk.authjs.CallInfo$CallError)
+    61:61:private boolean e()
+    65:66:private void a(boolean)
+    81:81:private java.lang.String f()
+    97:97:private java.lang.String g()
+    101:102:private void d(java.lang.String)
+com.alipay.sdk.authjs.CallInfo$1
+com.alipay.sdk.authjs.JsBridge:
+    77:102:private void a(com.alipay.sdk.authjs.CallInfo)
+    122:132:private static void a(java.lang.Runnable)
+    135:138:private com.alipay.sdk.authjs.CallInfo$CallError b(com.alipay.sdk.authjs.CallInfo)
+    142:172:private void c(com.alipay.sdk.authjs.CallInfo)
+com.alipay.sdk.cons.GlobalConstants:
+    public static final boolean a
+    public static final java.lang.String c
+    public static final java.lang.String e
+    public static final java.lang.String f
+    public static final java.lang.String g
+    public static final java.lang.String h
+    public static final java.lang.String i
+    public static final java.lang.String j
+    public static final java.lang.String k
+    public static final java.lang.String l
+    public static final java.lang.String m
+    public static final java.lang.String o
+    public static final java.lang.String p
+    public static final java.lang.String q
+    public static final java.lang.String r
+    public static final java.lang.String s
+    public static final java.lang.String t
+    public static final java.lang.String u
+    10:10:public GlobalConstants()
+com.alipay.sdk.cons.GlobalDefine
+com.alipay.sdk.cons.MiniDefine
+com.alipay.sdk.data.Envelope:
+    102:102:private static java.lang.String f(java.lang.String)
+com.alipay.sdk.data.FrameUtils:
+    private static final java.lang.String a
+    34:34:public FrameUtils()
+    72:82:private static com.alipay.sdk.data.Request a(org.json.JSONObject,boolean)
+    93:159:private static void a(com.alipay.sdk.data.InteractionData,com.alipay.sdk.data.Request,java.lang.String)
+    166:172:private static java.lang.String a(java.lang.String)
+    180:186:private static java.lang.String b(java.lang.String)
+    195:201:private static java.lang.String c(java.lang.String)
+    221:227:private static java.lang.String e(java.lang.String)
+    267:293:public static com.alipay.sdk.data.Request a()
+com.alipay.sdk.data.InteractionData:
+    public static final java.lang.String a
+    42:42:private org.apache.http.Header[] d()
+    64:65:private void a(java.lang.String)
+    72:73:private void b(java.lang.String)
+    77:79:private void e()
+com.alipay.sdk.data.MspConfig:
+    private static final java.lang.String a
+    private static final java.lang.String b
+    private static final java.lang.String c
+    39:39:private java.lang.String b()
+    65:65:private static java.lang.String c()
+    69:70:private static java.lang.String a(android.content.Context)
+    177:191:private static java.lang.String d()
+    195:215:private static java.lang.String e()
+    227:232:private static java.lang.String b(android.content.Context)
+    236:241:private static java.lang.String c(android.content.Context)
+    245:246:private static java.lang.String a(android.content.Context,java.util.HashMap)
+com.alipay.sdk.data.Request:
+    37:37:private boolean e()
+    69:70:private void b(boolean)
+    76:76:private long f()
+    84:85:private void a(long)
+    96:97:private void a(org.json.JSONObject)
+com.alipay.sdk.data.Response:
+    public static final int a
+    public static final int b
+    public static final int c
+    60:60:private boolean e()
+    80:80:private java.lang.String f()
+    88:88:private java.lang.String g()
+    96:96:private java.lang.String h()
+    116:116:private java.lang.String i()
+com.alipay.sdk.encrypt.Base64:
+    private static final int a
+    private static final int b
+    private static final int c
+    private static final int d
+    private static final int e
+    private static final int f
+    private static final int g
+    private static final char h
+    9:9:public Base64()
+    57:57:private static boolean a(char)
+    261:273:private static int a(char[])
+com.alipay.sdk.encrypt.Des:
+    10:10:public Des()
+com.alipay.sdk.encrypt.MD5:
+    6:6:public MD5()
+    10:16:private static java.lang.String a(java.lang.String)
+com.alipay.sdk.encrypt.Rsa:
+    private static final java.lang.String b
+    public static final java.lang.String a
+    20:20:public Rsa()
+    33:37:private static java.security.PublicKey b(java.lang.String,java.lang.String)
+    81:120:private static java.lang.String c(java.lang.String,java.lang.String)
+    126:146:private static java.lang.String d(java.lang.String,java.lang.String)
+    151:169:private static boolean a(java.lang.String,java.lang.String,java.lang.String)
+com.alipay.sdk.encrypt.TriDes:
+    8:8:public TriDes()
+com.alipay.sdk.exception.AppErrorException:
+    private static final long serialVersionUID
+    25:26:public AppErrorException(java.lang.Class)
+    33:34:public AppErrorException(java.lang.Class,java.lang.Throwable)
+com.alipay.sdk.exception.FailOperatingException:
+    private static final long serialVersionUID
+    34:35:public FailOperatingException(java.lang.Throwable)
+com.alipay.sdk.exception.NetErrorException:
+    private static final long serialVersionUID
+    public static final int NET_CONNECTION_ERROR
+    public static final int SERVER_ERROR
+    public static final int SSL_ERROR
+    39:40:public NetErrorException(java.lang.Throwable)
+    49:49:public final int getErrorCode()
+    53:54:public final void setErrorCode(int)
+com.alipay.sdk.exception.UnZipException:
+    private static final long serialVersionUID
+    33:34:public UnZipException(java.lang.Throwable)
+com.alipay.sdk.exception.ValifyException
+com.alipay.sdk.net.MspClient:
+    49:50:private MspClient(android.content.Context)
+    80:105:private static org.apache.http.entity.ByteArrayEntity a(com.alipay.sdk.data.InteractionData,java.lang.String)
+    218:221:private org.apache.http.HttpHost c()
+    231:241:private org.apache.http.HttpHost d()
+    250:277:private org.apache.http.HttpHost e()
+com.alipay.sdk.net.MspHttpClient:
+    public static final java.lang.String a
+    77:77:private static com.alipay.sdk.net.MspHttpClient d()
+    84:85:private static void e()
+    187:195:private void f()
+    210:210:private org.apache.http.conn.ClientConnectionManager g()
+    224:226:private org.apache.http.HttpResponse a(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)
+    233:236:private org.apache.http.HttpResponse a(org.apache.http.HttpHost,org.apache.http.HttpRequest)
+    243:245:private org.apache.http.HttpResponse a(org.apache.http.HttpHost,org.apache.http.HttpRequest,org.apache.http.protocol.HttpContext)
+    252:254:private java.lang.Object a(org.apache.http.client.methods.HttpUriRequest,org.apache.http.client.ResponseHandler)
+    262:264:private java.lang.Object a(org.apache.http.client.methods.HttpUriRequest,org.apache.http.client.ResponseHandler,org.apache.http.protocol.HttpContext)
+    271:273:private java.lang.Object a(org.apache.http.HttpHost,org.apache.http.HttpRequest,org.apache.http.client.ResponseHandler)
+    281:283:private java.lang.Object a(org.apache.http.HttpHost,org.apache.http.HttpRequest,org.apache.http.client.ResponseHandler,org.apache.http.protocol.HttpContext)
+com.alipay.sdk.net.RequestUtils:
+    30:30:public RequestUtils()
+com.alipay.sdk.net.RequestWrapper:
+    149:175:private static java.lang.String a(java.lang.String)
+    183:202:private org.json.JSONObject a(android.content.Context,com.alipay.sdk.data.Request,com.alipay.sdk.data.Response,java.lang.String,java.lang.String)
+    208:211:private static org.json.JSONObject a(com.alipay.sdk.data.Response,java.lang.String)
+    275:279:private static void a(org.json.JSONObject)
+com.alipay.sdk.protocol.ActionType:
+    71:71:private org.json.JSONObject m()
+    99:103:private static java.lang.String[] a(java.lang.String)
+com.alipay.sdk.protocol.ElementAction:
+    55:105:private static com.alipay.sdk.protocol.ElementAction a(org.json.JSONObject)
+com.alipay.sdk.protocol.MiniStatus:
+    33:33:private java.lang.String a()
+com.alipay.sdk.protocol.MiniWindowFrame:
+    37:37:public final boolean d()
+    47:47:public final int e()
+    57:57:public final java.lang.String f()
+    61:61:private boolean g()
+com.alipay.sdk.protocol.WindowData:
+    public static final int a
+    public static final int b
+    public static final int c
+    public static final int d
+    public static final int e
+    public static final int f
+    public static final int g
+    39:39:private boolean g()
+    43:44:private void a(boolean)
+    public abstract boolean d()
+    public abstract int e()
+    public abstract java.lang.String f()
+com.alipay.sdk.sys.GlobalContext:
+    130:148:private static boolean a(java.lang.String)
+com.alipay.sdk.sys.UserLocation:
+    14:14:public UserLocation()
+    32:83:private static void a(android.content.Context)
+    90:90:private static double b()
+    98:98:private static double c()
+com.alipay.sdk.tid.TidDbHelper:
+    private static final java.lang.String a
+    private static final int b
+    109:131:private long d(java.lang.String,java.lang.String)
+    135:161:private java.util.List a()
+    211:216:private void a(android.database.sqlite.SQLiteDatabase,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    236:258:private static void a(android.database.sqlite.SQLiteDatabase)
+com.alipay.sdk.tid.TidInfo:
+    71:71:private boolean e()
+    104:108:private static java.lang.String f()
+com.alipay.sdk.util.ActionUtil:
+    17:17:public ActionUtil()
+com.alipay.sdk.util.AuthHelper:
+    private static final java.lang.String b
+    private static final int c
+    22:22:public AuthHelper()
+    31:46:public static java.lang.String a(android.app.Activity,java.lang.String)
+    51:68:private static java.lang.String b(android.app.Activity,java.lang.String)
+    73:84:private static boolean a(android.content.Context)
+com.alipay.sdk.util.DeviceInfo:
+    static final java.lang.String a
+    static final java.lang.String b
+    static final java.lang.String c
+    private static final java.lang.String d
+    70:76:private void a(java.lang.String)
+    97:110:private java.lang.String d()
+com.alipay.sdk.util.FileDownloader:
+    48:50:private FileDownloader(boolean)
+    61:62:private void a(boolean)
+    147:155:private void f()
+    181:198:private void g()
+com.alipay.sdk.util.JsonUtils:
+    20:20:public JsonUtils()
+com.alipay.sdk.util.LogUtils
+com.alipay.sdk.util.NetConnectionType:
+    56:56:private int b()
+    64:65:private void a(java.lang.String)
+com.alipay.sdk.util.PayHelper:
+    public static final java.lang.String a
+com.alipay.sdk.util.Utils:
+    static final java.lang.String a
+    static final java.lang.String b
+    private static final java.lang.String c
+    private static final java.lang.String d
+    46:46:public Utils()
+    124:133:private static boolean g(android.content.Context)
+    138:145:private static void a(java.lang.String,java.lang.String)
+    243:248:private static android.util.DisplayMetrics h(android.content.Context)
+    253:277:private static boolean a(android.content.Context,java.lang.String,java.lang.String)
+com.alipay.sdk.widget.Loading:
+    33:34:private void a(java.lang.String)
+com.alipay.sdk.widget.SystemDefaultDialog:
+    14:14:public SystemDefaultDialog()
+    47:71:private static android.app.AlertDialog$Builder a(android.content.Context,java.lang.String,android.content.DialogInterface$OnClickListener,java.lang.String,android.content.DialogInterface$OnClickListener)
+com.chorhair.hairer.BuildConfig
+com.chorhair.hairer.R:
+    10:10:public R()
+com.chorhair.hairer.R$anim
+com.chorhair.hairer.R$attr
+com.chorhair.hairer.R$color
+com.chorhair.hairer.R$drawable
+com.chorhair.hairer.R$id
+com.chorhair.hairer.R$layout
+com.chorhair.hairer.R$string
+com.chorhair.hairer.R$style
+com.chorhair.hairer.R$styleable:
+    public static final int ActionSheet_actionSheetBackground
+    public static final int ActionSheet_actionSheetPadding
+    public static final int ActionSheet_actionSheetTextSize
+    public static final int ActionSheet_cancelButtonBackground
+    public static final int ActionSheet_cancelButtonMarginTop
+    public static final int ActionSheet_cancelButtonTextColor
+    public static final int ActionSheet_destructiveButtonTextColor
+    public static final int ActionSheet_otherButtonBottomBackground
+    public static final int ActionSheet_otherButtonMiddleBackground
+    public static final int ActionSheet_otherButtonSingleBackground
+    public static final int ActionSheet_otherButtonSpacing
+    public static final int ActionSheet_otherButtonTextColor
+    public static final int ActionSheet_otherButtonTitleBackground
+    public static final int ActionSheet_otherButtonTopBackground
+    public static final int ActionSheet_titleButtonTextColor
+    public static final int ActionSheets_actionSheetStyle
+    268:268:public R$styleable()
+com.google.zxing.BinaryBitmap:
+    92:92:public boolean isCropSupported()
+    106:107:public com.google.zxing.BinaryBitmap crop(int,int,int,int)
+    135:136:public com.google.zxing.BinaryBitmap rotateCounterClockwise45()
+com.google.zxing.DecodeHintType:
+    102:102:public java.lang.Class getValueType()
+com.google.zxing.Dimension
+com.google.zxing.EncodeHintType
+com.google.zxing.InvertedLuminanceSource
+com.google.zxing.LuminanceSource:
+    81:81:public boolean isCropSupported()
+    95:95:public com.google.zxing.LuminanceSource crop(int,int,int,int)
+    110:110:public com.google.zxing.LuminanceSource invert()
+    130:130:public com.google.zxing.LuminanceSource rotateCounterClockwise45()
+com.google.zxing.MultiFormatReader:
+    54:55:public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.MultiFormatWriter
+com.google.zxing.MultiFormatWriter$1
+com.google.zxing.PlanarYUVLuminanceSource
+com.google.zxing.RGBLuminanceSource
+com.google.zxing.Reader:
+    public abstract com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.Result:
+    125:125:public long getTimestamp()
+com.google.zxing.Writer
+com.google.zxing.WriterException
+com.google.zxing.aztec.AztecReader:
+    53:53:public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.aztec.AztecWriter
+com.google.zxing.aztec.encoder.AztecCode
+com.google.zxing.aztec.encoder.Encoder
+com.google.zxing.client.result.AbstractDoCoMoResultParser
+com.google.zxing.client.result.AddressBookAUResultParser
+com.google.zxing.client.result.AddressBookDoCoMoResultParser
+com.google.zxing.client.result.AddressBookParsedResult
+com.google.zxing.client.result.BizcardResultParser
+com.google.zxing.client.result.BookmarkDoCoMoResultParser
+com.google.zxing.client.result.CalendarParsedResult
+com.google.zxing.client.result.EmailAddressParsedResult
+com.google.zxing.client.result.EmailAddressResultParser
+com.google.zxing.client.result.EmailDoCoMoResultParser
+com.google.zxing.client.result.ExpandedProductParsedResult
+com.google.zxing.client.result.ExpandedProductResultParser
+com.google.zxing.client.result.GeoParsedResult
+com.google.zxing.client.result.GeoResultParser
+com.google.zxing.client.result.ISBNParsedResult
+com.google.zxing.client.result.ISBNResultParser
+com.google.zxing.client.result.ParsedResult
+com.google.zxing.client.result.ParsedResultType
+com.google.zxing.client.result.ProductParsedResult
+com.google.zxing.client.result.ProductResultParser
+com.google.zxing.client.result.ResultParser
+com.google.zxing.client.result.SMSMMSResultParser
+com.google.zxing.client.result.SMSParsedResult
+com.google.zxing.client.result.SMSTOMMSTOResultParser
+com.google.zxing.client.result.SMTPResultParser
+com.google.zxing.client.result.TelParsedResult
+com.google.zxing.client.result.TelResultParser
+com.google.zxing.client.result.TextParsedResult
+com.google.zxing.client.result.URIParsedResult
+com.google.zxing.client.result.URIResultParser
+com.google.zxing.client.result.URLTOResultParser
+com.google.zxing.client.result.VCardResultParser
+com.google.zxing.client.result.VEventResultParser
+com.google.zxing.client.result.WifiParsedResult
+com.google.zxing.client.result.WifiResultParser
+com.google.zxing.common.BitArray:
+    44:44:public int getSizeInBytes()
+    48:53:private void ensureCapacity(int)
+    78:79:public void flip(int)
+    144:167:public void setRange(int,int)
+    221:226:public void appendBit(boolean)
+    234:241:public void appendBits(int,int)
+    244:249:public void appendBitArray(com.google.zxing.common.BitArray)
+    252:260:public void xor(com.google.zxing.common.BitArray)
+    271:281:public void toBytes(int,byte[],int,int)
+com.google.zxing.common.BitMatrix:
+    94:98:public void clear()
+com.google.zxing.common.CharacterSetECI:
+    93:93:public int getValue()
+    115:115:public static com.google.zxing.common.CharacterSetECI getCharacterSetECIByName(java.lang.String)
+com.google.zxing.common.DecoderResult:
+    65:65:public java.lang.Integer getErrorsCorrected()
+    73:73:public java.lang.Integer getErasures()
+com.google.zxing.common.GlobalHistogramBinarizer:
+    private static final int LUMINANCE_BITS
+    private static final int LUMINANCE_SHIFT
+    private static final int LUMINANCE_BUCKETS
+com.google.zxing.common.GridSampler:
+    48:49:public static void setGridSampler(com.google.zxing.common.GridSampler)
+com.google.zxing.common.HybridBinarizer:
+    private static final int BLOCK_SIZE_POWER
+    private static final int BLOCK_SIZE
+    private static final int BLOCK_SIZE_MASK
+    private static final int MINIMUM_DIMENSION
+    private static final int MIN_DYNAMIC_RANGE
+com.google.zxing.common.PerspectiveTransform:
+    88:96:public void transformPoints(float[],float[])
+com.google.zxing.common.StringUtils:
+    public static final java.lang.String SHIFT_JIS
+    public static final java.lang.String GB2312
+    private static final java.lang.String EUC_JP
+    private static final java.lang.String UTF8
+    private static final java.lang.String ISO88591
+    42:42:private StringUtils()
+com.google.zxing.common.detector.MathUtils:
+    21:22:private MathUtils()
+com.google.zxing.common.detector.MonochromeRectangleDetector
+com.google.zxing.common.detector.WhiteRectangleDetector:
+    private static final int INIT_SIZE
+    private static final int CORR
+com.google.zxing.common.reedsolomon.GenericGF:
+    private static final int INITIALIZATION_THRESHOLD
+com.google.zxing.common.reedsolomon.GenericGFPoly:
+    70:70:int[] getCoefficients()
+    201:223:com.google.zxing.common.reedsolomon.GenericGFPoly[] divide(com.google.zxing.common.reedsolomon.GenericGFPoly)
+com.google.zxing.common.reedsolomon.ReedSolomonEncoder
+com.google.zxing.datamatrix.DataMatrixReader:
+    59:59:public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.datamatrix.DataMatrixWriter
+com.google.zxing.datamatrix.decoder.DecodedBitStreamParser:
+    79:80:private DecodedBitStreamParser()
+com.google.zxing.datamatrix.decoder.Decoder:
+    51:60:public com.google.zxing.common.DecoderResult decode(boolean[][])
+com.google.zxing.datamatrix.encoder.ASCIIEncoder
+com.google.zxing.datamatrix.encoder.Base256Encoder
+com.google.zxing.datamatrix.encoder.C40Encoder
+com.google.zxing.datamatrix.encoder.DataMatrixSymbolInfo144
+com.google.zxing.datamatrix.encoder.DefaultPlacement
+com.google.zxing.datamatrix.encoder.EdifactEncoder
+com.google.zxing.datamatrix.encoder.Encoder
+com.google.zxing.datamatrix.encoder.EncoderContext
+com.google.zxing.datamatrix.encoder.ErrorCorrection
+com.google.zxing.datamatrix.encoder.HighLevelEncoder
+com.google.zxing.datamatrix.encoder.SymbolInfo
+com.google.zxing.datamatrix.encoder.SymbolShapeHint
+com.google.zxing.datamatrix.encoder.TextEncoder
+com.google.zxing.datamatrix.encoder.X12Encoder
+com.google.zxing.maxicode.MaxiCodeReader:
+    private static final int MATRIX_WIDTH
+    private static final int MATRIX_HEIGHT
+    47:47:com.google.zxing.maxicode.decoder.Decoder getDecoder()
+    60:60:public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.maxicode.decoder.DecodedBitStreamParser:
+    private static final char SHIFTA
+    private static final char SHIFTB
+    private static final char SHIFTC
+    private static final char SHIFTD
+    private static final char SHIFTE
+    private static final char TWOSHIFTA
+    private static final char THREESHIFTA
+    private static final char LATCHA
+    private static final char LATCHB
+    private static final char LOCK
+    private static final char ECI
+    private static final char NS
+    private static final char PAD
+    private static final char FS
+    private static final char GS
+    private static final char RS
+    61:62:private DecodedBitStreamParser()
+com.google.zxing.maxicode.decoder.Decoder:
+    private static final int ALL
+    private static final int EVEN
+    private static final int ODD
+    49:49:public com.google.zxing.common.DecoderResult decode(com.google.zxing.common.BitMatrix)
+com.google.zxing.multi.ByQuadrantReader
+com.google.zxing.multi.GenericMultipleBarcodeReader
+com.google.zxing.multi.MultipleBarcodeReader
+com.google.zxing.multi.qrcode.QRCodeMultiReader
+com.google.zxing.multi.qrcode.detector.MultiDetector
+com.google.zxing.multi.qrcode.detector.MultiFinderPatternFinder
+com.google.zxing.multi.qrcode.detector.MultiFinderPatternFinder$1
+com.google.zxing.multi.qrcode.detector.MultiFinderPatternFinder$ModuleSizeComparator
+com.google.zxing.oned.CodaBarReader:
+    private static final int MAX_ACCEPTABLE
+    private static final int PADDING
+    private static final java.lang.String ALPHABET_STRING
+    private static final int MIN_CHARACTER_LENGTH
+com.google.zxing.oned.CodaBarWriter
+com.google.zxing.oned.Code128Reader:
+    private static final int MAX_AVG_VARIANCE
+    private static final int MAX_INDIVIDUAL_VARIANCE
+    private static final int CODE_SHIFT
+    private static final int CODE_CODE_C
+    private static final int CODE_CODE_B
+    private static final int CODE_CODE_A
+    private static final int CODE_FNC_1
+    private static final int CODE_FNC_2
+    private static final int CODE_FNC_3
+    private static final int CODE_FNC_4_A
+    private static final int CODE_FNC_4_B
+    private static final int CODE_START_A
+    private static final int CODE_START_B
+    private static final int CODE_START_C
+    private static final int CODE_STOP
+com.google.zxing.oned.Code128Writer
+com.google.zxing.oned.Code39Reader:
+    static final java.lang.String ALPHABET_STRING
+com.google.zxing.oned.Code39Writer
+com.google.zxing.oned.Code93Reader:
+    private static final java.lang.String ALPHABET_STRING
+com.google.zxing.oned.EAN13Writer
+com.google.zxing.oned.EAN8Writer
+com.google.zxing.oned.ITFReader:
+    private static final int MAX_AVG_VARIANCE
+    private static final int MAX_INDIVIDUAL_VARIANCE
+    private static final int W
+    private static final int N
+com.google.zxing.oned.ITFWriter
+com.google.zxing.oned.OneDReader:
+    protected static final int INTEGER_MATH_SHIFT
+    protected static final int PATTERN_MATCH_RESULT_SCALE_FACTOR
+    49:49:public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.oned.OneDimensionalCodeWriter
+com.google.zxing.oned.UPCAReader:
+    57:57:public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.oned.UPCAWriter
+com.google.zxing.oned.UPCEANReader:
+    private static final int MAX_AVG_VARIANCE
+    private static final int MAX_INDIVIDUAL_VARIANCE
+com.google.zxing.oned.UPCEANWriter
+com.google.zxing.oned.rss.AbstractRSSReader:
+    private static final int MAX_AVG_VARIANCE
+    private static final int MAX_INDIVIDUAL_VARIANCE
+    private static final float MIN_FINDER_PATTERN_RATIO
+    private static final float MAX_FINDER_PATTERN_RATIO
+com.google.zxing.oned.rss.RSSUtils:
+    22:22:private RSSUtils()
+    25:61:static int[] getRSSwidths(int,int,int,int,boolean)
+    128:152:static int[] elements(int[],int,int)
+com.google.zxing.oned.rss.expanded.BitArrayBuilder:
+    39:40:private BitArrayBuilder()
+com.google.zxing.oned.rss.expanded.ExpandedPair:
+    53:53:boolean mayBeLast()
+com.google.zxing.oned.rss.expanded.ExpandedRow:
+    47:47:boolean isReversed()
+com.google.zxing.oned.rss.expanded.RSSExpandedReader:
+    private static final int FINDER_PAT_A
+    private static final int FINDER_PAT_B
+    private static final int FINDER_PAT_C
+    private static final int FINDER_PAT_D
+    private static final int FINDER_PAT_E
+    private static final int FINDER_PAT_F
+    private static final int MAX_PAIRS
+    361:361:java.util.List getRows()
+com.google.zxing.oned.rss.expanded.decoders.AI01392xDecoder:
+    private static final int HEADER_SIZE
+    private static final int LAST_DIGIT_SIZE
+com.google.zxing.oned.rss.expanded.decoders.AI01393xDecoder:
+    private static final int HEADER_SIZE
+    private static final int LAST_DIGIT_SIZE
+    private static final int FIRST_THREE_DIGITS_SIZE
+com.google.zxing.oned.rss.expanded.decoders.AI013x0x1xDecoder:
+    private static final int HEADER_SIZE
+    private static final int WEIGHT_SIZE
+    private static final int DATE_SIZE
+com.google.zxing.oned.rss.expanded.decoders.AI013x0xDecoder:
+    private static final int HEADER_SIZE
+    private static final int WEIGHT_SIZE
+com.google.zxing.oned.rss.expanded.decoders.AI01AndOtherAIs:
+    private static final int HEADER_SIZE
+com.google.zxing.oned.rss.expanded.decoders.AI01decoder:
+    protected static final int GTIN_SIZE
+com.google.zxing.oned.rss.expanded.decoders.AnyAIDecoder:
+    private static final int HEADER_SIZE
+com.google.zxing.oned.rss.expanded.decoders.CurrentParsingState:
+    65:65:boolean isNumeric()
+com.google.zxing.oned.rss.expanded.decoders.DecodedChar:
+    static final char FNC1
+com.google.zxing.oned.rss.expanded.decoders.DecodedNumeric:
+    static final int FNC1
+    64:64:int getValue()
+    76:76:boolean isAnyFNC1()
+com.google.zxing.oned.rss.expanded.decoders.FieldParser:
+    190:191:private FieldParser()
+com.google.zxing.pdf417.PDF417Common:
+    public static final int NUMBER_OF_CODEWORDS
+    public static final int MAX_CODEWORDS_IN_BARCODE
+    public static final int MIN_ROWS_IN_BARCODE
+    public static final int MAX_ROWS_IN_BARCODE
+    public static final int MAX_CODEWORDS_IN_ROW
+    public static final int MODULES_IN_CODEWORD
+    public static final int MODULES_IN_STOP_PATTERN
+    public static final int BARS_IN_MODULE
+    39:40:private PDF417Common()
+com.google.zxing.pdf417.PDF417Reader:
+    55:55:public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+    70:70:public com.google.zxing.Result[] decodeMultiple(com.google.zxing.BinaryBitmap)
+    76:80:public com.google.zxing.Result[] decodeMultiple(com.google.zxing.BinaryBitmap,java.util.Map)
+com.google.zxing.pdf417.PDF417ResultMetadata:
+    30:30:public int getSegmentIndex()
+    38:38:public java.lang.String getFileId()
+    46:46:public int[] getOptionalData()
+    54:54:public boolean isLastSegment()
+com.google.zxing.pdf417.PDF417Writer
+com.google.zxing.pdf417.decoder.BarcodeValue:
+    66:66:public java.lang.Integer getConfidence(int)
+com.google.zxing.pdf417.decoder.BoundingBox:
+    135:137:void setTopRight(com.google.zxing.ResultPoint)
+    140:142:void setBottomRight(com.google.zxing.ResultPoint)
+com.google.zxing.pdf417.decoder.Codeword:
+    private static final int BARCODE_ROW_UNKNOWN
+com.google.zxing.pdf417.decoder.DecodedBitStreamParser:
+    private static final int TEXT_COMPACTION_MODE_LATCH
+    private static final int BYTE_COMPACTION_MODE_LATCH
+    private static final int NUMERIC_COMPACTION_MODE_LATCH
+    private static final int BYTE_COMPACTION_MODE_LATCH_6
+    private static final int BEGIN_MACRO_PDF417_CONTROL_BLOCK
+    private static final int BEGIN_MACRO_PDF417_OPTIONAL_FIELD
+    private static final int MACRO_PDF417_TERMINATOR
+    private static final int MODE_SHIFT_TO_BYTE_COMPACTION_MODE
+    private static final int MAX_NUMERIC_CODEWORDS
+    private static final int PL
+    private static final int LL
+    private static final int AS
+    private static final int ML
+    private static final int AL
+    private static final int PS
+    private static final int PAL
+    private static final int NUMBER_OF_SEQUENCE_CODEWORDS
+    88:89:private DecodedBitStreamParser()
+com.google.zxing.pdf417.decoder.DetectionResult:
+    private static final int ADJUST_ROW_NUMBER_SKIP
+com.google.zxing.pdf417.decoder.DetectionResultColumn:
+    private static final int MAX_NEARBY_DISTANCE
+    65:65:final int codewordIndexToImageRow(int)
+com.google.zxing.pdf417.decoder.PDF417CodewordDecoder:
+    47:48:private PDF417CodewordDecoder()
+com.google.zxing.pdf417.decoder.PDF417ScanningDecoder:
+    private static final int CODEWORD_SKEW_SIZE
+    private static final int MAX_ERRORS
+    private static final int MAX_EC_CODEWORDS
+    44:45:private PDF417ScanningDecoder()
+    607:623:public static java.lang.String toString(com.google.zxing.pdf417.decoder.BarcodeValue[][])
+com.google.zxing.pdf417.decoder.ec.ModulusPoly:
+    56:56:int[] getCoefficients()
+    205:227:com.google.zxing.pdf417.decoder.ec.ModulusPoly[] divide(com.google.zxing.pdf417.decoder.ec.ModulusPoly)
+com.google.zxing.pdf417.detector.Detector:
+    private static final int INTEGER_MATH_SHIFT
+    private static final int PATTERN_MATCH_RESULT_SCALE_FACTOR
+    private static final int MAX_AVG_VARIANCE
+    private static final int MAX_INDIVIDUAL_VARIANCE
+    private static final int MAX_PIXEL_DRIFT
+    private static final int MAX_PATTERN_DRIFT
+    private static final int SKIPPED_ROW_COUNT_MAX
+    private static final int ROW_STEP
+    private static final int BARCODE_MIN_HEIGHT
+    63:64:private Detector()
+com.google.zxing.pdf417.encoder.BarcodeMatrix
+com.google.zxing.pdf417.encoder.BarcodeRow
+com.google.zxing.pdf417.encoder.Compaction
+com.google.zxing.pdf417.encoder.Dimensions
+com.google.zxing.pdf417.encoder.PDF417
+com.google.zxing.pdf417.encoder.PDF417ErrorCorrection
+com.google.zxing.pdf417.encoder.PDF417HighLevelEncoder
+com.google.zxing.qrcode.QRCodeReader:
+    50:50:protected final com.google.zxing.qrcode.decoder.Decoder getDecoder()
+    63:63:public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.qrcode.QRCodeWriter
+com.google.zxing.qrcode.decoder.DecodedBitStreamParser:
+    private static final int GB2312_SUBSET
+    53:54:private DecodedBitStreamParser()
+com.google.zxing.qrcode.decoder.Decoder:
+    45:45:public com.google.zxing.common.DecoderResult decode(boolean[][])
+    59:68:public com.google.zxing.common.DecoderResult decode(boolean[][],java.util.Map)
+    72:72:public com.google.zxing.common.DecoderResult decode(com.google.zxing.common.BitMatrix)
+com.google.zxing.qrcode.decoder.ErrorCorrectionLevel:
+    45:45:public int getBits()
+com.google.zxing.qrcode.decoder.FormatInformation:
+    private static final int FORMAT_INFO_MASK_QR
+com.google.zxing.qrcode.decoder.Mode:
+    99:99:public int getBits()
+com.google.zxing.qrcode.decoder.Version$ECBlocks:
+    198:202:public int getNumBlocks()
+    206:206:public int getTotalECCodewords()
+com.google.zxing.qrcode.detector.Detector:
+    49:49:protected final com.google.zxing.common.BitMatrix getImage()
+    53:53:protected final com.google.zxing.ResultPointCallback getResultPointCallback()
+    63:63:public com.google.zxing.common.DetectorResult detect()
+com.google.zxing.qrcode.detector.FinderPattern:
+    52:53:void incrementCount()
+com.google.zxing.qrcode.detector.FinderPatternFinder:
+    private static final int CENTER_QUORUM
+    protected static final int MIN_SKIP
+    protected static final int MAX_MODULES
+    private static final int INTEGER_MATH_SHIFT
+    59:60:public FinderPatternFinder(com.google.zxing.common.BitMatrix)
+    70:70:protected final com.google.zxing.common.BitMatrix getImage()
+    74:74:protected final java.util.List getPossibleCenters()
+com.google.zxing.qrcode.encoder.BlockPair
+com.google.zxing.qrcode.encoder.ByteMatrix
+com.google.zxing.qrcode.encoder.Encoder
+com.google.zxing.qrcode.encoder.Encoder$1
+com.google.zxing.qrcode.encoder.MaskUtil
+com.google.zxing.qrcode.encoder.MatrixUtil
+com.google.zxing.qrcode.encoder.QRCode
+com.motorola.telephony.SecondaryPhoneStateListener
+com.motorola.telephony.SecondaryPhoneStateListener$1
+com.motorola.telephony.SecondarySmsManager
+com.motorola.telephony.SecondaryTelephonyManager
+com.nineoldandroids.animation.Animator:
+    61:61:public void cancel()
+    72:72:public void end()
+    public abstract long getStartDelay()
+    public abstract void setStartDelay(long)
+    public abstract long getDuration()
+    public abstract boolean isRunning()
+    135:135:public boolean isStarted()
+    183:187:public void removeAllListeners()
+    217:217:public void setupStartValues()
+    229:229:public void setupEndValues()
+com.nineoldandroids.animation.Animator$AnimatorListener:
+    public abstract void onAnimationCancel(com.nineoldandroids.animation.Animator)
+com.nineoldandroids.animation.AnimatorInflater
+com.nineoldandroids.animation.AnimatorListenerAdapter:
+    31:31:public void onAnimationCancel(com.nineoldandroids.animation.Animator)
+com.nineoldandroids.animation.AnimatorSet:
+    140:151:public void playTogether(java.util.Collection)
+    160:170:public varargs void playSequentially(com.nineoldandroids.animation.Animator[])
+    179:189:public void playSequentially(java.util.List)
+    200:204:public java.util.ArrayList getChildAnimations()
+    284:309:public void cancel()
+    319:348:public void end()
+    357:362:public boolean isRunning()
+    367:367:public boolean isStarted()
+    378:378:public long getStartDelay()
+    389:390:public void setStartDelay(long)
+    402:402:public long getDuration()
+    429:432:public void setupStartValues()
+    436:439:public void setupEndValues()
+com.nineoldandroids.animation.AnimatorSet$1:
+    511:512:public void onAnimationCancel(com.nineoldandroids.animation.Animator)
+com.nineoldandroids.animation.AnimatorSet$AnimatorSetListener:
+    716:728:public void onAnimationCancel(com.nineoldandroids.animation.Animator)
+com.nineoldandroids.animation.AnimatorSet$Builder:
+    1064:1072:public com.nineoldandroids.animation.AnimatorSet$Builder before(com.nineoldandroids.animation.Animator)
+    1084:1092:public com.nineoldandroids.animation.AnimatorSet$Builder after(com.nineoldandroids.animation.Animator)
+    1105:1108:public com.nineoldandroids.animation.AnimatorSet$Builder after(long)
+com.nineoldandroids.animation.AnimatorSet$Dependency:
+    static final int WITH
+    static final int AFTER
+com.nineoldandroids.animation.AnimatorSet$DependencyListener:
+    647:647:public void onAnimationCancel(com.nineoldandroids.animation.Animator)
+com.nineoldandroids.animation.ArgbEvaluator
+com.nineoldandroids.animation.IntKeyframeSet
+com.nineoldandroids.animation.Keyframe:
+    77:77:public static com.nineoldandroids.animation.Keyframe ofInt(float,int)
+    93:93:public static com.nineoldandroids.animation.Keyframe ofInt(float)
+    141:141:public static com.nineoldandroids.animation.Keyframe ofObject(float,java.lang.Object)
+    157:157:public static com.nineoldandroids.animation.Keyframe ofObject(float)
+    202:203:public void setFraction(float)
+    233:233:public java.lang.Class getType()
+com.nineoldandroids.animation.Keyframe$IntKeyframe
+com.nineoldandroids.animation.Keyframe$ObjectKeyframe
+com.nineoldandroids.animation.KeyframeSet:
+    54:65:public static varargs com.nineoldandroids.animation.KeyframeSet ofInt(int[])
+    85:111:public static varargs com.nineoldandroids.animation.KeyframeSet ofKeyframe(com.nineoldandroids.animation.Keyframe[])
+    116:127:public static varargs com.nineoldandroids.animation.KeyframeSet ofObject(java.lang.Object[])
+com.nineoldandroids.animation.ObjectAnimator:
+    private static final boolean DBG
+    142:142:public java.lang.String getPropertyName()
+    162:165:private ObjectAnimator(java.lang.Object,java.lang.String)
+    173:176:private ObjectAnimator(java.lang.Object,com.nineoldandroids.util.Property)
+    193:195:public static varargs com.nineoldandroids.animation.ObjectAnimator ofInt(java.lang.Object,java.lang.String,int[])
+    211:213:public static varargs com.nineoldandroids.animation.ObjectAnimator ofInt(java.lang.Object,com.nineoldandroids.util.Property,int[])
+    231:233:public static varargs com.nineoldandroids.animation.ObjectAnimator ofFloat(java.lang.Object,java.lang.String,float[])
+    250:252:public static varargs com.nineoldandroids.animation.ObjectAnimator ofFloat(java.lang.Object,com.nineoldandroids.util.Property,float[])
+    274:277:public static varargs com.nineoldandroids.animation.ObjectAnimator ofObject(java.lang.Object,java.lang.String,com.nineoldandroids.animation.TypeEvaluator,java.lang.Object[])
+    297:300:public static varargs com.nineoldandroids.animation.ObjectAnimator ofObject(java.lang.Object,com.nineoldandroids.util.Property,com.nineoldandroids.animation.TypeEvaluator,java.lang.Object[])
+    322:325:public static varargs com.nineoldandroids.animation.ObjectAnimator ofPropertyValuesHolder(java.lang.Object,com.nineoldandroids.animation.PropertyValuesHolder[])
+    330:341:public varargs void setIntValues(int[])
+    360:371:public varargs void setObjectValues(java.lang.Object[])
+    438:438:public java.lang.Object getTarget()
+    461:466:public void setupStartValues()
+    470:475:public void setupEndValues()
+com.nineoldandroids.animation.PreHoneycombCompat:
+    168:168:private PreHoneycombCompat()
+com.nineoldandroids.animation.PreHoneycombCompat$11:
+    124:125:public void setValue(android.view.View,int)
+    121:121:public bridge synthetic void setValue(java.lang.Object,int)
+com.nineoldandroids.animation.PreHoneycombCompat$12:
+    135:136:public void setValue(android.view.View,int)
+    132:132:public bridge synthetic void setValue(java.lang.Object,int)
+com.nineoldandroids.animation.PropertyValuesHolder:
+    154:154:public static varargs com.nineoldandroids.animation.PropertyValuesHolder ofInt(java.lang.String,int[])
+    165:165:public static varargs com.nineoldandroids.animation.PropertyValuesHolder ofInt(com.nineoldandroids.util.Property,int[])
+    204:207:public static varargs com.nineoldandroids.animation.PropertyValuesHolder ofObject(java.lang.String,com.nineoldandroids.animation.TypeEvaluator,java.lang.Object[])
+    224:227:public static varargs com.nineoldandroids.animation.PropertyValuesHolder ofObject(com.nineoldandroids.util.Property,com.nineoldandroids.animation.TypeEvaluator,java.lang.Object[])
+    250:260:public static varargs com.nineoldandroids.animation.PropertyValuesHolder ofKeyframe(java.lang.String,com.nineoldandroids.animation.Keyframe[])
+    281:291:public static varargs com.nineoldandroids.animation.PropertyValuesHolder ofKeyframe(com.nineoldandroids.util.Property,com.nineoldandroids.animation.Keyframe[])
+    309:311:public varargs void setIntValues(int[])
+    337:344:public varargs void setKeyframes(com.nineoldandroids.animation.Keyframe[])
+    360:362:public varargs void setObjectValues(java.lang.Object[])
+    551:565:private void setupValue(java.lang.Object,com.nineoldandroids.animation.Keyframe)
+    576:577:void setupStartValue(java.lang.Object)
+    588:589:void setupEndValue(java.lang.Object)
+    659:661:public void setEvaluator(com.nineoldandroids.animation.TypeEvaluator)
+com.nineoldandroids.animation.PropertyValuesHolder$FloatPropertyValuesHolder:
+    901:905:public PropertyValuesHolder$FloatPropertyValuesHolder(java.lang.String,com.nineoldandroids.animation.FloatKeyframeSet)
+    908:915:public PropertyValuesHolder$FloatPropertyValuesHolder(com.nineoldandroids.util.Property,com.nineoldandroids.animation.FloatKeyframeSet)
+com.nineoldandroids.animation.PropertyValuesHolder$IntPropertyValuesHolder
+com.nineoldandroids.animation.TimeAnimator
+com.nineoldandroids.animation.TimeAnimator$TimeListener
+com.nineoldandroids.animation.ValueAnimator:
+    private static final long DEFAULT_FRAME_DELAY
+    static final int ANIMATION_START
+    static final int ANIMATION_FRAME
+    static final int STOPPED
+    static final int RUNNING
+    static final int SEEKED
+    public static final int RESTART
+    public static final int REVERSE
+    public static final int INFINITE
+    299:301:public static varargs com.nineoldandroids.animation.ValueAnimator ofInt(int[])
+    330:332:public static varargs com.nineoldandroids.animation.ValueAnimator ofPropertyValuesHolder(com.nineoldandroids.animation.PropertyValuesHolder[])
+    353:356:public static varargs com.nineoldandroids.animation.ValueAnimator ofObject(com.nineoldandroids.animation.TypeEvaluator,java.lang.Object[])
+    374:385:public varargs void setIntValues(int[])
+    434:446:public varargs void setObjectValues(java.lang.Object[])
+    477:477:public com.nineoldandroids.animation.PropertyValuesHolder[] getValues()
+    525:525:public long getDuration()
+    693:693:public long getStartDelay()
+    703:704:public void setStartDelay(long)
+    716:716:public static long getFrameDelay()
+    729:730:public static void setFrameDelay(long)
+    745:749:public java.lang.Object getAnimatedValue()
+    763:768:public java.lang.Object getAnimatedValue(java.lang.String)
+    781:782:public void setRepeatCount(int)
+    790:790:public int getRepeatCount()
+    801:802:public void setRepeatMode(int)
+    810:810:public int getRepeatMode()
+    821:825:public void addUpdateListener(com.nineoldandroids.animation.ValueAnimator$AnimatorUpdateListener)
+    831:836:public void removeAllUpdateListeners()
+    845:852:public void removeUpdateListener(com.nineoldandroids.animation.ValueAnimator$AnimatorUpdateListener)
+    879:879:public android.view.animation.Interpolator getInterpolator()
+    899:902:public void setEvaluator(com.nineoldandroids.animation.TypeEvaluator)
+    959:971:public void cancel()
+    975:990:public void end()
+    994:994:public boolean isRunning()
+    999:999:public boolean isStarted()
+    1010:1019:public void reverse()
+    1154:1154:public float getAnimatedFraction()
+    1240:1240:public static int getCurrentAnimationsCount()
+    1250:1253:public static void clearAllAnimations()
+com.nineoldandroids.util.IntProperty:
+    public abstract void setValue(java.lang.Object,int)
+com.nineoldandroids.util.NoSuchPropertyException
+com.nineoldandroids.util.Property:
+    55:55:public static com.nineoldandroids.util.Property of(java.lang.Class,java.lang.Class,java.lang.String)
+    76:76:public boolean isReadOnly()
+    104:104:public java.lang.Class getType()
+com.nineoldandroids.util.ReflectiveProperty
+com.nineoldandroids.view.ViewHelper:
+    8:8:private ViewHelper()
+    11:11:public static float getAlpha(android.view.View)
+    23:23:public static float getPivotX(android.view.View)
+    27:32:public static void setPivotX(android.view.View,float)
+    35:35:public static float getPivotY(android.view.View)
+    39:44:public static void setPivotY(android.view.View,float)
+    47:47:public static float getRotation(android.view.View)
+    51:56:public static void setRotation(android.view.View,float)
+    59:59:public static float getRotationX(android.view.View)
+    63:68:public static void setRotationX(android.view.View,float)
+    71:71:public static float getRotationY(android.view.View)
+    75:80:public static void setRotationY(android.view.View,float)
+    83:83:public static float getScaleX(android.view.View)
+    95:95:public static float getScaleY(android.view.View)
+    107:107:public static float getScrollX(android.view.View)
+    111:116:public static void setScrollX(android.view.View,int)
+    119:119:public static float getScrollY(android.view.View)
+    123:128:public static void setScrollY(android.view.View,int)
+    131:131:public static float getTranslationX(android.view.View)
+    135:140:public static void setTranslationX(android.view.View,float)
+    143:143:public static float getTranslationY(android.view.View)
+    147:152:public static void setTranslationY(android.view.View,float)
+com.nineoldandroids.view.ViewHelper$Honeycomb:
+    178:178:private ViewHelper$Honeycomb()
+    180:180:static float getAlpha(android.view.View)
+    188:188:static float getPivotX(android.view.View)
+    192:193:static void setPivotX(android.view.View,float)
+    196:196:static float getPivotY(android.view.View)
+    200:201:static void setPivotY(android.view.View,float)
+    204:204:static float getRotation(android.view.View)
+    208:209:static void setRotation(android.view.View,float)
+    212:212:static float getRotationX(android.view.View)
+    216:217:static void setRotationX(android.view.View,float)
+    220:220:static float getRotationY(android.view.View)
+    224:225:static void setRotationY(android.view.View,float)
+    228:228:static float getScaleX(android.view.View)
+    236:236:static float getScaleY(android.view.View)
+    244:244:static float getScrollX(android.view.View)
+    248:249:static void setScrollX(android.view.View,int)
+    252:252:static float getScrollY(android.view.View)
+    256:257:static void setScrollY(android.view.View,int)
+    260:260:static float getTranslationX(android.view.View)
+    264:265:static void setTranslationX(android.view.View,float)
+    268:268:static float getTranslationY(android.view.View)
+    272:273:static void setTranslationY(android.view.View,float)
+com.nineoldandroids.view.ViewPropertyAnimator
+com.nineoldandroids.view.ViewPropertyAnimatorHC
+com.nineoldandroids.view.ViewPropertyAnimatorHC$1
+com.nineoldandroids.view.ViewPropertyAnimatorHC$AnimatorEventListener
+com.nineoldandroids.view.ViewPropertyAnimatorHC$NameValuesHolder
+com.nineoldandroids.view.ViewPropertyAnimatorHC$PropertyBundle
+com.nineoldandroids.view.ViewPropertyAnimatorICS
+com.nineoldandroids.view.ViewPropertyAnimatorICS$1
+com.nineoldandroids.view.ViewPropertyAnimatorPreHC
+com.nineoldandroids.view.ViewPropertyAnimatorPreHC$1
+com.nineoldandroids.view.ViewPropertyAnimatorPreHC$AnimatorEventListener
+com.nineoldandroids.view.ViewPropertyAnimatorPreHC$NameValuesHolder
+com.nineoldandroids.view.ViewPropertyAnimatorPreHC$PropertyBundle
+com.nineoldandroids.view.animation.AnimatorProxy:
+    163:167:public void setScrollX(int)
+    176:180:public void setScrollY(int)
+com.nostra13.universalimageloader.cache.disc.BaseDiscCache:
+    private static final java.lang.String ERROR_ARG_NULL
+    40:41:public BaseDiscCache(java.io.File)
+    63:69:public void clear()
+com.nostra13.universalimageloader.cache.disc.DiscCacheAware:
+    public abstract void clear()
+com.nostra13.universalimageloader.cache.disc.LimitedDiscCache:
+    private static final int INVALID_SIZE
+    55:56:public LimitedDiscCache(java.io.File,int)
+    119:122:public void clear()
+com.nostra13.universalimageloader.cache.disc.impl.FileCountLimitedDiscCache:
+    40:41:public FileCountLimitedDiscCache(java.io.File,int)
+com.nostra13.universalimageloader.cache.disc.impl.LimitedAgeDiscCache
+com.nostra13.universalimageloader.cache.disc.impl.TotalSizeLimitedDiscCache:
+    private static final int MIN_NORMAL_CACHE_SIZE_IN_MB
+    private static final int MIN_NORMAL_CACHE_SIZE
+com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator
+com.nostra13.universalimageloader.cache.memory.BaseMemoryCache:
+    63:64:public void clear()
+com.nostra13.universalimageloader.cache.memory.LimitedMemoryCache:
+    private static final int MAX_NORMAL_CACHE_SIZE_IN_MB
+    private static final int MAX_NORMAL_CACHE_SIZE
+    98:101:public void clear()
+com.nostra13.universalimageloader.cache.memory.MemoryCacheAware:
+    public abstract void clear()
+com.nostra13.universalimageloader.cache.memory.impl.FIFOLimitedMemoryCache
+com.nostra13.universalimageloader.cache.memory.impl.FuzzyKeyMemoryCache:
+    72:73:public void clear()
+com.nostra13.universalimageloader.cache.memory.impl.LRULimitedMemoryCache:
+    private static final int INITIAL_CAPACITY
+    private static final float LOAD_FACTOR
+    76:78:public void clear()
+com.nostra13.universalimageloader.cache.memory.impl.LargestLimitedMemoryCache
+com.nostra13.universalimageloader.cache.memory.impl.LimitedAgeMemoryCache
+com.nostra13.universalimageloader.cache.memory.impl.LruMemoryCache:
+    126:127:public void clear()
+com.nostra13.universalimageloader.cache.memory.impl.UsingFreqLimitedMemoryCache
+com.nostra13.universalimageloader.core.DefaultConfigurationFactory:
+    50:125:public DefaultConfigurationFactory()
+com.nostra13.universalimageloader.core.DisplayBitmapTask:
+    private static final java.lang.String LOG_DISPLAY_IMAGE_IN_IMAGEAWARE
+    private static final java.lang.String LOG_TASK_CANCELLED_IMAGEAWARE_REUSED
+    private static final java.lang.String LOG_TASK_CANCELLED_IMAGEAWARE_COLLECTED
+com.nostra13.universalimageloader.core.DisplayImageOptions$Builder:
+    249:250:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder showStubImage(int)
+    260:261:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder showImageOnLoading(int)
+    270:271:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder showImageOnLoading(android.graphics.drawable.Drawable)
+    282:283:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder showImageForEmptyUri(int)
+    293:294:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder showImageForEmptyUri(android.graphics.drawable.Drawable)
+    305:306:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder showImageOnFail(int)
+    316:317:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder showImageOnFail(android.graphics.drawable.Drawable)
+    327:328:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder resetViewBeforeLoading()
+    336:337:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder resetViewBeforeLoading(boolean)
+    346:347:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder cacheInMemory()
+    352:353:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder cacheInMemory(boolean)
+    362:363:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder cacheOnDisc()
+    397:399:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder decodingOptions(android.graphics.BitmapFactory$Options)
+    404:405:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder delayBeforeLoading(int)
+    410:411:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder extraForDownloader(java.lang.Object)
+    416:417:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder considerExifParams(boolean)
+    426:427:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder preProcessor(com.nostra13.universalimageloader.core.process.BitmapProcessor)
+    436:437:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder postProcessor(com.nostra13.universalimageloader.core.process.BitmapProcessor)
+    445:447:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder displayer(com.nostra13.universalimageloader.core.display.BitmapDisplayer)
+    451:452:com.nostra13.universalimageloader.core.DisplayImageOptions$Builder syncLoading(boolean)
+    460:461:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder handler(android.os.Handler)
+com.nostra13.universalimageloader.core.ImageLoader:
+    static final java.lang.String LOG_INIT_CONFIG
+    static final java.lang.String LOG_DESTROY
+    static final java.lang.String LOG_LOAD_IMAGE_FROM_MEMORY_CACHE
+    private static final java.lang.String WARNING_RE_INIT_CONFIG
+    private static final java.lang.String ERROR_WRONG_ARGUMENTS
+    private static final java.lang.String ERROR_NOT_INIT
+    private static final java.lang.String ERROR_INIT_CONFIG_WITH_NULL
+    99:99:public boolean isInited()
+    115:116:public void displayImage(java.lang.String,com.nostra13.universalimageloader.core.imageaware.ImageAware)
+    133:134:public void displayImage(java.lang.String,com.nostra13.universalimageloader.core.imageaware.ImageAware,com.nostra13.universalimageloader.core.assist.ImageLoadingListener)
+    151:152:public void displayImage(java.lang.String,com.nostra13.universalimageloader.core.imageaware.ImageAware,com.nostra13.universalimageloader.core.DisplayImageOptions)
+    249:250:public void displayImage(java.lang.String,android.widget.ImageView)
+    266:267:public void displayImage(java.lang.String,android.widget.ImageView,com.nostra13.universalimageloader.core.DisplayImageOptions)
+    283:284:public void displayImage(java.lang.String,android.widget.ImageView,com.nostra13.universalimageloader.core.assist.ImageLoadingListener)
+    317:318:public void loadImage(java.lang.String,com.nostra13.universalimageloader.core.assist.ImageLoadingListener)
+    335:336:public void loadImage(java.lang.String,com.nostra13.universalimageloader.core.assist.ImageSize,com.nostra13.universalimageloader.core.assist.ImageLoadingListener)
+    353:354:public void loadImage(java.lang.String,com.nostra13.universalimageloader.core.DisplayImageOptions,com.nostra13.universalimageloader.core.assist.ImageLoadingListener)
+    376:386:public void loadImage(java.lang.String,com.nostra13.universalimageloader.core.assist.ImageSize,com.nostra13.universalimageloader.core.DisplayImageOptions,com.nostra13.universalimageloader.core.assist.ImageLoadingListener)
+    400:400:public android.graphics.Bitmap loadImageSync(java.lang.String)
+    416:416:public android.graphics.Bitmap loadImageSync(java.lang.String,com.nostra13.universalimageloader.core.DisplayImageOptions)
+    434:434:public android.graphics.Bitmap loadImageSync(java.lang.String,com.nostra13.universalimageloader.core.assist.ImageSize)
+    453:460:public android.graphics.Bitmap loadImageSync(java.lang.String,com.nostra13.universalimageloader.core.assist.ImageSize,com.nostra13.universalimageloader.core.DisplayImageOptions)
+    480:481:public com.nostra13.universalimageloader.cache.memory.MemoryCacheAware getMemoryCache()
+    490:492:public void clearMemoryCache()
+    500:501:public com.nostra13.universalimageloader.cache.disc.DiscCacheAware getDiscCache()
+    510:512:public void clearDiscCache()
+    519:519:public java.lang.String getLoadingUriForView(com.nostra13.universalimageloader.core.imageaware.ImageAware)
+    527:527:public java.lang.String getLoadingUriForView(android.widget.ImageView)
+    538:539:public void cancelDisplayTask(com.nostra13.universalimageloader.core.imageaware.ImageAware)
+    548:549:public void cancelDisplayTask(android.widget.ImageView)
+    562:563:public void denyNetworkDownloads(boolean)
+    573:574:public void handleSlowNetwork(boolean)
+    594:595:public void stop()
+    603:607:public void destroy()
+com.nostra13.universalimageloader.core.ImageLoaderConfiguration:
+    139:139:public static com.nostra13.universalimageloader.core.ImageLoaderConfiguration createDefault(android.content.Context)
+com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder:
+    private static final java.lang.String WARNING_OVERLAP_DISC_CACHE_PARAMS
+    private static final java.lang.String WARNING_OVERLAP_DISC_CACHE_NAME_GENERATOR
+    private static final java.lang.String WARNING_OVERLAP_MEMORY_CACHE
+    private static final java.lang.String WARNING_OVERLAP_EXECUTOR
+    public static final int DEFAULT_THREAD_POOL_SIZE
+    public static final int DEFAULT_THREAD_PRIORITY
+    222:224:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder memoryCacheExtraOptions(int,int)
+    242:247:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder discCacheExtraOptions(int,int,android.graphics.Bitmap$CompressFormat,int,com.nostra13.universalimageloader.core.process.BitmapProcessor)
+    264:269:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder taskExecutor(java.util.concurrent.Executor)
+    291:296:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder taskExecutorForCachedImages(java.util.concurrent.Executor)
+    304:309:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder threadPoolSize(int)
+    318:331:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder threadPriority(int)
+    343:344:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder denyCacheImageMultipleSizesInMemory()
+    352:357:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder tasksProcessingOrder(com.nostra13.universalimageloader.core.assist.QueueProcessingType)
+    369:376:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder memoryCacheSize(int)
+    389:399:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder memoryCacheSizePercentage(int)
+    430:437:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder discCacheSize(int)
+    449:457:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder discCacheFileCount(int)
+    467:472:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder discCacheFileNameGenerator(com.nostra13.universalimageloader.cache.disc.naming.FileNameGenerator)
+    482:483:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder imageDownloader(com.nostra13.universalimageloader.core.download.ImageDownloader)
+    493:494:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder imageDecoder(com.nostra13.universalimageloader.core.decode.ImageDecoder)
+    539:540:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder writeDebugLogs()
+com.nostra13.universalimageloader.core.ImageLoaderEngine:
+    139:140:void denyNetworkDownloads(boolean)
+    150:151:void handleSlowNetwork(boolean)
+    171:180:void stop()
+com.nostra13.universalimageloader.core.LoadAndDisplayImageTask:
+    private static final java.lang.String LOG_WAITING_FOR_RESUME
+    private static final java.lang.String LOG_RESUME_AFTER_PAUSE
+    private static final java.lang.String LOG_DELAY_BEFORE_LOADING
+    private static final java.lang.String LOG_START_DISPLAY_IMAGE_TASK
+    private static final java.lang.String LOG_WAITING_FOR_IMAGE_LOADED
+    private static final java.lang.String LOG_GET_IMAGE_FROM_MEMORY_CACHE_AFTER_WAITING
+    private static final java.lang.String LOG_LOAD_IMAGE_FROM_NETWORK
+    private static final java.lang.String LOG_LOAD_IMAGE_FROM_DISC_CACHE
+    private static final java.lang.String LOG_PREPROCESS_IMAGE
+    private static final java.lang.String LOG_POSTPROCESS_IMAGE
+    private static final java.lang.String LOG_CACHE_IMAGE_IN_MEMORY
+    private static final java.lang.String LOG_CACHE_IMAGE_ON_DISC
+    private static final java.lang.String LOG_PROCESS_IMAGE_BEFORE_CACHE_ON_DISC
+    private static final java.lang.String LOG_TASK_CANCELLED_IMAGEAWARE_REUSED
+    private static final java.lang.String LOG_TASK_CANCELLED_IMAGEAWARE_COLLECTED
+    private static final java.lang.String LOG_TASK_INTERRUPTED
+    private static final java.lang.String ERROR_PRE_PROCESSOR_NULL
+    private static final java.lang.String ERROR_POST_PROCESSOR_NULL
+    private static final java.lang.String ERROR_PROCESSOR_FOR_DISC_CACHE_NULL
+    private static final int BUFFER_SIZE
+com.nostra13.universalimageloader.core.ProcessAndDisplayImageTask:
+    private static final java.lang.String LOG_POSTPROCESS_IMAGE
+com.nostra13.universalimageloader.core.assist.DiscCacheUtil
+com.nostra13.universalimageloader.core.assist.FailReason:
+    37:37:public com.nostra13.universalimageloader.core.assist.FailReason$FailType getType()
+    42:42:public java.lang.Throwable getCause()
+com.nostra13.universalimageloader.core.assist.ImageSize:
+    private static final int TO_STRING_MAX_LENGHT
+    private static final java.lang.String SEPARATOR
+com.nostra13.universalimageloader.core.assist.MemoryCacheUtil:
+    private static final java.lang.String URI_AND_SIZE_SEPARATOR
+    private static final java.lang.String WIDTH_AND_HEIGHT_SEPARATOR
+    37:38:private MemoryCacheUtil()
+    66:72:public static java.util.List findCachedBitmapsForImageUri(java.lang.String,com.nostra13.universalimageloader.cache.memory.MemoryCacheAware)
+    82:88:public static java.util.List findCacheKeysForImageUri(java.lang.String,com.nostra13.universalimageloader.cache.memory.MemoryCacheAware)
+    98:107:public static void removeFromCache(java.lang.String,com.nostra13.universalimageloader.cache.memory.MemoryCacheAware)
+com.nostra13.universalimageloader.core.assist.SyncImageLoadingListener
+com.nostra13.universalimageloader.core.assist.deque.BlockingDeque:
+    public abstract void addFirst(java.lang.Object)
+    public abstract void addLast(java.lang.Object)
+    public abstract boolean offerFirst(java.lang.Object)
+    public abstract boolean offerLast(java.lang.Object)
+    public abstract void putFirst(java.lang.Object)
+    public abstract void putLast(java.lang.Object)
+    public abstract boolean offerFirst(java.lang.Object,long,java.util.concurrent.TimeUnit)
+    public abstract boolean offerLast(java.lang.Object,long,java.util.concurrent.TimeUnit)
+    public abstract java.lang.Object takeFirst()
+    public abstract java.lang.Object takeLast()
+    public abstract java.lang.Object pollFirst(long,java.util.concurrent.TimeUnit)
+    public abstract java.lang.Object pollLast(long,java.util.concurrent.TimeUnit)
+    public abstract boolean removeFirstOccurrence(java.lang.Object)
+    public abstract boolean removeLastOccurrence(java.lang.Object)
+    public abstract boolean add(java.lang.Object)
+    public abstract boolean offer(java.lang.Object)
+    public abstract void put(java.lang.Object)
+    public abstract boolean offer(java.lang.Object,long,java.util.concurrent.TimeUnit)
+    public abstract java.lang.Object remove()
+    public abstract java.lang.Object poll()
+    public abstract java.lang.Object take()
+    public abstract java.lang.Object poll(long,java.util.concurrent.TimeUnit)
+    public abstract java.lang.Object element()
+    public abstract java.lang.Object peek()
+    public abstract boolean remove(java.lang.Object)
+    public abstract boolean contains(java.lang.Object)
+    public abstract int size()
+    public abstract java.util.Iterator iterator()
+    public abstract void push(java.lang.Object)
+com.nostra13.universalimageloader.core.assist.deque.Deque:
+    public abstract void addFirst(java.lang.Object)
+    public abstract void addLast(java.lang.Object)
+    public abstract boolean offerFirst(java.lang.Object)
+    public abstract boolean offerLast(java.lang.Object)
+    public abstract java.lang.Object removeFirst()
+    public abstract java.lang.Object removeLast()
+    public abstract java.lang.Object pollFirst()
+    public abstract java.lang.Object pollLast()
+    public abstract java.lang.Object getFirst()
+    public abstract java.lang.Object getLast()
+    public abstract java.lang.Object peekFirst()
+    public abstract java.lang.Object peekLast()
+    public abstract boolean removeFirstOccurrence(java.lang.Object)
+    public abstract boolean removeLastOccurrence(java.lang.Object)
+    public abstract boolean add(java.lang.Object)
+    public abstract boolean offer(java.lang.Object)
+    public abstract java.lang.Object remove()
+    public abstract java.lang.Object poll()
+    public abstract java.lang.Object element()
+    public abstract java.lang.Object peek()
+    public abstract void push(java.lang.Object)
+    public abstract java.lang.Object pop()
+    public abstract boolean remove(java.lang.Object)
+    public abstract boolean contains(java.lang.Object)
+    public abstract int size()
+    public abstract java.util.Iterator iterator()
+    public abstract java.util.Iterator descendingIterator()
+com.nostra13.universalimageloader.core.assist.deque.LIFOLinkedBlockingDeque:
+    private static final long serialVersionUID
+com.nostra13.universalimageloader.core.assist.deque.LinkedBlockingDeque:
+    private static final long serialVersionUID
+    165:178:public LinkedBlockingDeque(java.util.Collection)
+    294:296:public void addFirst(java.lang.Object)
+    342:352:public void putFirst(java.lang.Object)
+    377:390:public boolean offerFirst(java.lang.Object,long,java.util.concurrent.TimeUnit)
+    430:432:public java.lang.Object removeLast()
+    446:451:public java.lang.Object pollLast()
+    469:477:public java.lang.Object takeLast()
+    501:513:public java.lang.Object pollLast(long,java.util.concurrent.TimeUnit)
+    530:532:public java.lang.Object getLast()
+    546:551:public java.lang.Object peekLast()
+    573:585:public boolean removeLastOccurrence(java.lang.Object)
+    738:739:public void push(java.lang.Object)
+    745:745:public java.lang.Object pop()
+    1007:1007:public java.util.Iterator descendingIterator()
+    1133:1146:private void writeObject(java.io.ObjectOutputStream)
+    1155:1167:private void readObject(java.io.ObjectInputStream)
+com.nostra13.universalimageloader.core.assist.deque.LinkedBlockingDeque$DescendingItr
+com.nostra13.universalimageloader.core.decode.BaseImageDecoder:
+    protected static final java.lang.String LOG_SABSAMPLE_IMAGE
+    protected static final java.lang.String LOG_SCALE_IMAGE
+    protected static final java.lang.String LOG_ROTATE_IMAGE
+    protected static final java.lang.String LOG_FLIP_IMAGE
+    protected static final java.lang.String ERROR_CANT_DECODE_IMAGE
+com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer
+com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer
+com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer$1
+com.nostra13.universalimageloader.core.download.BaseImageDownloader:
+    public static final int DEFAULT_HTTP_CONNECT_TIMEOUT
+    public static final int DEFAULT_HTTP_READ_TIMEOUT
+    protected static final int BUFFER_SIZE
+    protected static final java.lang.String ALLOWED_URI_CHARS
+    protected static final int MAX_REDIRECT_COUNT
+    private static final java.lang.String ERROR_UNSUPPORTED_SCHEME
+    65:69:public BaseImageDownloader(android.content.Context,int,int)
+com.nostra13.universalimageloader.core.download.HttpClientImageDownloader
+com.nostra13.universalimageloader.core.imageaware.ImageNonViewAware
+com.nostra13.universalimageloader.utils.ImageSizeUtils:
+    31:32:private ImageSizeUtils()
+com.nostra13.universalimageloader.utils.IoUtils:
+    private static final int BUFFER_SIZE
+    33:34:private IoUtils()
+com.nostra13.universalimageloader.utils.L:
+    private static final java.lang.String LOG_FORMAT
+    32:33:private L()
+    37:38:public static void enableLogging()
+    42:43:public static void disableLogging()
+    66:67:public static varargs void e(java.lang.Throwable,java.lang.String,java.lang.Object[])
+com.nostra13.universalimageloader.utils.StorageUtils:
+    private static final java.lang.String EXTERNAL_STORAGE_PERMISSION
+    private static final java.lang.String INDIVIDUAL_DIR_NAME
+    38:39:private StorageUtils()
+com.sina.sso.RemoteSSO$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_getPackageName
+    static final int TRANSACTION_getActivityName
+    static final int TRANSACTION_getLoginUserName
+    13:16:public RemoteSSO$Stub()
+    34:34:public android.os.IBinder asBinder()
+com.sina.sso.RemoteSSO$Stub$Proxy:
+    85:85:public java.lang.String getInterfaceDescriptor()
+com.ta.utdid2.android.utils.AESUtils:
+    public static final java.lang.String TAG
+    12:12:public AESUtils()
+    76:76:public static java.lang.String toHex(java.lang.String)
+    80:80:public static java.lang.String fromHex(java.lang.String)
+com.ta.utdid2.android.utils.Base64:
+    public static final int DEFAULT
+    public static final int NO_PADDING
+    public static final int NO_WRAP
+    public static final int CRLF
+    public static final int URL_SAFE
+    public static final int NO_CLOSE
+    489:492:public static java.lang.String encodeToString(byte[],int,int,int)
+com.ta.utdid2.android.utils.Base64$Coder:
+    public abstract boolean process(byte[],int,int,boolean)
+    public abstract int maxOutputSize(int)
+com.ta.utdid2.android.utils.Base64$Decoder:
+    private static final int SKIP
+    private static final int EQUALS
+    261:261:public int maxOutputSize(int)
+com.ta.utdid2.android.utils.Base64$Encoder:
+    public static final int LINE_GROUPS
+    620:620:public int maxOutputSize(int)
+com.ta.utdid2.android.utils.IntUtils:
+    3:3:public IntUtils()
+    19:30:public static byte[] getBytes(byte[],int)
+com.ta.utdid2.android.utils.NetworkUtils
+com.ta.utdid2.android.utils.PhoneInfoUtils:
+    9:9:public PhoneInfoUtils()
+com.ta.utdid2.android.utils.StringUtils:
+    3:3:public StringUtils()
+    12:35:public static java.lang.String convertObjectToString(java.lang.Object)
+com.ta.utdid2.android.utils.SystemUtils
+com.ta.utdid2.core.persistent.FastXmlSerializer:
+    private static final int BUFFER_LEN
+com.ta.utdid2.core.persistent.MySharedPreferences:
+    public abstract int getInt(java.lang.String,int)
+    public abstract float getFloat(java.lang.String,float)
+    public abstract boolean getBoolean(java.lang.String,boolean)
+    public abstract boolean contains(java.lang.String)
+    public abstract void registerOnSharedPreferenceChangeListener(com.ta.utdid2.core.persistent.MySharedPreferences$OnSharedPreferenceChangeListener)
+    public abstract void unregisterOnSharedPreferenceChangeListener(com.ta.utdid2.core.persistent.MySharedPreferences$OnSharedPreferenceChangeListener)
+com.ta.utdid2.core.persistent.MySharedPreferences$MyEditor:
+    public abstract com.ta.utdid2.core.persistent.MySharedPreferences$MyEditor remove(java.lang.String)
+com.ta.utdid2.core.persistent.PersistentConfiguration:
+    private static final java.lang.String KEY_TIMESTAMP
+    private static final java.lang.String KEY_TIMESTAMP2
+    248:257:public void putInt(java.lang.String,int)
+    272:281:public void putBoolean(java.lang.String,boolean)
+    284:293:public void putFloat(java.lang.String,float)
+    308:317:public void remove(java.lang.String)
+    320:342:public void reload()
+    345:355:public void clear()
+    432:438:public int getInt(java.lang.String)
+    442:448:public long getLong(java.lang.String)
+    452:458:public float getFloat(java.lang.String)
+    462:468:public boolean getBoolean(java.lang.String)
+    472:478:public java.util.Map getAll()
+com.ta.utdid2.core.persistent.TransactionXMLFile:
+    public static final int MODE_WORLD_WRITEABLE
+    public static final int MODE_WORLD_READABLE
+    public static final int MODE_PRIVATE
+com.ta.utdid2.core.persistent.TransactionXMLFile$MySharedPreferencesImpl:
+    167:170:public void registerOnSharedPreferenceChangeListener(com.ta.utdid2.core.persistent.MySharedPreferences$OnSharedPreferenceChangeListener)
+    174:177:public void unregisterOnSharedPreferenceChangeListener(com.ta.utdid2.core.persistent.MySharedPreferences$OnSharedPreferenceChangeListener)
+    194:197:public int getInt(java.lang.String,int)
+    208:211:public float getFloat(java.lang.String,float)
+    215:218:public boolean getBoolean(java.lang.String,boolean)
+    222:224:public boolean contains(java.lang.String)
+com.ta.utdid2.core.persistent.TransactionXMLFile$MySharedPreferencesImpl$EditorImpl:
+    267:270:public com.ta.utdid2.core.persistent.MySharedPreferences$MyEditor remove(java.lang.String)
+com.ta.utdid2.core.persistent.XmlUtils:
+    20:20:XmlUtils()
+    24:29:public static void skipCurrentTag(org.xmlpull.v1.XmlPullParser)
+    33:40:public static final int convertValueToList(java.lang.CharSequence,java.lang.String[],int)
+    45:53:public static final boolean convertValueToBoolean(java.lang.CharSequence,boolean)
+    58:96:public static final int convertValueToInt(java.lang.CharSequence,int)
+    101:104:public static final int convertValueToUnsignedInt(java.lang.String,int)
+    108:134:public static final int parseUnsignedIntAttribute(java.lang.CharSequence)
+    178:185:public static final void writeListXml(java.util.List,java.io.OutputStream)
+    479:481:public static final java.util.ArrayList readListXml(java.io.InputStream)
+    787:799:public static final void beginDocument(org.xmlpull.v1.XmlPullParser,java.lang.String)
+    805:808:public static final void nextElement(org.xmlpull.v1.XmlPullParser)
+com.ta.utdid2.device.Device:
+    19:19:long getCheckSum()
+com.ta.utdid2.device.DeviceInfo:
+    static final byte UTDID_VERSION_CODE
+    10:10:public DeviceInfo()
+com.ta.utdid2.device.UTDevice:
+    10:10:public UTDevice()
+com.ta.utdid2.device.UTUtdid:
+    private static final java.lang.String HMAC_KEY
+    static final java.lang.String UM_SETTINGS_STORAGE
+    static final java.lang.String UM_SETTINGS_STORAGE_NEW
+    private static final java.lang.String S_LOCAL_STORAGE_NAME
+    private static final java.lang.String S_LOCAL_STORAGE_KEY
+    private static final java.lang.String S_GLOBAL_PERSISTENT_CONFIG_KEY
+com.ta.utdid2.device.UTUtdidHelper:
+    63:67:public static java.lang.String generateRandomUTDID()
+com.ut.device.UTDevice
+io.dcloud.RInformation:
+    13:13:public RInformation()
+io.dcloud.e.c$1:
+    228:228:public void onAnimationCancel(com.nineoldandroids.animation.Animator)
+io.dcloud.feature.barcode.a.e:
+    102:102:public boolean isCropSupported()
+io.dcloud.js.map.JsMapManager:
+    156:174:public static java.util.ArrayList getStrToStrArry(java.lang.String)
+io.dcloud.js.map.JsMapPosition
+io.dcloud.js.map.JsMapRoute:
+    71:72:public void setRoute(io.dcloud.js.map.JsMapPoint,io.dcloud.js.map.JsMapPoint)
+io.dcloud.js.map.JsMapView:
+    private java.lang.String id
+    private java.lang.String mJsId
+    67:68:private void init(java.lang.String,java.lang.String)
+    128:129:public void setMapView(io.dcloud.js.map.adapter.DHMapFrameItem)
+io.dcloud.js.map.MapJsUtil:
+    10:10:public MapJsUtil()
+    89:90:public static void assignJsVar(java.lang.StringBuffer,java.lang.String,java.lang.String,org.json.JSONObject)
+io.dcloud.js.map.adapter.DHMapFrameItem:
+    public static final int MSG_CREATE
+    public static final int MSG_SCALE
+    public static final int MSG_UPDATE_CENTER
+    public static final int MSG_ADD_OVERLAY
+    public static final int MSG_REMOVE_OVERLAY
+    public static final int MSG_CLEAR_OVERLAY
+    public static final int MSG_RESET
+    public static final int MSG_SHOWLOCATION
+    public static final int MSG_SET_MAPTYPE
+    public static final int MSG_VISIBLE
+    public static final int MSG_SHOWZOOMCONTROLS
+    248:248:public boolean isShowUserLocation()
+    269:269:public boolean isShowZoomControls()
+    285:285:public boolean isTraffic()
+io.dcloud.js.map.adapter.DHMapUtil:
+    26:26:public DHMapUtil()
+io.dcloud.js.map.adapter.DHMapView:
+    public static final int MAPTYPE_NORMAL
+    public static final int MAPTYPE_SATELLITE
+    public static final int MAPTYPE_TRAFFIC
+    public static final int MAPTYPE_UNTRAFFIC
+    static final java.lang.String GET_USER_LOCATION_TEMPLATE
+    static final java.lang.String PLUS_MAPS_POINT_TEMPLATE
+    static final java.lang.String COORTYPE
+    static final int SCAN_SPAN_TIME
+io.dcloud.js.map.adapter.DHMapView$2:
+    private static final java.lang.String POINT_TEMPLATE
+io.dcloud.js.map.adapter.DHMapView$MyLocationListenner:
+    472:475:public void onReceivePoi(com.baidu.location.BDLocation)
+io.dcloud.js.map.adapter.MapCircleProxy:
+    private java.lang.String mJsId
+    88:88:public double getRadius()
+    96:96:public int getStrokeColor()
+    118:118:public io.dcloud.js.map.adapter.MapPoint getCenter()
+    135:135:public double getStrokeOpacity()
+    160:160:public java.lang.String getFillColor()
+    176:176:public double getFillOpacity()
+    192:192:public double getLineWidth()
+io.dcloud.js.map.adapter.MapMarker:
+    66:66:public java.lang.String getIcon()
+    96:96:public io.dcloud.js.map.adapter.MapPoint getMapPoint()
+io.dcloud.js.map.adapter.MapPoint:
+    48:48:public java.lang.String getLongitude()
+    54:55:public void setLongitude(java.lang.String)
+    60:60:public java.lang.String getLatitude()
+    66:67:public void setLatitude(java.lang.String)
+io.dcloud.js.map.adapter.MapPolygonProxy:
+    private java.lang.String mJsId
+    private java.util.ArrayList mPoints
+    97:97:public int getStrokeColor()
+    108:108:public float getStrokeOpacity()
+    121:121:public float getLineWidth()
+    134:134:public int getFillColor()
+    147:147:public float getFillOpacity()
+io.dcloud.js.map.adapter.MapPolylineProxy:
+    private java.lang.String mJsId
+    private java.util.ArrayList mPoints
+    95:95:public int getStrokeColor()
+    106:106:public float getStrokeOpacity()
+    119:119:public float getLineWidth()
+io.dcloud.js.map.adapter.MapRoute:
+    71:74:public void setRoute(io.dcloud.js.map.adapter.MapPoint,io.dcloud.js.map.adapter.MapPoint)
+    184:185:protected static android.graphics.Point geoToPoint(com.baidu.mapapi.map.MapView,com.baidu.platform.comapi.basestruct.GeoPoint)
+io.dcloud.js.map.adapter.MapSearch:
+    private static final int TRANSIT_NO_SUBWAY
+    private static final int TRANSIT_TIME_FIRST
+    private static final int TRANSIT_TRANSFER_FIRST
+    private static final int TRANSIT_WALK_FIRST
+    private static final int DRIVING_DIS_FIRST
+    private static final int DRIVING_AVOID_JAM
+    private static final int DRIVING_FEE_FIRST
+    private static final int DRIVING_TIME_FIRST
+    private static final int SEARCH_RESULT_TYPE_POSITION
+    private static final int SEARCH_RESULT_TYPE_ROUTE
+    private static final int POISEARCH_TYPE
+    private static final int ROUTESEARCH_TYPE
+    114:114:public int getPageCapacity()
+    127:128:public void setTransitPolicy(int)
+    134:135:public void setDrivingPolicy(int)
+    398:403:private java.lang.String newJS_Route_Obj(com.baidu.platform.comapi.basestruct.GeoPoint,com.baidu.platform.comapi.basestruct.GeoPoint,int,java.lang.StringBuffer)
+io.dcloud.js.map.adapter.MyGraphicsOverlay:
+    protected abstract void updateData()

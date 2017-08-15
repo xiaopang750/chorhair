@@ -1,0 +1,20 @@
+<!-- 提成列表 -->
+<li class="ba-clearfix ba-mb-20" awards-list>
+	<div script-role="check-wrap">
+		<label>提成名称:</label>
+		<input type="text" class="form-control" ischeck="true" form_check="sys" sub-name="awardname" re="(.{1,10})" tip="请填写提成名称" wrong="提成名称不能超过10个字">
+	</div>
+	<div script-role="check-wrap">
+		<label>提成方式:</label>
+		<select type="text" class="form-control" ischeck="true" form_check="sys" sub-name="israte" re="(.+)" tip="请选择提成方式" msg="请选择提成方式">
+			<option value="">请选择</option>
+			<option value="1">固定额度</option>
+			<option value="2">比例提成</option>
+		</select>
+	</div>
+	<div script-role="check-wrap">	
+		<label>值:</label>
+		<input type="text" class="form-control" ischeck="true" form_check="sys" sub-name="awardmoney" re="" tip="请填写提成值" msg="" wrong="提成值为数字" ignorecheck="yes">
+	</div>
+	<span class="ba-none" sub-name="pkFaireraward" ignorecheck="yes"></span>
+</li>

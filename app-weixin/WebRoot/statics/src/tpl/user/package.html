@@ -1,0 +1,43 @@
+{{each packageArr}}
+	<li>
+		<p class="package-name">
+			<span>套餐名称：</span>
+			<span>{{$value.comboname}}</span>
+		</p>
+		<p>
+			<span>开始时间：</span>
+			<span>
+				{{if $value.combobegintime}}
+				{{$value.combobegintime}}
+				{{else}}
+				未开始使用
+				{{/if}}
+			</span>
+		</p>
+		<p>
+			<span>到期时间：</span>
+			<span>
+				{{if $value.comboendtime}}
+				{{$value.comboendtime}}
+				{{else}}
+				未开始使用
+				{{/if}}
+			</span>
+		</p>
+		<p>
+			<span>套餐内容：</span>
+			<span class="package-content">
+				{{each $value.products}}
+					<span>{{$value.productname}} X {{$value.productcount}}</span>
+				{{/each}}
+				{{each $value.services}}
+					{{if $value.servicecount == ''}}
+					<span>{{$value.servicename}}</span>
+					{{else}}
+					<span>{{$value.servicename}} X {{$value.servicecount}}</span>
+					{{/if}}						
+				{{/each}}
+			</span>
+		</p>
+	</li>
+{{/each}}

@@ -1,0 +1,6 @@
+<HBuilder version="1.0.0.14678">
+	<!--应用节点-->
+	<apps>
+		<app appid='ChorHair' appver='0.9.0'/>
+	</apps>
+</HBuilder> 

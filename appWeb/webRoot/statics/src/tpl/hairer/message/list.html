@@ -1,0 +1,35 @@
+<!-- 系统消息列表 -->
+{{each data}}
+<li list>
+	<dl class="ba-clearfix">
+		<dt class="ba-mr-10 ba-fl">
+			
+		</dt>
+		<dd class="ba-fl text" look pkMessage="{{$value.pkMessage}}" status="{{$value.messagestatus}}" tranParam="002" fullMsg="{{$value.content}}">
+			<div class="ba-mb-5 ba-mt-2">
+				<span>系统消息</span>
+				{{if noShowStatus!='yes'}}
+				<span class="ba-pink" msg-status="{{$value.messagestatus}}">
+					{{if $value.messagestatus == '001'}}
+						(未读)
+					{{else if $value.messagestatus == '002'}}
+						(已读)
+					{{else if $value.messagestatus == '003'}}
+						(忽略)
+					{{/if}}
+					
+				</span>
+				{{/if}}
+			</div>
+			<div>
+				{{cut $value.content 15}}
+			</div>
+		</dd>
+		<dd class="ba-fr ba-mt-5 ba-tr">
+			{{if noShowStatus == 'yes'}}
+			<button class="btn btn-gray ba-mr-5" ignore pkMessage="{{$value.pkMessage}}" status="{{$value.messagestatus}}" tranParam="003">忽略</button>
+			{{/if}}
+		</dd>
+	</dl>
+</li>
+{{/each}}

@@ -1,0 +1,74 @@
+/**
+ *description:网站全局less变量-配置
+ *author:wangwc
+ *date:2015/4/2
+ */
+/* color */
+/* site-config */
+.appoint-wrap {
+  position: relative;
+}
+.appoint-bg {
+  height: 100px;
+  background: #ccc;
+  overflow: hidden;
+}
+.appoint-bg img {
+  display: block;
+  width: 100%;
+}
+.appoint-tab {
+  position: absolute;
+  left: 0;
+  bottom: -45px;
+  width: 100%;
+  text-align: center;
+}
+.appoint-tab .appoint-tab-item {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  line-height: 62px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.6);
+  margin: 10px;
+  border-radius: 50%;
+}
+.appoint-tab .appoint-tab-item span {
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  margin: 4px auto;
+  background: #5e5e5e;
+  border-radius: 50%;
+}
+.appoint-tab .appoint-tab-item.active span {
+  background: #d84466;
+}
+.appoint-list {
+  margin-top: 45px;
+}
+.appoint-list li {
+  padding: 10px 15px;
+  background: #fff;
+  margin-bottom: 10px;
+  position: relative;
+}
+.appoint-list li p {
+  color: #909090;
+  line-height: 22px;
+  overflow: hidden;
+}
+.appoint-list li p.appoint-num {
+  color: #424242;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.appoint-list li p span {
+  float: left;
+}
+.no-result {
+  margin-top: 70px;
+  text-align: center;
+  color: #999;
+}

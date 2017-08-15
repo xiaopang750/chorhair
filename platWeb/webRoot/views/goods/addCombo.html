@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+{{include '../include/meta'}}
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/goods/addCombo.css">
+</head>
+
+<body>
+	{{include '../include/header'}}
+	<div class="main-content">
+		{{include '../include/nav'}}
+		{{include '../include/msg'}}
+		<div class="center-bar">
+			<div class="bar-title ba-clearfix">
+				<span class="ba-intro">{{title}}</span>
+				<a href="{{views['goods/list'].url}}" class="btn btn-primary back-btn">返回</a>
+			</div>
+			<div class="main-content">
+				<div class="item-wrap">
+					<div class="ba-mt-20 ba-clearfix"> 
+						<span class="item">套餐名称：</span> 
+						<input class="form-control" type="text" value="{{pageInfo.comboname}}" comboname> 
+					</div>
+					<div class="ba-mt-20 ba-clearfix"> 
+						<span class="item">套餐编码：</span> 
+						<input class="form-control" type="text" value="{{pageInfo.combocode}}" combocode> 
+					</div>
+					<div class="ba-mt-20 ba-clearfix"> 
+						<span class="item">套餐价格：</span> 
+						<input class="form-control" type="text" value="{{pageInfo.combomoney}}" combomoney> 
+					</div>
+					<div class="ba-mt-20 ba-clearfix"> 
+						<span class="item">服务类型：</span> 
+						<select class="form-control" fairtype="{{pageInfo.fairtype}}">
+							<option value="">请选择服务类型</option>
+							<option value="1">烫发</option>
+							<option value="2">染发</option>
+							<option value="3">护发</option>
+							<option value="4">养发</option>
+							<option value="5">剪发</option>
+							<option value="6">头皮SPA</option>
+							<option value="7">洗发</option>
+							<option value="8">造型</option>
+						</select>
+					</div>
+					<div class="ba-mt-20 ba-clearfix"> 
+						<span class="item">次数限制：</span>
+						<select class="form-control" combotype="{{pageInfo.combotype}}">
+							<option value="">请选择</option>
+							<option value="1">不限次</option>
+							<option value="2">单次</option>
+							<option value="3">限次</option>
+						</select>
+					</div>
+					<div class="ba-mt-20 ba-clearfix combocount" combocount-wrap {{if pageInfo.combotype == '3'}}style="display:block;"{{/if}}>
+						<span class="item">次数：</span>
+						<input class="form-control" type="text" value="{{pageInfo.combocount}}" combocount>
+					</div>
+					<div class="ba-mt-20 ba-clearfix"> 
+						<span class="item">匹配商品：</span>
+						<div class="selected-goods" sub-selected-goods>
+							<p class="ba-mb-10 item-wrap" item-wrap {{if pageInfo.nowWay == 'edit'}}style="display:block;"{{/if}}>
+								{{each pageInfo.products}}
+								<span pkproduct="{{$value.pkProduct}}" productprice="{{$value.productprice}}" productunit="{{$value.productunit}}">{{$value.productname}}</span>
+								{{/each}}
+							</p>
+							<p><a class="btn btn-primary ba-mr-10" href="javascript:;" select-goods>选择商品</a></p>
+						</div>
+					</div>
+					<div class="ba-mt-20 ba-clearfix"> 
+						<span class="item">套餐使用店铺：</span>
+						<div class="selected-shop" sub-selected-shop>
+							<p class="ba-mb-10 item-wrap" item-wrap {{if pageInfo.nowWay == 'edit'}}style="display:block;"{{/if}}>
+								{{each pageInfo.shops}}
+								<span pkShop="{{$value.pkShop}}">{{$value.shopname}}</span>
+								{{/each}}
+							</p>
+							<p><a class="btn btn-primary ba-mr-10" href="javascript:;" select-shop>选择店铺</a> </p>
+						</div>
+					</div>
+					<div class="ba-tc ba-mt-50"> 
+						<a class="btn btn-primary ba-mr-10" href="javascript:;" confirm-add-combo>确定</a> 
+						<a class="btn btn-danger" href="{{views['goods/list'].url}}">取消</a> 
+					</div>
+				</div>
+			</div>	
+		</div>	
+	</div>
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/goods/addCombo');
+</script>
+</body>
+</html>

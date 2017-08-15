@@ -1,0 +1,401 @@
+@import "../../config/config.less";
+
+body.home {
+	overflow: hidden;
+	padding: 0;
+	-webkit-transition: 0.3s all ease;
+
+	.home-bg{
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+.shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	-webkit-transition: 0.65s all ease;
+	-webkit-transform: translateX(-500px) translateY(-500px);
+
+	img{
+		display: block;
+		width: 100%;
+	}
+
+	&.old{
+		-webkit-transition: none;
+		-webkit-transform: translateX(0) translateY(0);
+	}
+}
+
+.text1 {
+	position: absolute;
+	top: 5%;
+	left: 32%;
+	width: 36%;
+	-webkit-transition: 0.65s all ease;
+	-webkit-transform: translateX(500px) rotate(360deg);
+	
+	&.old{
+		-webkit-transition: none;
+		-webkit-transform: translateX(0) rotate(0);
+	}
+
+	img{
+		display: block;
+		width: 100%;
+	}
+}
+
+.text2 {
+	position: absolute;
+	top: 11.7%;
+	left: 15%;
+	width: 36%;
+	-webkit-transition: 0.65s all ease;
+	-webkit-transform: translateX(-500px) rotate(360deg);
+
+	img{
+		display: block;
+		width: 100%;
+	}
+
+	&.old{
+		-webkit-transition: none;
+		-webkit-transform: translateX(0) rotate(0);
+	}
+}
+
+.text3 {
+	position: absolute;
+	top: 23%;
+	left: 16%;
+	width: 44%;
+	opacity: 0;
+	-webkit-transition: 0.9s all ease;
+
+	img{
+		display: block;
+		width: 100%;
+	}
+
+	&.old{
+		-webkit-transition: none;
+		opacity: 1;
+	}
+}
+
+.text4 {
+	position: absolute;
+	top: 31%;
+	left: 16%;
+	width: 29%;
+	opacity: 0;
+	-webkit-transition: 0.9s all ease;
+
+	img{
+		display: block;
+		width: 100%;
+	}
+
+	&.old{
+		-webkit-transition: none;
+		opacity: 1;
+	}
+}
+
+.line1 {
+	position: absolute;
+	left: 5%;
+	top: 21%;
+	width: 52.5%;
+	height: 1px;
+	background: #fff;
+	-webkit-transition: 0.5s all ease;
+	-webkit-transform: translateX(500px);
+
+	&.old{
+		-webkit-transition: none;
+		-webkit-transform: translateX(0);
+	}
+}
+.line1 .dot {
+	position: absolute;
+	left: -3px;
+	top: -1px;
+	width: 3px;
+	height: 3px;
+	background: #fff;
+}
+.line2 {
+	position: absolute;
+	left: 11%;
+	top: 21.7%;
+	width: 57%;
+	height: 1px;
+	background: #fff;
+	-webkit-transition: 0.5s all ease;
+	-webkit-transform: translateX(-500px);
+
+	&.old{
+		-webkit-transition: none;
+		-webkit-transform: translateX(0);
+	}
+}
+.line2 .dot {
+	position: absolute;
+	right: -3px;
+	top: -1px;
+	width: 3px;
+	height: 3px;
+	background: #fff;
+}
+.btn-group {
+	position: absolute;
+	width: 100%;
+	top: 75%;
+	left: 0;
+	text-align: center;
+
+	.btn-single {
+		display: inline-block;
+		width: 40%;
+		padding: 20px 0;
+		font-size: 20px;
+		text-align: center;
+		color: #fff;
+		margin-right: 2px;
+		background: #ff5a9a;
+		opacity: 0.8;
+		border-radius: 35px 0 0 35px;
+		-webkit-transition: 0.6s all ease;
+		-webkit-transform: translateY(500px);
+
+		&:active{
+			opacity: 1;
+		}
+
+		&.old{
+			-webkit-transition: none;
+			-webkit-transform: translateY(0);
+		}
+	}
+
+	.btn-fullyear {
+		display: inline-block;
+		width: 40%;
+		padding: 20px 0;
+		font-size: 20px;
+		text-align: center;
+		color: #fff;
+		margin-left: 2px;
+		background: #000;
+		opacity: 0.8;
+		border-radius: 0 35px 35px 0;
+		-webkit-transition: 0.6s all ease;
+		-webkit-transform: translateY(500px);
+	
+		&:active{
+			opacity: 1;
+		}
+
+		&.old{
+			-webkit-transition: none;
+			-webkit-transform: translateY(0);
+		}
+	}
+}
+
+.icons-group{
+	
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 40%;
+	text-align: center;
+
+	span{	
+		display: inline-block;
+		width: 70px;
+		height: 70px;
+		text-align: center;
+		line-height: 70px;
+		color: #fff;
+		font-size: 24px;
+		margin: 7px;
+		border-radius: 50%;
+
+		a{
+			display: block;
+			color: #fff;
+		}
+	}
+
+	.icons-user{
+		background: rgba(243, 209, 51, 0.8);
+
+		&:active{
+			background: rgba(243, 209, 51, 1);
+		}
+
+		.icon-user{
+			display: inline-block;
+			width: 70px;
+			height: 70px;
+			background: url('../../../../assets/main/user/user.png') no-repeat center;
+			background-size: 28px;
+		}
+	}
+	.icons-shop{
+		background: rgba(4, 203, 210, 0.8);
+
+		&:active{
+			background: rgba(4, 203, 210, 1);
+		}
+
+		.icon-shop{
+			display: inline-block;
+			width: 70px;
+			height: 70px;
+			background: url('../../../../assets/main/user/shop.png') no-repeat center;
+			background-size: 40px;
+		}
+	}
+
+	i.icon{
+		position: relative;
+		top: -1px;
+		font-size: 46px;
+
+		&.icon-user{
+			top: -2px;
+			font-size: 45px;
+		}		
+	}
+
+}
+
+.user-info{
+	position: absolute;
+	width: 70%;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	background: url('@{base-img}main/user/user-bg.jpg') no-repeat;
+	background-size:auto 100%;
+	color: #fff;
+	font-size: 16px;
+	-webkit-transition: 0.3s all ease;
+	-webkit-transform: translateX(-100%);
+	
+	a{
+		display: block;
+		color: #fff;
+	}
+
+	.img{
+		width: 35%;
+		margin: 40px auto 15px auto;
+		border: 5px solid #383838;
+		background: #ccc;
+		border-radius: 50%;
+		
+		img{
+			display: block;
+			width: 100%;
+			border-radius: 50%;		
+		}
+	}
+	
+	.icon{
+		font-size: 18px;
+		margin-right: 2px;
+		display: inline-block;
+	}
+
+	.icon-order,.icon-user,.icon-erweima{
+		position: relative;
+		top: 4px;
+		width: 20px;
+		height: 20px;
+	}
+
+	.icon-user{
+		background: url('../../../../assets/main/user/user.png') no-repeat center;
+		background-size: 12px;
+	}
+
+	.icon-erweima{
+		background: url('../../../../assets/main/user/qrcode.png') no-repeat center;
+		background-size: 15px;
+	}
+
+	.icon-order{
+		background: url('../../../../assets/main/user/order.png') no-repeat center;
+		background-size: 14px;
+	}
+
+	.message{
+		margin-top: 30px;
+		margin-bottom: 30px;
+		padding-left: 20px;
+
+		p{
+			margin-bottom: 20px;
+			overflow: hidden;
+			
+			span{
+				display: inline-block;
+			}
+
+			.icon{
+				position: relative;
+				top: 4px;
+				font-size: 18px;
+				margin-right: 12px;
+				width: 20px;
+				height: 20px;
+			}
+
+			.icon-address{
+				background: url('../../../../assets/main/user/add.png') no-repeat center;
+				background-size: 14px;
+			}
+
+			.icon-phone{
+				background: url('../../../../assets/main/user/phone.png') no-repeat center;
+				background-size: 11px;
+			}
+		}
+	}
+
+	.name{
+		text-align: center;
+		font-size: 18px;
+	}
+	
+	.appoint,.popular,.package{
+		width: 52%;
+		height: 40px;
+		line-height: 40px;
+		margin: 15px auto;
+		background: @pink;
+		text-align: center;
+		color: #fff;
+		border-radius: 22px;
+
+		&:active{
+			background: #555;
+		}
+	}
+}

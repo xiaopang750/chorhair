@@ -1,0 +1,11 @@
+<!-- 分组列表 -->
+{{if list}}
+	{{each list}}
+	<li pkGroup="{{$value.pkGroup}}" groupnum="{{$value.groupnum}}">
+		<p>{{$value.groupname}}</p>
+		<span class="group-edit" title="编辑分组" group-edit><i class="fa fa-users"></i></span>
+		<span class="group-send" title="发送信息" group-send><i class="fa fa-comment"></i></span>
+		<span class="group-remove" title="删除分组" group-remove><i class="fa fa-trash"></i></span>
+	</li>
+	{{/each}}
+{{/if}}

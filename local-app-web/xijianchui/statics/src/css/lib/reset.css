@@ -1,0 +1,106 @@
+/**
+ *description:网站重置样式-pc
+ *author:fanwei
+ *date:2014/10/30
+ */
+/**
+ *description:网站全局less变量-配置
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* use-most-var */
+/* color */
+/* a-link */
+/* font-family */
+/* h-size */
+/* btn */
+/* layer */
+/* site-config */
+/**
+ *description:网站全局less函数-pc
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* line-height */
+/* font-size */
+/* margin */
+/* padding */
+/* opacity */
+/* trangle */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+}
+body {
+  font-family: "Microsoft Yahei";
+  font-size: 12px !important;
+  background: #f0f0f0;
+  color: #000000;
+  overflow-x: hidden;
+  padding-top: 1.5rem;
+}
+a {
+  color: #757474;
+  text-decoration: none;
+}
+a:hover {
+  color: "";
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  border: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+select {
+  vertical-align: middle;
+  border: none;
+}
+textarea {
+  resize: none;
+  outline: none;
+  overflow: auto;
+}
+input {
+  vertical-align: middle;
+  outline: none;
+  background: none;
+  -webkit-user-select: auto;
+}

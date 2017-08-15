@@ -1,0 +1,85 @@
+@import "../../config/config.less";
+
+.shop-head{
+	background: #04cbd2;
+	overflow: hidden;
+
+	.shop-bg{
+		width: 50%;
+		float: left;
+		overflow: hidden;
+
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+	.shop-title{
+		position: relative;
+		width: 50%;
+		float: right;
+		color: #f0f0f0;
+		padding-top: 14%;
+		padding-bottom: 14%;
+		text-align: center;
+
+		.cn{	
+			font-size: 36px;
+		}
+		.en{
+			font-size: 18px;
+		}
+	}
+}
+
+.shop-list{
+	li{
+		overflow: hidden;
+		.name{
+			width: 80%;
+			font-size: 16px;
+			margin-top: 40%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	li:nth-child(odd){
+		
+		background: #3a3a3a;
+
+		.text{
+			width: 50%;
+			float: left;
+			text-align: center;
+			color: #fff;				
+		}
+
+		.img{
+			width: 50%;
+			float: right;
+		}
+	}
+
+	li:nth-child(even){
+		
+		background: #222;
+
+		.text{
+			width: 50%;
+			float: right;
+			text-align: center;
+			color: #fff;
+		}
+
+		.img{
+			width: 50%;
+			float: left;
+		}
+	}
+
+	img{
+		width: 100%;
+		display: block;
+	}
+}

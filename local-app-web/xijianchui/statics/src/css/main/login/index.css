@@ -1,0 +1,53 @@
+/**
+ *description:网站全局less变量-配置
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* use-most-var */
+/* color */
+/* a-link */
+/* font-family */
+/* h-size */
+/* btn */
+/* layer */
+/* site-config */
+/**
+ *description:网站全局less函数-pc
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* line-height */
+/* font-size */
+/* margin */
+/* padding */
+/* opacity */
+/* trangle */
+.login-box {
+  width: 400px;
+  height: 260px;
+  position: fixed;
+  margin: -130px 0 0 -200px;
+  left: 50%;
+  top: 50%;
+}
+.auth-form-header {
+  position: relative;
+  padding: 10px 20px;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  background-color: #829aa8;
+  border: 1px solid #768995;
+  border-radius: 3px 3px 0 0;
+}
+.auth-form-header h1 {
+  font-size: 16px;
+}
+.auth-form-body {
+  padding: 20px;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #d8dee2;
+  border-top: 0;
+  border-radius: 0 0 3px 3px;
+}

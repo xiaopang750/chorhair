@@ -1,0 +1,1 @@
+https://open.weixin.qq.com/connect/oauth2/authorize?appId=wx04bf3ce7725466d1&response_type=code&scope=snsapi_base&redirect_uri=http://chwx.rs07.com/oauth/redirect.php%3FeventId=testsub%26accountId=gh_8d500db884c3&state=rock#wechat_redirect

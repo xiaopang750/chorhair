@@ -1,0 +1,2 @@
+/*! company 罗格斯达 version 1.0.0 2015-06-17 */
+define("driver/interfaces/user",[],function(e,t,i){i.exports={login:R.uri.reqPrefix+"user/login",regist:R.uri.reqPrefix+"user/regist",loginOut:R.uri.reqPrefix+"user/loginOut"}});

@@ -1,0 +1,7 @@
+<!-- 根据价格查询提成列表 -->
+{{each data}}
+<li class="form-group ba-fl col-3 ba-mr-20" ticheng-item>
+	<label class="ba-mb-2 ba-mr-5 ba-fl">{{$value.awardname}}:</label>
+	<input type="text" class="form-control" readonly="readonly" otherfairer="" awardmoney="{{$value.awardmoney}}" israte="{{$value.israte}}" awardname="{{$value.awardname}}" ticheng-list fairer>
+</li>
+{{/each}}

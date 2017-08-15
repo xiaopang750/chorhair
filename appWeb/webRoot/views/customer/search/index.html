@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/customer/search/index.css">
+</head>
+
+<body pageLevel="{{pageLevel}}">
+
+	<header class="index-header search1" search-head>
+		<div class="ba-clearfix">
+			<div class="header-wrap ba-clearfix">
+				<div class="ba-fl return-index">
+					<a href="/views/customer/user/index"><span class="icon icon-left"></span>返回</a>
+				</div>
+				<div class="search-area ba-fl" search-area>
+					<span class="icon icon-search ba-font-18"></span>
+					<form class="ba-in-bl" search-form>
+						<input type="text" placeholder="最近热搜" search-input>
+						<input class="ba-none" type="submit">
+					</form>
+				</div>
+				<div class="ba-fr my-beauty">
+					<a href="#" class="search-btn" search-btn>搜索</a>
+				</div>		
+			</div>
+		</div>
+	</header>
+
+	<section class="search-list" search-list>
+		<ul></ul>
+	</section>
+
+	<!-- content -->
+	<section class="col-11 ba-auto main-content ba-mt-15">
+		<div class="level1-content ba-clearfix">
+			<ul falls-wrap></ul>
+			<ul falls-wrap></ul>
+		</div>
+	</section>
+	
+	<!-- loading -->
+	<section class="ba-none falls-loading falls-loading-first" get-more><img src="{{imgPath}}lib/loading/btn_loading_r.gif" alt=""></section>
+
+	{{include '../include/siteConfig'}}
+
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/customer/search/index');
+</script>
+</body>
+</html>

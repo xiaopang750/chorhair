@@ -1,0 +1,21 @@
+{
+    "$schema": "fairerawardsplit#",
+    "description": "提成人维护",
+    "type": "object",
+    "properties": {
+        "datas":
+         {
+            "type": "array",
+            "items":{
+	                "type":"object",
+	                "properties":{
+		                "awardmoney":{"required":true},
+		                "israte":{"required":true},
+		                "awardname":{"required":true}
+		            }
+	         },
+	         "minItems":1,
+	         "maxItems":4
+         }
+    }
+}

@@ -1,0 +1,13 @@
+Index: src/mail.properties
+===================================================================
+--- src/mail.properties	(.../lucenebak)	(revision 1579)
++++ src/mail.properties	(.../lucene)	(revision 1579)
+@@ -1,6 +1,6 @@
+ smtp=smtp.163.com
+ from=tj_rockstars@163.com
+-to=xucheng@rockstars.com.cn,hxx@rockstars.com.cn,wangwc@rockstars.com.cn
++to=xucheng@rockstars.com.cn,hxx@rockstars.com.cn
+ username=tj_rockstars@163.com
+ password=admin@123
+ pop=pop.163.com
+\ No newline at end of file

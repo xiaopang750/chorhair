@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+{{include '../include/meta'}}
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/goods/platBookList.css">
+</head>
+
+<body>
+	{{include '../include/header'}}
+	<div class="main-content">
+		{{include '../include/nav'}}
+		{{include '../include/msg'}}
+		<div class="center-bar">
+			<div class="bar-title ba-clearfix">
+				<span class="ba-intro">{{title}}</span>
+			</div>
+			<div class="main-content">
+				<div class="select-area ba-clearfix">
+					<div class="select-shop">选择店铺：</div>
+					<div class="related-select" area-wrap>
+						<select class="form-control" province name="province" pkArea="" areaname="">
+							<option value="">请选择省</option>
+						</select>
+					</div>
+					<div class="related-select" area-wrap>
+						<select class="form-control" city name="city" pkArea="" areaname="">
+							<option value="">请选择市</option>
+						</select>
+					</div>
+					<div class="related-select" area-wrap>
+						<select class="form-control" area name="county" pkArea="" areaname="">
+							<option value="">请选择区</option>
+						</select>
+					</div>
+					<div class="shop-select">
+						<select class="form-control" shop>
+							<option value="">请选择店铺</option>
+						</select>
+					</div>
+				</div>
+				<div class="ba-clearfix ba-mt-20">
+					<label class="ba-fl ba-mt-5">&nbsp;&nbsp;&nbsp;时间段：</label>
+					<input type="text" class="startTime form-control ba-fl ba-mr-10 w-200" readonly="readonly" calendar="" search="book-begintime">
+					<label class="ba-fl ba-mt-5">至：</label>
+					<input type="text" class="endTime form-control ba-fl ba-mr-10 w-200" calendar="" search="book-endtime" readonly="readonly">
+				</div>
+				<div class="ba-clearfix ba-mt-20">
+					<label class="ba-fl ba-mt-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;状态：</label>
+					<div class="vbillstatus-select ba-fl w-100">
+						<select class="form-control" vbillstatus>
+							<option value="">全部</option>
+							<option value="2">待审批</option>
+							<option value="4">待发货</option>
+							<option value="6">已驳回</option>
+							<option value="7">待收货</option>
+							<option value="8">已完成</option>
+						</select>
+					</div>
+					<a href="javascript:;" class="ba-fl btn btn-primary ba-ml-10" search-book-btn>查询</a>
+				</div>
+				<div class="ba-mt-20">
+					<table class="table bordered striped" width="100%" list-wrap>
+						<thead>
+							<tr>
+								<td width="20%">编号</td>
+								<td width="10%">订货日期</td>
+								<td width="10%">店铺名称</td>
+								<td width="10%">订货负责人</td>
+								<td width="10%">订货总金额</td>
+								<td width="10%">状态</td>
+								<td width="10%">审核批语</td>
+								<td width="20%">管理</td>
+							</tr>
+						</thead>
+						<tbody data-ele="data-wrap">
+							
+						</tbody>
+					</table>
+					<!-- fenye -->
+					{{include '../include/fenye'}}
+				</div>
+			</div>	
+		</div>	
+	</div>
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/goods/platBookList');
+</script>
+</body>
+</html>

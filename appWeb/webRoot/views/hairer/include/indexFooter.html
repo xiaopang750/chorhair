@@ -1,0 +1,17 @@
+<!-- index-footer -->
+<footer class="index-footer">
+	<ul class="ba-clearfix">
+		{{each siteNav}}
+		<li {{if $value.text == title}}class="active"{{/if}}>
+			<div class="{{iosNavFix}}">
+				<a href="{{$value.url}}">
+					<p class="logo ba-mb-3">
+						<span class="icon {{$value.logo}}"></span>
+					</p>
+					<p class="text">{{$value.text}}</p>
+				</a>
+			</div>
+		</li>
+		{{/each}}
+	</ul>
+</footer>

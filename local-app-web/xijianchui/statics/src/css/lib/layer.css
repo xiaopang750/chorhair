@@ -1,0 +1,140 @@
+/**
+ *description:网站布局框架
+ *author:fanwei
+ *date:2014/11/04
+ */
+/**
+ *description:网站全局less变量-配置
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* use-most-var */
+/* color */
+/* a-link */
+/* font-family */
+/* h-size */
+/* btn */
+/* layer */
+/* site-config */
+/**
+ *description:网站全局less函数-pc
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* line-height */
+/* font-size */
+/* margin */
+/* padding */
+/* opacity */
+/* trangle */
+/**
+ *description:css3-pc
+ *author:fanwei
+ *date:2014/10/31
+ */
+html {
+  font-size: 36px;
+}
+html,
+body {
+  width: 100%;
+}
+.header {
+  width: 100%;
+  height: 1.5rem;
+  border-bottom: 1px solid #dddddd;
+  color: #ffffff;
+  background: #f5f6f6;
+  line-height: 1.5rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+.header section {
+  float: left;
+  height: 1.5rem;
+}
+.header .header-left {
+  width: 20%;
+  color: #585858;
+  font-size: 1.4em;
+}
+.header .header-left a {
+  color: #585858;
+}
+.header .header-center {
+  width: 60%;
+  font-size: 1.7em;
+  text-align: center;
+  color: #f14c76;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.header .header-right {
+  width: 20%;
+  color: #585858;
+  font-size: 1.4em;
+}
+.header .header-right a {
+  color: #585858;
+}
+.index-footer {
+  height: 1.7rem;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #fafafa;
+  border-top: 1px solid #c5c5c5;
+}
+.index-footer ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  height: 100%;
+  margin-top: 1em;
+}
+.index-footer ul li {
+  height: 100%;
+  text-align: center;
+  color: #585858;
+  box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+}
+.index-footer ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.index-footer ul li a:active {
+  color: #f14c76;
+}
+.index-footer ul li p {
+  font-size: 1em;
+  margin-top: 0.1em;
+}
+.index-footer ul li .icon {
+  display: block;
+  font-size: 1.8em;
+}
+.index-footer ul li.active a {
+  color: #f14c76;
+}
+.level1-content {
+  margin-bottom: 1.8rem;
+}
+.page-loading {
+  text-align: center;
+  padding: 1rem;
+}
+.loading-wrap {
+  display: none;
+}
+.iosNavFix {
+  position: relative;
+  top: -8px;
+}

@@ -1,0 +1,20 @@
+<!-- 客服管理消息 -->
+{{if list}}
+{{each list}}
+	{{if $value.pkGroup}}
+		<li>
+			<p class="ba-mb-5">To：{{$value.groupname}}</p>
+			<p class="ba-mb-5 ba-ml-10">{{$value.content}}</p>
+			<p class="ba-tr">{{$value.sendtime}}</p>
+		</li>
+	{{else}}
+		<li>
+			<p class="ba-mb-5">To：{{$value.membername}}</p>
+			<p class="ba-mb-5 ba-ml-10">{{$value.content}}</p>
+			<p class="ba-tr">{{$value.sendtime}}</p>
+		</li>
+	{{/if}}
+{{/each}}
+{{else}}
+<li class="ba-tc">暂无消息记录</li>
+{{/if}}

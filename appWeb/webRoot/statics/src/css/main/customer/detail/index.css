@@ -1,0 +1,105 @@
+/**
+ *description: 详情页模板
+ *author:fanwei
+ *date:2015/01/22
+ */
+/**
+ *description:网站全局less变量-配置
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* use-most-var */
+/* color */
+/* a-link */
+/* font-family */
+/* h-size */
+/* btn */
+/* layer */
+/* site-config */
+/**
+ *description:网站全局less函数-pc
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* line-height */
+/* font-size */
+/* margin */
+/* padding */
+/* opacity */
+/* trangle */
+/**
+ *description:css3-pc
+ *author:fanwei
+ *date:2014/10/31
+ */
+.info {
+  text-align: center;
+  background: #fff;
+  padding: 1.2em 0;
+  border-bottom: 1px solid #dddddd;
+}
+.info .sale {
+  display: inline-block;
+  background: #ff9829;
+  border-radius: 5px;
+  padding: 1px 3px;
+}
+.info .icon {
+  font-size: 1.5em;
+}
+.info .icon.icon-message {
+  position: relative;
+  top: 2px;
+}
+.info-detail {
+  background: #fff;
+  padding: 1em 1.2em;
+  border-bottom: 1px solid #dddddd;
+  font-size: 1.2em;
+}
+.info-comment {
+  background: #fff;
+  padding: 0.8em 1.2em;
+  font-size: 1.2em;
+}
+.info-comment .arg-list-wrap li {
+  border-bottom: 1px solid #dddddd;
+}
+.info-comment .arg-list-wrap li dl {
+  padding: 0.7em 0 0.4em 0;
+}
+.info-comment .arg-list-wrap li dt {
+  width: 15%;
+}
+.info-comment .arg-list-wrap li dt img {
+  border-radius: 50%;
+  width: 100% !important;
+  height: auto !important;
+}
+.info-comment .arg-list-wrap li dd {
+  width: 80%;
+}
+.info-comment .arg-list-wrap li dd .comment-time {
+  font-size: 0.8em;
+  float: right;
+  color: #666;
+}
+.info-comment .arg-list-wrap li.get-more {
+  color: #666;
+}
+.info-comment .arg-list-wrap :last-child {
+  border-bottom: none;
+}
+.arg-input {
+  width: 100%;
+  padding: 1em 0;
+  background: #f9f9f9;
+  border-top: 1px solid #dddddd;
+}
+.arg-input input {
+  background: none;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 8px 5px;
+  width: 85%;
+}

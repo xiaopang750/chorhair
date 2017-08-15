@@ -1,0 +1,21 @@
+<!-- 档案管理列表 -->
+{{each list}}
+<tr sub-name-list>
+	<td list-sort>
+		{{$index + 1}}
+	</td>
+	<td can-edit sub-name="awardname" re="^.{1,10}$" msg="系列名称为10个字以内" tip="系列名称不能为空">
+		{{$value.awardname}}
+	</td>
+	<td can-edit sub-name="awardvalue" re="^\d+$" msg="抵用券额度只能为数字" tip="抵用券额度不能为空">
+		{{$value.awardvalue}}
+	</td>
+	<td>
+		{{if type != 'look'}}
+		<a href="javascript:;" aid="{{$value.pkCustomeraward}}" edit>编辑</a>
+		<a href="javascript:;" addAfterNeedId aid="{{$value.pkCustomeraward}}" adapt>适用套餐</a>
+		{{/if}}
+		<span class="ba-none" sub-name="pkCustomeraward" ignorecheck="yes">{{$value.pkCustomeraward}}</span>
+	</td>
+</tr>
+{{/each}}

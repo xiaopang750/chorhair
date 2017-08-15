@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+{{include '../include/meta'}}
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/goods/addGoods.css">
+</head>
+
+<body>
+	{{include '../include/header'}}
+	<div class="main-content">
+		{{include '../include/nav'}}
+		{{include '../include/msg'}}
+		<div class="center-bar">
+			<div class="bar-title ba-clearfix">
+				<span class="ba-intro">{{title}}</span>
+				<a href="{{views['goods/stockList'].url}}" class="btn btn-primary back-btn">返回</a>
+			</div>
+			<div class="main-content">
+				<div class="item-wrap">
+					<div class="ba-mt-20 ba-clearfix"> 
+						<span class="item">品牌：</span> 
+						<input class="form-control" type="text" brand> 
+					</div>
+					<div class="ba-mt-20 ba-clearfix"> 
+						<span class="item">系列：</span> 
+						<input class="form-control" type="text" series> 
+					</div>
+					<div class="ba-mt-20 ba-clearfix"> 
+						<span class="item">货号：</span> 
+						<input class="form-control" type="text" itemno> 
+					</div>
+					<div class="ba-mt-20 ba-clearfix"> 
+						<span class="item">商品名称：</span> 
+						<input class="form-control" type="text" productname> 
+					</div>
+					<div class="ba-mt-20 ba-clearfix"> 
+						<span class="item">容量单位：</span> 
+						<select class="form-control" unit>
+							<option value="">请选择</option>
+							<option value="mL">mL</option>
+							<option value="L">L</option>
+							<option value="g">g</option>
+							<option value="kg">kg</option>
+						</select> 
+					</div>
+					<div class="ba-mt-20 ba-clearfix"> 
+						<span class="item">容量：</span> 
+						<input class="form-control" type="text" capacity>
+					</div>
+					<div class="ba-mt-20 ba-clearfix"> 
+						<span class="item">数量单位：</span> 
+						<select class="form-control" productunit>
+							<option value="">请选择</option>
+							<option value="支">支</option>
+							<option value="瓶">瓶</option>
+							<option value="袋">袋</option>
+						</select> 
+					</div>
+					<div class="ba-mt-20 ba-clearfix"> 
+						<span class="item">数量：</span> 
+						<input class="form-control" type="text" productnum>
+					</div>
+					<div class="ba-mt-20 ba-clearfix"> 
+						<span class="item">标准价格：</span> 
+						<input class="form-control" type="text" productprice>
+					</div>
+					<div class="ba-tc ba-mt-50"> 
+						<a class="btn btn-primary ba-mr-10" href="javascript:;" add-confirm-btn>确定</a> 
+						<a class="btn btn-danger" href="{{views['goods/stockList'].url}}">取消</a> 
+					</div>
+				</div>
+			</div>	
+		</div>	
+	</div>
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/goods/addGoods');
+</script>
+</body>
+</html>

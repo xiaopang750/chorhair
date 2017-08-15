@@ -1,0 +1,129 @@
+/**
+ *description:附加项目管理
+ *author:fanwei
+ *date:2015/3/24
+ */
+/**
+ *description:网站全局less变量-配置
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* use-most-var */
+/* color */
+/* a-link */
+/* font-family */
+/* h-size */
+/* btn */
+/* layer */
+/* site-config */
+/**
+ *description:网站全局less函数-pc
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* line-height */
+/* font-size */
+/* margin */
+/* padding */
+/* opacity */
+/* trangle */
+/**
+ *description:css3-pc
+ *author:fanwei
+ *date:2014/10/31
+ */
+/**
+ *description:档案管理公共样式
+ *author:fanwei
+ *date:2015/3/24
+ */
+.sys-wrap {
+  width: 700px;
+  border: 1px solid #cccccc;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fff;
+  font-size: 14px;
+}
+.sys-wrap .sys-left-bar {
+  width: 200px;
+  border-right: 1px solid #cccccc;
+  float: left;
+  padding-bottom: 5000px;
+  margin-bottom: -5000px;
+}
+.sys-wrap .sys-left-bar ul li {
+  position: relative;
+  padding-left: 10px;
+}
+.sys-wrap .sys-left-bar ul li .item {
+  height: 40px;
+  line-height: 40px;
+}
+.sys-wrap .sys-left-bar ul li .item .hover-item:hover {
+  color: #ccc;
+  cursor: pointer;
+}
+.sys-wrap .sys-left-bar > ul > li {
+  border-bottom: 1px solid #cccccc;
+}
+.sys-wrap .sys-left-bar > ul > li .sub-wrap {
+  display: none;
+}
+.sys-wrap .sys-left-bar > ul > li .fa-angle-up {
+  display: none;
+}
+.sys-wrap .sys-left-bar > ul > li.active .fa-angle-up {
+  display: inherit;
+}
+.sys-wrap .sys-left-bar > ul > li.active .fa-angle-down {
+  display: none;
+}
+.sys-wrap .sys-left-bar > ul > li.active .sub-wrap {
+  display: block;
+}
+.sys-wrap .sys-left-bar .group-add {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.sys-wrap .sys-left-bar .group-add:hover {
+  color: #fff;
+  background: #57b382;
+}
+.sys-wrap .sys-left-bar .sub-add:hover {
+  color: #ccc;
+  cursor: pointer;
+}
+.sys-wrap .sys-left-bar .func-icon {
+  display: none;
+}
+.sys-wrap .sys-right-bar {
+  float: left;
+  width: 479px;
+  padding: 10px;
+}
+.sys-wrap .func-icon {
+  margin-left: 10px;
+}
+.sys-wrap .func-icon .fa {
+  font-size: 18px;
+  margin-right: 2px;
+}
+.add-group {
+  width: 300px;
+  height: 120px;
+  background: #fff;
+}
+.sys-right-bar .fa-plus {
+  cursor: pointer;
+  font-size: 16px;
+}
+.sys-right-bar .fa-plus:hover {
+  color: #ccc;
+}
+.select-area {
+  width: 700px;
+  margin: 0 auto;
+}

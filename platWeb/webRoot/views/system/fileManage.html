@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+{{include '../include/meta'}}
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/system/fileManage.css">
+</head>
+
+<body>
+	{{include '../include/header'}}
+	<div class="main-content">
+		{{include '../include/nav'}}
+		{{include '../include/msg'}}
+		<div class="center-bar">
+			<div class="bar-title ba-clearfix">
+				<span class="ba-intro">{{title}}</span>
+			</div>
+			<div class="main-content">
+				<div class="select-area ba-clearfix">
+					<div class="select-shop">选择店铺：</div>
+					<div class="related-select" area-wrap>
+						<select class="form-control" province name="province" pkArea="" areaname="">
+							<option value="">请选择省</option>
+						</select>
+					</div>
+					<div class="related-select" area-wrap>
+						<select class="form-control" city name="city" pkArea="" areaname="">
+							<option value="">请选择市</option>
+						</select>
+					</div>
+					<div class="related-select" area-wrap>
+						<select class="form-control" area name="county" pkArea="" areaname="">
+							<option value="">请选择区</option>
+						</select>
+					</div>
+					<div class="shop-select">
+						<select class="form-control" shop>
+							<option value="">请选择店铺</option>
+						</select>
+					</div>
+				</div>
+				<div class="sys-wrap ba-clearfix ba-mt-20">
+					<div class="sys-left-bar">
+						<ul list-bar>
+							
+						</ul>
+						<div class="group-add ba-tc" group-add>
+							<span class="fa fa-plus"></span>
+							<span>新套餐提成组</span>
+						</div>
+					</div>
+					<div class="sys-right-bar" right-content-wrap>
+						
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/system/fileManage');
+</script>
+</body>
+</html>

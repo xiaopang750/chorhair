@@ -1,0 +1,2 @@
+/*! company 罗格斯达 version 1.0.0 2015-06-17 */
+define("driver/interfaces/global",[],function(e,t,i){i.exports={modifyPass:R.uri.reqPrefix+"global/modifyPass",getArea:R.uri.reqPrefix+"global/getArea",upload:R.uri.uploadPrefix+"uploader",getSignature:R.uri.reqPrefix+"global/getSignature"}});

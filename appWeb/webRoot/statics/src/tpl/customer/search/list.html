@@ -1,0 +1,15 @@
+<!-- 搜索列表页 -->
+{{each data}}
+	<li>
+		<div class="col-11 ba-auto">
+			<dl>
+				<dt class="ba-mb-10">{{$value.type}}</dt>
+				<dd>
+					{{each $value.words}}
+						<span hot-tag>{{$value.hotword}}</span>
+					{{/each}}
+				</dd>
+			</dl>
+		</div>
+	</li>
+{{/each}}

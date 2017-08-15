@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>虫二美发</title>
+    <meta content="虫二美发,虫二,美容美发,美发,烫发,染发,护发,养发" name="keywords">
+    <meta content="还在担心自己跟不上潮流？还在发愁自己的发质不好？还在担心美发产品价格虚高？还没有合适的发型师？关注虫二美发是您不二的选择！最新美发资讯，最新店内优惠活动尽在虫二美发，我们致力打造透明化的美发场所，让每一个人都可以消费得起美丽~" name="description">
+	<link rel="stylesheet" href="statics/css/main.css">
+    <link href="favicon.ico" rel="shortcut icon">
+</head>
+<body>
+	<div class="header">
+		<a class="logo" href="index.html"><img src="statics/img/logo.png" alt=""></a>
+        <span class="slogan"><img src="statics/img/slogan.png" alt=""></span>
+		<span class="phone"><img src="statics/img/tel.png" alt=""></span>
+	</div>
+	<div class="banner">
+        <ul>
+            <li style="opacity:1;filter:alpha(opacity:100);">
+                <img src="statics/assets/banner/1.jpg" alt="">
+            </li>
+            <li>
+                <img src="statics/assets/banner/2.jpg" alt="">
+            </li>
+            <li>
+                <img src="statics/assets/banner/3.jpg" alt="">
+            </li>
+        </ul>   
+    </div>
+    <div class="wrapper-fixed">
+        <ul class="feature">
+            <li>
+                <img src="statics/img/pzbz.png" alt="">
+                <p>国际一线品牌正品保障服务后有问题，一周内免费调整</p>
+            </li>
+            <li>
+                <img src="statics/img/gzbz.png" alt="">
+                <p>服务流程标准化所有人员经过培训平台统一考核</p>
+            </li>
+            <li>
+                <img src="statics/img/xdjg.png" alt="">
+                <p>全年不限次，不限长短，不限男女</p>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <div class="wrapper-fixed">
+            <span class="shop"><i></i><a href="shop/index.html">店铺信息</a></span>
+            <span class="user"><i></i><a href="faq/index.html">用户须知</a></span>
+            <span class="process"><i></i><a href="process/index.html">标准流程</a></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <span class="l">罗格斯达（天津）数据信息服务有限公司 津ICP备15002711号 © 2015</span>
+        <span class="r">联系我们&nbsp;&nbsp;&nbsp;&nbsp;邮箱：hr@rockstars.com.cn&nbsp;&nbsp;&nbsp;&nbsp;电话：4006303799</span>
+    </div>
+    <script src="statics/js/jquery.min.js"></script>
+    <script>
+    $(function(){
+        //设置高度
+        var scale = 872/1900;
+
+        $('.banner').height($(window).width()*scale);
+
+        $(window).on('resize', function() {
+            $('.banner').height($(window).width()*scale);
+        });
+
+        //幻灯片
+        var now=0,
+            timer=null;
+
+        timer=setInterval(function(){
+             now++;
+             if(now==$('.banner li').length){
+                 now=0;
+             }
+             $('.banner li').eq(now).addClass('current').siblings().removeClass('current');
+             $('.banner li').eq(now).stop().animate({opacity:1}, 600).siblings().stop().animate({opacity:0}, 600);
+        },3500);
+
+    });
+
+    </script>
+</body>
+</html>

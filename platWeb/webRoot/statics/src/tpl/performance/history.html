@@ -1,0 +1,45 @@
+<!-- 历史订单列表 -->
+{{if list}}
+    {{each list}}
+    <tr>
+        <td>{{$value.customername}}</td>
+        <td>
+            {{if $value.paystatus == '001'}}
+            未结算
+            {{else if $value.paystatus == '002'}}
+            已结算
+            {{/if}}
+        </td>
+        <td>
+            {{if $value.orderstatus == '001'}}
+            服务中
+            {{else if $value.orderstatus == '002'}}
+            服务完成
+            {{else if $value.orderstatus == '003'}}
+            预约单
+            {{else if $value.orderstatus == '004'}}
+            预约取消
+            {{/if}}
+        </td>
+        <td>{{$value.orderno}}</td>
+        <td>{{$value.ordetime}}</td>
+        <td>{{$value.ordermoney}}</td>
+        <td>
+        	{{if $value.iscombo == 'Y'}}
+        		套餐订单
+    		{{else}}
+    			服务订单	
+        	{{/if}}
+        </td>
+        <td>
+        	{{$value.operator}}
+        </td>
+        <td>{{$value.fairername}}</td>
+        <td>{{$value.fairermoney}}</td>
+    </tr>
+    {{/each}}
+{{else}}
+    <tr>
+        <td colspan="10">暂无数据</td>
+    </tr>    
+{{/if}}

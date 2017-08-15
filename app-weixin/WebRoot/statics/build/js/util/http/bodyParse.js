@@ -1,0 +1,1 @@
+define(function(){function n(){var n,t,e,o,i,r,c;if(window.location.search){for(n=decodeURIComponent(window.location.search.split("?")[1]),t=n.split("&"),o=t.length,c={},r=0;o>r;r++)e=t[r].split("="),i=e.length,c[e[0]]=e[1];return c}return{}}return n});

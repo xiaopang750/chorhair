@@ -1,0 +1,113 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from WebService WSDL service -->
+
+  <service name="WebServiceSoap12" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://tempuri.org/"/>
+      <parameter name="wsdlServiceElement" value="WebService"/>
+      <parameter name="schemaQualified" value="http://tempuri.org/"/>
+      <parameter name="wsdlServicePort" value="WebServiceSoap12"/>
+      <parameter name="className" value="com.rockstar.o2o.webservice.shortmessage.WebServiceSoap12Skeleton"/>
+      <parameter name="wsdlPortType" value="WebServiceSoap"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <parameter name="allowedMethods" value="*"/>
+
+      <typeMapping
+        xmlns:ns="http://tempuri.org/"
+        qname="ns:RegistryInfo2"
+        type="java:com.rockstar.o2o.webservice.shortmessage.RegistryInfo2"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://tempuri.org/"
+        qname="ns:ArrayOfString"
+        type="java:java.lang.String[]"
+        innerType="cmp-ns:string" xmlns:cmp-ns="http://www.w3.org/2001/XMLSchema"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://tempuri.org/"
+        qname="ns:ArrayOfMOBody"
+        type="java:com.rockstar.o2o.webservice.shortmessage.MOBody[]"
+        innerType="cmp-ns:MOBody" xmlns:cmp-ns="http://tempuri.org/"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://tempuri.org/"
+        qname="ns:MOBody"
+        type="java:com.rockstar.o2o.webservice.shortmessage.MOBody"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://tempuri.org/"
+        qname="ns:RegistryInfo"
+        type="java:com.rockstar.o2o.webservice.shortmessage.RegistryInfo"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+  <service name="WebServiceSoap" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://tempuri.org/"/>
+      <parameter name="wsdlServiceElement" value="WebService"/>
+      <parameter name="schemaQualified" value="http://tempuri.org/"/>
+      <parameter name="wsdlServicePort" value="WebServiceSoap"/>
+      <parameter name="className" value="com.rockstar.o2o.webservice.shortmessage.WebServiceSoapSkeleton"/>
+      <parameter name="wsdlPortType" value="WebServiceSoap"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <parameter name="allowedMethods" value="*"/>
+
+      <typeMapping
+        xmlns:ns="http://tempuri.org/"
+        qname="ns:RegistryInfo2"
+        type="java:com.rockstar.o2o.webservice.shortmessage.RegistryInfo2"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://tempuri.org/"
+        qname="ns:ArrayOfString"
+        type="java:java.lang.String[]"
+        innerType="cmp-ns:string" xmlns:cmp-ns="http://www.w3.org/2001/XMLSchema"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://tempuri.org/"
+        qname="ns:ArrayOfMOBody"
+        type="java:com.rockstar.o2o.webservice.shortmessage.MOBody[]"
+        innerType="cmp-ns:MOBody" xmlns:cmp-ns="http://tempuri.org/"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://tempuri.org/"
+        qname="ns:MOBody"
+        type="java:com.rockstar.o2o.webservice.shortmessage.MOBody"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://tempuri.org/"
+        qname="ns:RegistryInfo"
+        type="java:com.rockstar.o2o.webservice.shortmessage.RegistryInfo"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+</deployment>

@@ -1,0 +1,80 @@
+/**
+ *description:table-for-pc
+ *author:fanwei
+ *date:2014/11/03
+ */
+
+@import "../config/config.less";
+@import "../config/func.less";
+@import "../extend/css3.less";
+
+//input元素
+
+@holder-size: 14px;
+@input-padding: 15px 15px;
+
+.ui-input-wrap {
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+	
+	&:after {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 15px;
+		height: 1px;
+		content: '';
+		background-color: #ddd;
+		transform: scaleY(.5);
+	}
+
+	&.line-full:after {
+		left:0;
+	}
+
+	& label {
+		float: left;
+		width: 10%;
+		padding: @input-padding;
+		font-family: "Helvetica Neue",Helvetica,sans-serif;
+		line-height: 1.1;
+	}
+
+	& input.form-control {
+		color:@light-gray;
+		font-size: @holder-size;
+		margin-bottom: 0;
+		background-color: transparent;
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+		float: right;
+		width: 90%;
+		padding-left: 0;
+		padding: @input-padding;
+		line-height: 21px;
+		.placeholder(@form-placeholder-color,  @holder-size);
+	}
+}
+
+
+.placeholder(@color,  @holder-size) {
+  &::-moz-placeholder           { color: @color; opacity: 1;font-size: @holder-size; } 
+  &:-ms-input-placeholder       { color: @color;font-size: @holder-size; } 
+  &::-webkit-input-placeholder  { color: @color;font-size: @holder-size; }
+}
+
+.select {
+	border:1px solid @input-border-color;
+	border-radius: 4px;
+	padding:2px 5px;
+}
+
+.normal-input {
+	border:1px solid @input-border-color;
+	border-radius: 5px;
+	padding:3px 10px;
+	width: 100%;
+}
+

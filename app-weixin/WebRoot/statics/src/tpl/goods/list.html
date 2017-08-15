@@ -1,0 +1,13 @@
+{{each goodsArr}}
+	<li>
+		<a href="{{$value.url}}">
+			<div class="img">
+				<img src="{{$value.firstpage}}" alt="">
+			</div>
+			<div class="text">
+				<p class="name">{{$value.topic | cut:14}}</p>
+				<p class="price"><em>￥{{$value.comboprice | cutPrice}}</em></p>
+			</div>
+		</a>
+	</li>
+{{/each}}

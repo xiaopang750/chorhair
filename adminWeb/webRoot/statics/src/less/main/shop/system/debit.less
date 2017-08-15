@@ -1,0 +1,42 @@
+/**
+ *description:抵用券档案
+ *author:fanwei
+ *date:2015/3/24
+ */
+
+@import "../../../config/config.less";
+@import "../../../config/func.less";
+@import "../../../extend/css3.less";
+@import "./syscom.less";
+
+.sys-left-bar {
+
+	& > ul > li {
+		border-bottom: none@i;
+	}
+
+}
+
+.adapt-box {
+	width: 450px;
+	height: 300px;
+	
+	& .package-list-wrap {
+
+		word-break:break-all;
+		height: 225px;
+		overflow: auto;
+
+		& span {
+			display: inline-block;
+			margin-bottom: 15px;
+		}
+	}
+
+	& .btn-area {
+		position: absolute;
+		bottom: 10px;
+		left:0;
+		width: 100%;
+	}
+}

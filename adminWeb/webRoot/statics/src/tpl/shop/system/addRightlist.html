@@ -1,0 +1,27 @@
+<!-- 档案管理列表 -->
+{{each list}}
+<tr sub-name-list>
+	<td list-sort>
+		{{$index + 1}}
+	</td>
+	<td can-edit sub-name="awardname" re="^.{1,10}$" msg="提成名称为10个字以内" tip="提成名称不能为空">
+		{{$value.awardname}}
+	</td>
+	<td>
+		<select {{if type=='look'}}disabled="disabled"{{/if}} sub-name="israte" re="^.+$" msg="请选择提成方式" tip="请选择提成方式" class="form-control">
+			<option value="">请选择</option>
+			<option value="1" {{if $value.israte == 1}}selected="selected"{{/if}}>固定额度</option>
+			<option value="2" {{if $value.israte == 2}}selected="selected"{{/if}}>比例提成</option>
+		</select>
+	</td>
+	<td can-edit sub-name="awardmoney" {{if $value.israte == 1}}re="^\d+$" msg="提成值只能为数字" tip="提成值不能为空"{{else if $value.israte == 2}}re="^(([1-9]\d?)|100)$" msg="提成比例为100以内的数字" tip="提成比例不能为空"{{else}}ignorecheck="yes"{{/if}}>
+		{{$value.awardmoney}}
+	</td>
+	<td>
+		{{if type != 'look'}}
+		<a href="javascript:;" aid="{{$value.pkFaireraward}}" edit>编辑</a>
+		{{/if}}
+		<span class="ba-none" sub-name="pkFaireraward" ignorecheck="yes">{{$value.pkFaireraward}}</span>
+	</td>
+</tr>
+{{/each}}

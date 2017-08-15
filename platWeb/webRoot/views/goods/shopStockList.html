@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+{{include '../include/meta'}}
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/goods/stockList.css">
+</head>
+
+<body>
+	{{include '../include/header'}}
+	<div class="main-content">
+		{{include '../include/nav'}}
+		{{include '../include/msg'}}
+		<div class="center-bar">
+			<div class="bar-title ba-clearfix">
+				<span class="ba-intro">{{title}}</span>
+			</div>
+			<div class="main-content">
+				<div class="ba-mb-20">
+					<a href="{{views['goods/stockList'].url}}" class="btn btn-warning">平台库存</a>
+					<a href="javascript:;" class="btn btn-warning ba-default active">店铺库存</a>
+				</div>
+				<div class="select-area ba-clearfix">
+					<div class="select-shop">选择店铺：</div>
+					<div class="related-select" area-wrap>
+						<select class="form-control" province name="province" pkArea="" areaname="">
+							<option value="">请选择省</option>
+						</select>
+					</div>
+					<div class="related-select" area-wrap>
+						<select class="form-control" city name="city" pkArea="" areaname="">
+							<option value="">请选择市</option>
+						</select>
+					</div>
+					<div class="related-select" area-wrap>
+						<select class="form-control" area name="county" pkArea="" areaname="">
+							<option value="">请选择区</option>
+						</select>
+					</div>
+					<div class="shop-select">
+						<select class="form-control" shop>
+							<option value="">请选择店铺</option>
+						</select>
+					</div>
+				</div>
+				<div class="ba-clearfix search-area ba-mt-20">
+					<label class="ba-fl ba-mt-6 ba-mr-10 control-label">搜索库存:</label>
+
+					<input type="text" class="ba-fl form-control ba-mr-10 search-input" search-input>
+
+					<a href="javascript:;" class="btn btn-primary ba-fl ba-mr-10" search-btn>查询</a>
+				</div>
+				<div class="ba-mt-20">
+					<table class="table bordered striped" width="100%" list-wrap>
+						<thead>
+							<tr>
+								<td width="20%">商品名称</td>
+								<td width="15%">品牌</td>
+								<td width="15%">系列</td>
+								<td width="10%">货号</td>
+								<td width="10%">商品数量</td>
+								<td width="10%">容量</td>
+								<td width="10%">容量单位</td>
+								<td width="10%">标准价格</td>
+							</tr>
+						</thead>
+						<tbody data-ele="data-wrap">
+							<!-- tpl/goods/shopStockList.html -->
+						</tbody>
+					</table>
+					<!-- fenye -->
+					{{include '../include/fenye'}}
+				</div>
+			</div>	
+		</div>	
+	</div>
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/goods/shopStockList');
+</script>
+</body>
+</html>

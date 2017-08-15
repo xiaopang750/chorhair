@@ -1,0 +1,2 @@
+/*! company 罗格斯达 version 1.0.0 2015-06-17 */
+define("widget/dom/contentEnd",[],function(e,t,r){function i(e){if(e.focus(),window.getSelection){var t=window.getSelection(),r=document.createRange(),i=e.childNodes.length;r.setStart(e,i),r.setEnd(e,i),t.removeAllRanges(),t.addRange(r)}else{var r=document.selection.createRange(),i=e.innerHTML.length;r.moveEnd("character",i),r.collapse(!0),r.select()}}r.exports=i});

@@ -1,0 +1,14 @@
+<!-- 库存修改记录 -->
+{{if list}}
+	{{each list}}
+		<tr list>
+			<td>{{$value.operatetime}}</td>
+			<td>{{$value.operator}}</td>
+			<td>{{$value.operatecontent}}</td>
+		</tr>
+	{{/each}}
+{{else}}
+	<tr>
+		<td colspan="3">暂无数据</td>
+	</tr>
+{{/if}}

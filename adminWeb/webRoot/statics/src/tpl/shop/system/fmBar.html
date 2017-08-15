@@ -1,0 +1,26 @@
+{{each data}}
+<li list-main gid="{{$value.pkShopGroup}}">
+	<div class="item" hover-list>
+		<span class="hover-item" list-item gid="{{$value.pkShopGroup}}" get-sub>
+			<span>
+				{{$value.groupname}}
+			</span>
+			<span class="fa fa-angle-down"></span>
+			<span class="fa fa-angle-up"></span>
+		</span>
+		<span class="func-icon" func-icon>
+			<!-- <span class="hover-item fa fa-remove" title="禁用" aid="" remove></span> -->
+			<span class="hover-item fa fa-edit" title="编辑" gid="{{$value.pkShopGroup}}" group-eidt></span>
+		</span>
+	</div>
+	<div class="sub-wrap">
+		<ul sub-wrap>
+			
+		</ul>
+		<div class="sub-add item" sub-add gid="{{$value.pkShopGroup}}">
+			<span class="fa fa-plus"></span>
+			<span>新价位</span>
+		</div>
+	</div>
+</li>
+{{/each}}

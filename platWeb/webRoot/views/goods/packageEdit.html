@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+{{include '../include/meta'}}
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/goods/packageEdit.css">
+</head>
+
+<body>
+	{{include '../include/header'}}
+	<div class="main-content">
+		{{include '../include/nav'}}
+		{{include '../include/msg'}}
+		<div class="center-bar">
+			<div class="bar-title ba-clearfix">
+				<span class="ba-intro">{{title}}</span>
+			</div>
+			<div class="main-content">
+				<div class="package-edit-wrap" script-bound = "form-check">
+					<div class="select-area ba-clearfix">
+						<div class="select-shop">选择店铺：</div>
+						<div class="related-select" area-wrap>
+							<select class="form-control" province name="province" pkArea="" areaname="">
+								<option value="">请选择省</option>
+							</select>
+						</div>
+						<div class="related-select" area-wrap>
+							<select class="form-control" city name="city" pkArea="" areaname="">
+								<option value="">请选择市</option>
+							</select>
+						</div>
+						<div class="related-select" area-wrap>
+							<select class="form-control" area name="county" pkArea="" areaname="">
+								<option value="">请选择区</option>
+							</select>
+						</div>
+						<div class="shop-select">
+							<select class="form-control" shop>
+								<option value="">请选择店铺</option>
+							</select>
+						</div>
+					</div>
+					<table width="100%" class="table no-bg no-border ba-mt-20">
+						<tr>
+							<td width="20%">套餐名称：</td>
+							<td width="30%" comboname></td>
+							<td width="25%"></td>
+							<td width="25%"></td>
+						</tr>
+						<tr>
+							<td width="10%">标准价格：</td>
+							<td width="40%">
+								<div script-role="check-wrap">
+									<input type="text" class="form-control" form_check="sys" ischeck="true" name="shopmoney" tip="此项为必填" wrong="请填写数字" re="([0-9]\d*)" value="" disabled="disabled" combomoney>
+								</div>
+							</td>
+							<td width="25%"></td>
+							<td width="25%"></td>
+						</tr>
+						<tr>
+							<td width="10%">套餐提成组：</td>
+							<td width="40%">
+								<div script-role="check-wrap">
+									<select type="text" class="form-control" name="pkServicegroup" form_check="sys" ischeck="true" tip="请选择" wrong="" re=".+" pkServicegroup>
+										<option value="">请选择</option>
+									</select>
+								</div>
+							</td>
+							<td width="25%"></td>
+							<td width="25%"></td>
+						</tr>
+						<tr>
+							<td width="10%">附加项目组：</td>
+							<td width="40%">
+								<div script-role="check-wrap">
+									<select type="text" class="form-control" name="pkAdditiongroup" form_check="sys" tip="请选择" wrong="" re=".+" pkAdditiongroup>
+										<option value="">请选择</option>
+									</select>
+								</div>
+							</td>
+							<td width="25%"></td>
+							<td width="25%"></td>
+						</tr>
+						<tr>
+							<td width="10%">备注：</td>
+							<td width="40%">
+								<div script-role="check-wrap">
+									<textarea class="form-control" form_check="sys" ischeck="free" name="combonote" tip="" wrong="请填写100字以内的备注" re="((.|\n){1,100})" combonote></textarea>
+								</div>
+							</td>
+							<td width="25%"></td>
+							<td width="25%"></td>
+						</tr>
+						<tr>
+							<td colspan="4" class="ba-tl">
+								<ul class="commission" awards-wrap>
+								</ul>
+								<div class="func-btn" func-btn style="display:none">
+									<button class="btn btn-primary" sub-add>
+										<span class="fa fa-plus"></span>
+									</button>
+									<button class="btn btn-danger" sub-reduce>
+										<span class="fa fa-minus"></span>
+									</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<a href="javascript:;" class="btn btn-primary" script-role = "confirm-btn">确定</a>
+								<a href="{{views['goods/list'].url}}" class="btn btn-danger">取消</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>	
+		</div>	
+	</div>
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/goods/packageEdit');
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- 套餐信息 -->
+{{if list}}
+	{{each list}}
+	<tr list-info>
+		<td packname>{{$value.comboname}}</td>
+		<td>
+			{{if $value.combotype == 1}}
+			全年不限次
+			{{else}}
+			{{$value.leftcount}}次
+			{{/if}}
+		</td>
+		<td>{{$value.combobuytime}}</td>
+		<td>{{$value.combobegintime}}</td>
+		<td>
+			{{if $value.comboendtime}}
+				{{timeLeft($value.comboendtime, curdate)}}天
+			{{/if}}
+		</td>	
+		<td class="ba-tl">
+			<p class="ba-mb-5">理发师:{{$value.lastfairername}}</p>
+			<p class="ba-mb-5">金额:{{$value.lastmoney}}</p>
+			<p>时间:{{$value.lastusetime}}</p>
+		</td>
+		<td money>{{$value.combomoney}}</td>
+		<td>
+			<a class="btn btn-normal" href="{{$value.orderUrl}}&spid={{$value.pkShopCombo}}&comboid={{$value.pkCustomerCombo}}" order spid="{{$value.pkShopCombo}}">下单</a>
+			<!-- <a class="btn btn-normal" href="javascript:;" aid="{{$value.pkCustomerCombo}}" {{if $value.pkCustomerCombo == 0}}class="ba-hidden"{{/if}} edit>编辑</a> -->
+		</td>
+	</tr>
+	{{/each}}
+{{else}}
+	<tr>
+		<td colspan="8">暂无数据</td>
+	</tr>
+{{/if}}

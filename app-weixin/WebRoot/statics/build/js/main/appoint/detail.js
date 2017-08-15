@@ -1,0 +1,1 @@
+define(function(e){e("../../driver/global");{var i=R.Class.create(R.util,{initialize:function(){this.loadData(),this.events()},loadData:function(){var e=this.parse().aid,i={pkOrder:e};this.req("/order/querybyorder.php",i,function(e){console.log(e),""!=e.data})},events:function(){}});new i}});

@@ -1,0 +1,50 @@
+/**
+ *description:套餐信息
+ *author:fanwei
+ *date:2015/01/23
+ */
+ 
+@import "../../../config/config.less";
+@import "../../../config/func.less";
+@import "../../../extend/css3.less";
+
+.package-list-wrap {
+
+	& li {
+		background: #fff;
+		border:1px solid @input-border-color;
+		border-left:none;
+		border-right:none;
+		color:@dark-gray;
+		font-size: 1.2em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+
+		& dl {
+
+			& dt {
+				height: 2.8em;
+				line-height: 2.8em;
+				font-size: 1.1em;
+				border-bottom:1px solid @input-border-color;
+			}
+
+			& dd {
+				padding:0.8em 0;
+
+				& table {
+
+					& td {
+						float: left;
+						padding:0.2em 0;
+						vertical-align: top;
+						line-height: 1.3em;
+					}
+
+				}
+			}
+
+		}
+	}
+
+}

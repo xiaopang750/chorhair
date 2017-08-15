@@ -1,0 +1,61 @@
+<!-- 美丽记录 -->
+{{each data}}
+	<li class="record-list">
+		<div class="col-11 ba-auto">
+			<dl class="ba-clearfix">
+				<dt class="ba-fl">
+					<p class="ba-font-1-5">{{$value.date.day}}</p>
+					<p class="ba-font-1-3">{{$value.date.month}}</p>
+				</dt>
+				<dd class="ba-fl">
+					<div class="ba-mb-7 ba-mt-5">
+						<span class="ba-font-1-2">今天换了个新发型~！</span>
+					</div>
+					<div gallery-wrap class="photo-list ba-clearfix">
+						{{each $value.records}}
+							<div><a href="{{$value.pictureurl}}"><img src="{{$value.pictureshorturl}}" alt=""></a></div>
+						{{/each}}
+					</div>
+					<!-- <div class="bar ba-tr ba-mt-3 ba-mb-8 ba-light-gray ba-font-1-2">
+						<label comment-btn><span class="ba-font-16 icon icon-message ba-mr-5"></span><span>评论</span></label>
+					</div> -->
+					<div class="arg-area ba-mt-5">
+						<div comment-wrap>
+							<ul class="arg-list-wrap" comment-list>
+								{{each $value.spitslots}}
+									<li class="ba-mb-5" comment-item>
+										<dl class="ba-clearfix">
+											<dd>
+												<div class="ba-clearfix ba-mb-5">
+													{{if $value.replyman}}
+													<h5 spitslotor-id={{$value.spitslotorid}}  class="ba-fl namer">{{$value.spitslotor}}</h5><span class="ba-fl ba-ml-5 ba-mr-5">回复</span><h5 replyman-id={{$value.replymanid}} class="ba-fl namer">{{$value.replyman}}</h5>
+													{{else}}
+													<h5 spitslotor-id={{$value.spitslotorid}} class="ba-fl namer">{{$value.spitslotor}}</h5>
+													{{/if}}
+													<span class="comment-time ba-fr">{{$value.ts}}</span>
+												</div>
+												<p>{{$value.spitslotcontent}}</p>
+											</dd>
+										</dl>
+									</li>
+								{{/each}}
+							</ul>
+							<!-- 加载更多 -->
+							<div class="ba-none ba-tc ba-mt-10 ba-mb-4 ba-light-gray" extend>展开评论</div>
+							<!-- 评论框 -->
+							<section class="arg-input">
+								<div class="ba-auto ba-clearfix">
+									<form comment-form>
+										<input class="ba-font-1-0" type="text ba-fl" comment-input>
+										<input class="ba-none" type="submit">
+										<span class="ba-pink ba-fr ba-pt-5 ba-pl-5 ba-pr-5 ba-font-1-1" comment-send>发送</span>
+									</form>
+								</div>
+							</section>
+						</div>		
+					</div>
+				</dd>
+			</dl>
+		</div>
+	</li>
+{{/each}}

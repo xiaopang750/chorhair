@@ -1,0 +1,44 @@
+/**
+ *description: 我的预约
+ *author:fanwei
+ *date:2015/01/21
+ */
+
+@import "../../../config/config.less";
+@import "../../../config/func.less";
+@import "../../../extend/css3.less";
+
+.appoint-list {
+
+	& li {
+		background: #fff;
+		border: 1px solid @input-border-color;
+		border-left:none;
+		border-right:none;
+		position: relative;
+		margin-bottom: 2em;
+		
+	}
+
+	& .list-head {
+		height: 3em;
+		line-height: 3em;
+		font-size: 1.2em;
+		border-bottom: 1px solid @input-border-color;
+		color:@light-gray;
+	}
+	
+	& table td {
+		padding:2px 0;
+		line-height: 1.5em;
+		color:@light-gray;
+	}
+
+	& .icon {
+		position: absolute;
+		right: 5px;
+		top:50%;
+		margin-top:-10px;
+	}
+
+} 

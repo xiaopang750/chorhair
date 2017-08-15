@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+{{include '../include/meta'}}
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/shop/shopList.css">
+</head>
+
+<body>
+	{{include '../include/header'}}
+	<div class="main-content">
+		{{include '../include/nav'}}
+		{{include '../include/msg'}}
+		<div class="center-bar">
+			<div class="bar-title ba-clearfix">
+				<span class="ba-intro">{{title}}</span>
+				<a href="javascript:;" class="btn btn-primary bar-right-btn" shop-add>新增店铺</a>
+			</div>
+			<div class="main-content">
+				<div class="select-area ba-clearfix">
+					<div class="select-shop">选择店铺：</div>
+					<div class="related-select" area-wrap>
+						<select class="form-control" province name="province" pkArea="" areaname="">
+							<option value="">请选择省</option>
+						</select>
+					</div>
+					<div class="related-select" area-wrap>
+						<select class="form-control" city name="city" pkArea="" areaname="">
+							<option value="">请选择市</option>
+						</select>
+					</div>
+					<div class="related-select" area-wrap>
+						<select class="form-control" area name="county" pkArea="" areaname="">
+							<option value="">请选择区</option>
+						</select>
+					</div>
+					<div class="shop-select">
+						<select class="form-control" shop>
+							<option value="">请选择店铺</option>
+						</select>
+					</div>
+					<a href="javascript:;" class="btn btn-primary" search-shop-btn>查询</a>
+				</div>
+				<table class="table bordered striped ba-mt-20" width="100%" list-wrap data-ele="data-wrap">
+					<!-- tpl/shop/shopList.html -->
+				</table>
+				<!-- fenye -->
+				{{include '../include/fenye'}}
+			</div>	
+		</div>	
+	</div>
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/shop/shopList');
+</script>
+</body>
+</html>

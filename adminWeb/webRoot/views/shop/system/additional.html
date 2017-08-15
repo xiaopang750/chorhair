@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+{{include '../include/meta'}}
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/shop/system/additional.css">
+</head>
+
+<body>
+	{{include '../include/header'}}
+	<div class="main-content">
+		{{include '../include/nav'}}
+		{{include '../include/msg'}}
+		<div class="center-bar">
+			<div class="bar-title ba-clearfix">
+				<span class="ba-intro">{{title}}</span>
+			</div>
+			<div class="main-content">
+				<div class="sys-wrap ba-clearfix">
+					<div class="sys-left-bar">
+						<ul list-bar>
+							
+						</ul>
+						<div class="group-add ba-tc" group-add>
+							<span class="fa fa-plus"></span>
+							<span>新附加项目组</span>
+						</div>
+					</div>
+					<div class="sys-right-bar" right-content-wrap>
+						
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/shop/system/additional');
+</script>
+</body>
+</html>

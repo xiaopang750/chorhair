@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+{{include '../include/meta'}}
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/goods/platBookAddEdit.css">
+</head>
+
+<body>
+	{{include '../include/header'}}
+	<div class="main-content">
+		{{include '../include/nav'}}
+		{{include '../include/msg'}}
+		<div class="center-bar">
+			<div class="bar-title ba-clearfix">
+				<span class="ba-intro">{{title}}</span>
+				<a href="{{views['goods/platBookList'].url}}" class="btn btn-primary back-btn">返回</a>
+			</div>
+			<div class="main-content">
+				<table class="table bordered striped" width="100%" list-wrap>
+					<thead>
+						<tr>
+							<td width="20%" goods-name>商品名称</td>
+							<td width="10%">订货数量</td>
+							<td width="10%">发货数量</td>
+							<td width="10%">实收数量</td>
+							<td width="10%">单位</td>
+							<td width="10%">容量</td>
+							<td width="20%">标准价格</td>
+							<td width="10%">操作</td>
+						</tr>
+					</thead>
+					<tbody product-list>
+						{{each pageInfo.bookdetail}}
+						<tr list pkProductBookB={{$value.pkProductBookB}}>
+							<td>{{$value.productname}}</td>
+							<td>{{$value.productnum}}</td>
+							<td data="approvenum">{{$value.approvenum}}</td>
+							<td data="realnum">{{$value.realnum}}</td>
+							<td>{{$value.productunit}}</td>
+							<td>{{$value.productcapacity}}</td>
+							<td data="productprice">{{$value.productprice}}</td>
+							<td>
+								{{if pageInfo.vbillstatus == '2' || pageInfo.vbillstatus == '4'}}
+								<a class="btn btn-normal" href="javascript:;" modify-approvenum>修改发货数量</a>
+								{{/if}}
+							</td>
+						</tr>
+						{{/each}}
+					</tbody>
+				</table>
+				<p class="ba-mt-20 ba-font-14">总金额：<strong class="ba-red" amount-money>{{pageInfo.bookmoney}}</strong> 元</p>
+				<p class="ba-mt-10 ba-font-14">订货负责人：<span operatorname>{{pageInfo.operatorname}}</span></p>
+				<p class="ba-mt-10 ba-font-14 ba-clearfix">
+					<span class="ba-fl">备注：</span>
+					<span class="ba-fl" book-note>{{pageInfo.note}}</span>
+				</p>
+				<!-- fenye -->
+				{{include '../include/fenye'}}
+				{{if pageInfo.vbillstatus == '2'}}
+				<div class="ba-mt-30 ba-tc" operation-btns> 
+					<a href="javascript:;" class="btn btn-primary" operation="pass">通过</a> 
+					<a href="javascript:;" class="btn btn-danger" operation="reject">驳回</a> 
+				</div>
+				{{else if pageInfo.vbillstatus == '4'}}
+				<div class="ba-mt-30 ba-tc" operation-btns> 
+					<a href="javascript:;" class="btn btn-primary" operation="send">发货</a>
+					<a href="{{views['goods/platBookList'].url}}" class="btn btn-danger">取消</a>  
+				</div>
+				{{/if}}
+			</div>	
+		</div>	
+	</div>
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/goods/platBookAddEdit');
+</script>
+</body>
+</html>

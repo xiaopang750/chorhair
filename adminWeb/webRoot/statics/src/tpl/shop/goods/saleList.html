@@ -1,0 +1,7 @@
+<!-- 抵用券列表 -->
+{{each data}}
+	<span>
+		<input type="checkbox" id="{{$index}}" {{if $value.selectaward =='Y'}}checked="checked"{{/if}} awardname="{{$value.awardname}}" nowId="{{$value.pkCustomeraward}}" selectId="{{$value.pkComboAward}}" awardvalue="{{$value.awardvalue}}" sale-item>
+		<label for="{{$index}}">{{$value.awardname}}（{{$value.awardvalue}}元）</label>
+	</span>
+{{/each}}

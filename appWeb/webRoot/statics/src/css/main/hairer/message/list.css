@@ -1,0 +1,63 @@
+/**
+ *description:消息列表
+ *author:fanwei
+ *date:2015/01/21
+ */
+/**
+ *description:网站全局less变量-配置
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* use-most-var */
+/* color */
+/* a-link */
+/* font-family */
+/* h-size */
+/* btn */
+/* layer */
+/* site-config */
+/**
+ *description:网站全局less函数-pc
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* line-height */
+/* font-size */
+/* margin */
+/* padding */
+/* opacity */
+/* trangle */
+/**
+ *description:css3-pc
+ *author:fanwei
+ *date:2014/10/31
+ */
+.msg-list ul li {
+  width: 100%;
+  background: #fff;
+  padding: 1em 0;
+  border-bottom: 1px solid #dddddd;
+}
+.msg-list ul li dl {
+  width: 95%;
+  margin: 0 auto;
+}
+.msg-list ul li dl dt {
+  width: 20%;
+}
+.msg-list ul li dl dt img {
+  width: 100% !important;
+  height: auto !important;
+}
+.msg-list ul li dl dd {
+  width: 38%;
+}
+.msg-list ul li dl dd.text {
+  font-size: 1.1em;
+}
+.msg-list ul li dl [look] {
+  width: 75%;
+}
+.msg-list ul li .btn {
+  border: 1px solid #dddddd;
+}

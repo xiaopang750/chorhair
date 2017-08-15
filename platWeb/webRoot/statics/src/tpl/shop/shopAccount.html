@@ -1,0 +1,33 @@
+<!-- 店铺账号 -->
+<thead>
+	<tr>
+		<td width="20%">账号</td>
+		<td width="20%">所属店铺</td>
+		<td width="10%">操作人</td>
+		<td width="20%">手机号码</td>
+		<td width="20%">注册时间</td>
+		<td width="10%">操作</td>
+	</tr>
+</thead>
+<tbody>
+{{if list}}
+	{{each list}}
+	<tr>
+		<td>{{$value.shopusercode}}</td>
+		<td>{{$value.shopname}}</td>
+		<td>{{$value.shopusername}}</td>
+		<td>{{$value.cellphone}}</td>
+		<td>{{$value.registertime}}</td>
+		<td>
+			<p>
+				<a class="btn btn-normal" account-edit pkShop="{{$value.pkShop}}" pkShopuser="{{$value.pkShopuser}}" shopusercode="{{$value.shopusercode}}" shopusername="{{$value.shopusername}}" cellphone="{{$value.cellphone}}">编辑账号</a>
+			</p>
+		</td>
+	</tr>
+	{{/each}}
+{{else}}
+	<tr>
+		<td colspan="6">暂无数据</td>
+	</tr>
+{{/if}}
+</tbody>

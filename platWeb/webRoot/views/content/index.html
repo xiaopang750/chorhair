@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+{{include '../include/meta'}}
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/content/index.css">
+</head>
+
+<body>
+	{{include '../include/header'}}
+	<div class="main-content">
+		{{include '../include/nav'}}
+		{{include '../include/msg'}}
+		<div class="center-bar">
+			<div class="bar-title ba-clearfix">
+				<span class="ba-intro">{{title}}</span>
+				{{if userType == 2}}
+				<a href="{{views['content/addEdit'].url}}" class="btn btn-primary bar-right-btn">添加</a>
+				{{/if}}	
+			</div>
+			<div class="main-content">
+				<div class="ba-clearfix">
+					<label class="ba-fl ba-mt-5 control-label">开始时间：</label>
+					<input type="text" class="startTime form-control ba-fl ba-mr-10" readonly="readonly" calendar="" search="begintime">
+					<label class="ba-fl ba-mt-5 control-label">结束时间：</label>
+					<input type="text" class="endTime form-control ba-fl ba-mr-10" calendar="" search="endtime" readonly="readonly">
+					<a class="btn btn-primary ba-fl" href="javascript:;" search-content-btn>查询</a>
+				</div>
+				<table class="table bordered striped ba-mt-20" width="100%" list-wrap>
+					<thead>
+						<tr>
+							<td width="60%">主题</td>
+							<td width="40%">管理</td>
+						</tr>
+					</thead>
+					<tbody data-ele="data-wrap">
+						<!--  -->
+					</tbody>
+				</table>
+				<!-- fenye -->
+				{{include '../include/fenye'}}
+			</div>	
+		</div>	
+	</div>
+
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/content/index');
+</script>
+</body>
+</html>

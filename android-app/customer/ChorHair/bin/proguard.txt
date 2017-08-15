@@ -1,0 +1,58 @@
+# view AndroidManifest.xml #generated:217
+-keep class com.baidu.location.f { <init>(...); }
+
+# view AndroidManifest.xml #generated:304
+-keep class com.igexin.download.DownloadProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:298
+-keep class com.igexin.download.DownloadReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:294
+-keep class com.igexin.download.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:309
+-keep class com.igexin.getuiext.activity.GetuiExtActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:330
+-keep class com.igexin.getuiext.service.GetuiExtService { <init>(...); }
+
+# view AndroidManifest.xml #generated:318
+-keep class com.igexin.getuiext.service.PayloadReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:285
+-keep class com.igexin.sdk.PushActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:277
+-keep class com.igexin.sdk.PushManagerReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:269
+-keep class com.igexin.sdk.PushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:262
+-keep class com.igexin.sdk.PushService { <init>(...); }
+
+# view AndroidManifest.xml #generated:180
+-keep class io.dcloud.PandoraEntry { <init>(...); }
+
+# view AndroidManifest.xml #generated:206
+-keep class io.dcloud.adapter.io.MiniServerService { <init>(...); }
+
+# view AndroidManifest.xml #generated:342
+-keep class io.dcloud.feature.aps.NotificationReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:334
+-keep class io.dcloud.feature.aps.PushMessageReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:195
+-keep class io.dcloud.imagepick.CustomGalleryActivity { <init>(...); }
+
+# view res/layout/image_pick_gallery_item.xml #generated:13
+# view res/layout/image_pick_gallery_item.xml #generated:21
+-keep class io.dcloud.imagepick.SquareImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:380
+-keep class io.dcloud.share.tencent.WebAuthorize { <init>(...); }
+
+# view AndroidManifest.xml #generated:176
+-keep class io.dcloud.splash.SplashActivity { <init>(...); }
+

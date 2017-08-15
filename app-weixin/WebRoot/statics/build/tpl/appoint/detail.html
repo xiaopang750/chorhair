@@ -1,0 +1,34 @@
+<p class="appoint-num">
+	<span>服务编号：</span>
+	<span>{{orderno}}</span>
+</p>
+<p>
+	<span>订单类型：</span>
+	<span>
+		{{if iscombo == 'Y'}}
+		套餐订单
+		{{else}}
+		服务订单
+		{{/if}}
+	</span>
+</p>
+<p>
+	<span>服务内容：</span>
+	<span>{{comboname}}</span>
+</p>
+<p>
+	<span>服务店铺：</span>
+	<span>{{shopname}}</span>
+</p>
+<p>
+	<span>服务人员：</span>
+	<span>{{fairername}}</span>
+</p>
+<p>
+	<span>服务时间：</span>
+	<span>{{ordetime}}</span>
+</p>
+<p>
+	<span>支付金额：</span>
+	<span>{{ordermoney}}元</span>
+</p>

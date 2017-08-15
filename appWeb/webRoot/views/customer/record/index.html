@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/customer/record/index.css">
+</head>
+
+<body pageLevel="{{pageLevel}}">
+
+	{{include '../include/header'}}
+	
+	<!-- loading -->
+	<section class="page-loading" page-loading><img src="{{imgPath}}lib/loading/btn_loading_r.gif" alt=""></section>
+	
+	<!-- loading-wrap -->
+	<section class="loading-wrap" loading-wrap>
+		<section class="record-list-wrap">
+			<ul></ul>
+		</section>
+	</section>
+
+	<!-- 图片浏览 -->
+	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+	    <div class="slides"></div>
+	    <ol class="indicator"></ol>
+	</div>	
+
+{{include '../include/indexFooter'}}
+	
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/customer/record/index');
+</script>
+
+</body>
+</html>

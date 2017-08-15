@@ -1,0 +1,69 @@
+{{each appointArr}}
+	<li aid="{{$value.pkOrder}}">
+		<p class="appoint-num">
+			<span>服务编号：</span>
+			<span>{{$value.orderno}}</span>
+		</p>
+		<p>
+			<span>订单类型：</span>
+			<span>
+				{{if $value.iscombo == 'Y'}}
+				套餐订单
+				{{else if $value.orderstatus == '003'}}
+				预约单
+				{{else}}
+				服务订单
+				{{/if}}
+			</span>
+		</p>
+		<p>
+			<span>服务内容：</span>
+			<span>{{$value.comboname}}</span>
+		</p>
+		<p>
+			<span>服务店铺：</span>
+			<span>{{$value.shopname}}</span>
+		</p>
+		{{if $value.fairername}}
+		<p>
+			<span>服务人员：</span>
+			<span>{{$value.fairername}}</span>
+		</p>
+		{{/if}}
+		{{if $value.appointtime == ''}}
+		<p>
+			<span>服务时间：</span>
+			<span>{{$value.ordetime}}</span>
+		</p>
+		{{else}}
+		<p>
+			<span>预约时间：</span>
+			<span>{{$value.appointtime}}</span>
+		</p>
+		{{/if}}
+		{{if $value.appointtime == '' && $value.discount}}
+		<p>
+			<span>优惠金额：</span>
+			<span>{{$value.discount}}元</span>
+		</p>
+		{{/if}}
+		{{if $value.paymode}}
+		<p>
+			<span>支付方式：</span>
+			{{if $value.paymode == '1'}}
+			<span>现金</span>
+			{{else if $value.paymode == '2'}}
+			<span>刷卡</span>
+			{{else if $value.paymode == '3'}}
+			<span>微信支付</span>
+			{{else if $value.paymode == '4'}}
+			<span>支付宝支付</span>
+			{{/if}}
+		</p>
+		{{/if}}
+		<p>
+			<span>支付金额：</span>
+			<span>{{$value.ordermoney}}元</span>
+		</p>
+	</li>
+{{/each}}

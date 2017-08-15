@@ -1,0 +1,127 @@
+<!-- 首页结算单模板 -->
+<li sum-list class="ba-rel" pid="{{pkOrder}}" pkcombo="{{pkCombo}}">
+    <span class="packType">
+        {{if iscombo}}
+        <span class="ba-red">
+            套餐订单
+        </span>
+        {{else}}
+        <span class="ba-qing">
+            服务订单
+        </span>
+        {{/if}}
+    </span>
+    <div>
+        <table cellpadding="0" cellspacing="0" border="0" class="ba-mb-5">
+            <tr>
+                <td width="65">
+                    客人:
+                </td>
+                <td>
+                    {{customername}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    电话号码:
+                </td>
+                <td>
+                    {{cellphone}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    套餐:
+                </td>
+                <td>
+                    {{comboname}}
+                </td>
+            </tr>
+            <tr>
+                {{if servicemoney}}
+                <td width="65">
+                    服务金额:
+                </td>
+                <td base>
+                    {{servicemoney}}元
+                </td>
+                {{else}}
+                <td width="65">
+                    套餐金额:
+                </td>
+                <td base>
+                    {{ordermoney}}元
+                </td>
+                {{/if}}
+            </tr>
+            <tr>
+                <td>
+                    理发师:
+                </td>
+                <td>
+                    {{fairername}}
+                </td>
+            </tr>
+        </table>
+        <table cellpadding="0" cellspacing="0" border="0">
+            {{each addition as value2 index2}}
+            <tr>
+                <td class="ba-vt-t ba-pt-5" width="70">
+                    附加项目:                
+                </td>
+                <td colspan="3" other-list-wrap>
+                    <div class="ba-clearfix ba-mb-10">
+                        <span class="ba-fl ba-mt-5 ba-mr-5">{{value2.additionname}}:</span>
+
+                        <input type="text" class="form-control col-3 ba-mr-5 ba-mr-10" sum-item otherPay id="{{value2.id}}" namer="{{value2.name}}" pkAddition="{{value2.pkAddition}}" pkDetail="{{value2.pkDetail}}" additionname="{{value2.additionname}}" value="{{value2.additionmoney}}">
+                        <span class="ba-mt-5 ba-fl">元</span>
+                    </div>
+                    <div>
+                        {{each value2.awardsplit as $value3 $index3}}
+                        <div class="form-group ba-fl col-4 ba-mr-5">
+                            <label class="ba-mb-2 ba-mr-5 ba-fl">{{$value3.awardname}}:</label>
+                            <input type="text" class="form-control" readonly="readonly" otherfairer="" awardmoney="{{$value3.awardmoney}}" israte="{{$value3.israte}}" other-list fairername="{{$value3.fairername}}" value="{{$value3.fairername}}" pkfairer="{{$value3.pkFairer}}" awardname="{{$value3.awardname}}">
+                        </div>
+                        {{/each}}
+                    </div>
+                </td>
+            </tr>
+            {{/each}}
+            <tr>
+                <td>
+                    优惠金额:
+                </td>
+                <td>
+                    <input class="form-control discount" discount type="text" value="{{discount}}">
+                    <span class="ba-fl ba-mt-5">元</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    结算方式：
+                </td>
+                <td>
+                    <select class="form-control paymode" paymode>
+                        <option value="1">现金</option>
+                        <option value="2">刷卡</option>
+                        <option value="3">微信</option>
+                        <option value="4">支付宝</option>
+                    </select>
+                    <a class="btn btn-warning dosage" href="javascript:;" dosage>用量</a>
+                </td>
+            </tr>
+        </table>
+        <div class="ba-clearfix">
+            <span class="ba-fl ba-mt-5">
+                总计:
+                <span sum-all org="{{ordermoney}}">
+                    {{ordermoney}}
+                </span>
+                元
+            </span>
+        </div>
+    </div>
+    <a href="javascript:;" class="btn btn-primary sum-btn" sum-btn aid="{{pkOrder}}">
+        结算
+    </a>
+</li>

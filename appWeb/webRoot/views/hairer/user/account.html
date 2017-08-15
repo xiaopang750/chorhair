@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/hairer/user/account.css">
+</head>
+
+<body pageLevel="{{pageLevel}}">
+
+	{{include '../include/header'}}
+
+	<!-- loading -->
+	<section class="page-loading" page-loading><img src="{{imgPath}}lib/loading/btn_loading_r.gif" alt=""></section>
+	
+	<!-- loading-wrap -->
+	<section class="loading-wrap" loading-wrap>
+
+		<section class="ba-tc ba-mt-15 ba-mb-15">
+			<div class="btn-group ba-clearfix">
+				<a class="btn btn-purple active" href="{{views['user/account'].url}}">账户信息</a>
+				<a class="btn btn-purple" href="{{views['user/info'].url}}">个人信息</a>
+			</div>
+		</section>
+
+		<!-- content -->
+		<section class="main-list level1-content">
+			<div oWrap>
+				
+			</div>
+			<ul class="ba-mt-20">
+				<li class="ba-tc">
+					<a href="{{views['login/out'].url}}">退出登录</a>
+				</li>
+			</ul>
+		</section>
+
+	</section>
+
+	<!-- footer -->
+	{{include '../include/indexFooter'}}
+
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/hairer/user/account');
+</script>
+</body>
+</html>

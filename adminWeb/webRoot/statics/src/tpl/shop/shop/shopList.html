@@ -1,0 +1,52 @@
+<!-- 店铺列表 -->
+{{if userType() == 1}}
+<thead>
+	<tr>
+		<td width="20%">店铺名称</td>
+		<td width="20%">店铺地址</td>
+		<td width="20%">营业时间</td>
+		<td width="20%">联系电话</td>
+		<td width="20%">操作</td>
+	</tr>
+</thead>
+{{else userType() == 2}}
+<thead>
+	<tr>
+		<td width="25%">店铺名称</td>
+		<td width="25%">店铺地址</td>
+		<td width="25%">营业时间</td>
+		<td width="25%">联系电话</td>
+	</tr>
+</thead>
+{{/if}}
+<tbody>
+	{{if userType() == 1}}
+	<tr shop-info>
+		<td>{{shopname}}</td>
+		<td>{{addr}}</td>
+		<td>{{businessour}}</td>
+		<td>{{fixphone}}</td>
+		<td>
+			<p class="ba-mb-10">
+				<a class="btn btn-normal" shop-edit shopshortcode="{{shopshortcode}}" shopcode="{{shopshortcode}}" shopname="{{shopname}}">店铺信息</a>
+			</p>
+			<p class="ba-mb-10">
+				<a class="btn btn-normal" href="{{getRoute ['content/addEdit']}}?pkType={{pkShop}}&pkShop={{pkShop}}&contenttype=shop&address={{addr}}&time={{businessour}}&phone={{fixphone}}&shopname={{shopname}}&location={{location}}">内容维护</a>
+			</p>
+			<p>
+				<a class="btn btn-normal" order-code>订单二维码</a>
+			</p>
+		</td>
+	</tr>
+	{{/if}}
+	{{if userType() == 2}}
+	{{each list}}
+	<tr>
+		<td>{{$value.shopname}}</td>
+		<td>{{$value.addr}}</td>
+		<td>{{$value.businessour}}</td>
+		<td>{{$value.fixphone}}</td>
+	</tr>
+	{{/each}}
+	{{/if}}
+</tbody>

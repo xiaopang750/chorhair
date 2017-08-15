@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+{{include '../include/meta'}}
+<link rel="stylesheet" href="{{cssPath}}core/rockstar.css">
+<link rel="stylesheet" href="{{cssPath}}main/user/index.css">
+</head>
+
+<body>
+	{{include '../include/header'}}
+	
+	<div class="main-content">
+		{{include '../include/nav'}}
+		{{include '../include/msg'}}
+		<div class="center-bar">
+			<div class="bar-title ba-clearfix">
+				<span class="ba-intro">{{title}}</span>
+				<span class="ba-qing ba-fr ba-mr-10 ba-mt-12">当天订单数(<span pay-num>{{pageInfo.orderNum}}</span>)</span>
+			</div>
+			<div class="main-content">
+				<div class="ba-clearfix search-area">
+					<a href="{{views['user/add'].url}}" class="btn btn-primary ba-fr">
+						注册新用户
+					</a>
+				</div>
+				<div class="select-area ba-clearfix">
+					<div class="select-shop">选择店铺：</div>
+					<div class="related-select" area-wrap>
+						<select class="form-control" province name="province" pkArea="" areaname="">
+							<option value="">请选择省</option>
+						</select>
+					</div>
+					<div class="related-select" area-wrap>
+						<select class="form-control" city name="city" pkArea="" areaname="">
+							<option value="">请选择市</option>
+						</select>
+					</div>
+					<div class="related-select" area-wrap>
+						<select class="form-control" area name="county" pkArea="" areaname="">
+							<option value="">请选择区</option>
+						</select>
+					</div>
+					<div class="shop-select">
+						<select class="form-control" shop>
+							<option value="">请选择店铺</option>
+						</select>
+					</div>
+				</div>
+				<div class="ba-clearfix ba-mt-20">
+					<label class="ba-fl control-label">开始时间：</label>
+					<input type="text" class="startTime form-control ba-fl ba-mr-10" readonly="readonly" calendar="" search="appoint-begintime">
+					<label class="ba-fl control-label">结束时间：</label>
+					<input type="text" class="endTime form-control ba-fl ba-mr-10" calendar="" search="appoint-endtime" readonly="readonly">
+					<div class="search-appoint">
+						<input class="form-control" type="text" placeholder="请输入会员姓名或者手机号" search-appoint-input>
+					</div>
+					<a class="btn btn-primary ba-fl" href="javascript:;" search-appoint-btn>查询</a>
+				</div>
+				<div class="pay-list" pay-wrap>
+					<ul></ul>
+					<ul></ul>
+					<!-- tpl/shop/user/list.html -->
+				</div>
+				<div class="load-more" load-more>加载更多</div>
+			</div>
+		</div>
+	</div>
+
+{{include '../include/siteConfig'}}
+<script src="{{seaPath}}seajs/sea.js"></script>	
+<script src="{{seaPath}}seajs/config.js"></script>
+<script>
+	seajs.use('main/user/index');
+</script>
+</body>
+</html>

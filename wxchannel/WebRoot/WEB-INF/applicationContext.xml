@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+         http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context-3.1.xsd
+         http://www.springframework.org/schema/tx
+     	 http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+         http://www.springframework.org/schema/aop 
+         http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
+	
+	<context:annotation-config />
+	<context:component-scan base-package="com.rockstar.o2o.weixin" />
+	<!-- 初始加载 -->
+	<!-- <bean id="dataLorder" lazy-init="false"
+		class="com.rockstar.o2o.mongodb.DataLoader" init-method="init" />
+    -->
+     <!-- 测试环境 -->
+    <beans profile="test">
+  <import resource="/applicationContext-weixin.xml" />
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="maxActive" value="1000"></property>
+		<property name="minIdle" value="20"></property>
+		<property name="maxWait" value="3"></property>
+		<property name="initialSize" value="30"></property>
+		
+		  <!-- 取连接前使用validationQuery验证,验证失败则从连接池中去除且尝试取出另一个 -->  
+            <property name="testOnBorrow" value="${jdbc.testOnBorrow}"/>  
+           <!-- 当连接被放回到连接池中时,使用validationQuery验证连接,无效则去除 -->  
+           <property name="testOnReturn" value="${jdbc.testOnReturn}"/>  
+           <!-- 每隔timeBetweenEvictionRunsMillis时长使用validationQuery去验证非活动的连接 -->  
+           <property name="testWhileIdle" value="${jdbc.testWhileIdle}"/>  
+            <!-- 运行"检查已经超时/废弃的连接"的线程频率(毫秒/次),默认为5000/5秒 -->  
+            <property name="timeBetweenEvictionRunsMillis" value="${jdbc.timeBetweenEvictionRunsMillis}" />  
+            <!-- 验证的SQL -->  
+           <property name="validationQuery" value="${jdbc.validationQuery}"/>  
+           <!-- 验证SQL超时时间 -->  
+           <property name="validationQueryTimeout" value="${jdbc.validationQueryTimeout}"/>  
+
+            
+	</bean>
+
+	<context:property-placeholder location="classpath*:jdbc.properties" ignore-unresolvable="true" />
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="packagesToScan">
+			<list>
+				<value>com.rockstar.o2o.weixin.pojo</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<value>
+				hibernate.dialect=org.hibernate.dialect.MySQLDialect
+				<!--  hibernate.show_sql=true-->
+				hibernate.jdbc.batch_size=50
+				 hibernate.hbm2ddl.auto=update
+				<!-- hibernate.cache.use_second_level_cache=true -->
+                <!-- hibernate.cache.provider_class=org.hibernate.cache.EhCacheProvider-->
+                <!-- 如果要使用查询缓存，需要先开启才行 -->
+                <!-- hibernate.cache.cache.use_query_cache=true-->
+                <!--  hibernate.cache.provider_configuration_file_resource_path=/WEB-INF/ehcache.xml-->
+                
+			</value>
+		</property>
+	</bean>
+	
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	 
+	<bean id="txManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	</beans>
+	
+	<!-- 生产环境 -->
+	<beans profile="production">
+	 <import resource="/applicationContext-weixin.xml" />
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="maxActive" value="1000"></property>
+		<property name="minIdle" value="20"></property>
+		<property name="maxWait" value="30000"></property>
+		<property name="initialSize" value="30"></property>
+		
+            <!-- 取连接前使用validationQuery验证,验证失败则从连接池中去除且尝试取出另一个 -->  
+            <property name="testOnBorrow" value="${jdbc.testOnBorrow}"/>  
+           <!-- 当连接被放回到连接池中时,使用validationQuery验证连接,无效则去除 -->  
+           <property name="testOnReturn" value="${jdbc.testOnReturn}"/>  
+           <!-- 每隔timeBetweenEvictionRunsMillis时长使用validationQuery去验证非活动的连接 -->  
+           <property name="testWhileIdle" value="${jdbc.testWhileIdle}"/>  
+             <!-- 运行"检查已经超时/废弃的连接"的线程频率(毫秒/次),默认为5000/5秒 -->  
+            <property name="timeBetweenEvictionRunsMillis" value="${jdbc.timeBetweenEvictionRunsMillis}" /> 
+            <!-- 验证的SQL -->  
+           <property name="validationQuery" value="${jdbc.validationQuery}"/>  
+           <!-- 验证SQL超时时间 -->  
+           <property name="validationQueryTimeout" value="${jdbc.validationQueryTimeout}"/>  
+
+	</bean>
+
+	<context:property-placeholder location="classpath*:jdbc_pro.properties"  ignore-unresolvable="true"  />
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="packagesToScan">
+			<list>
+				<value>com.rockstar.o2o.weixin.pojo</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<value>
+				hibernate.dialect=org.hibernate.dialect.MySQLDialect
+					<!--  hibernate.show_sql=true-->
+				hibernate.jdbc.batch_size=50
+				<!--  -->hibernate.hbm2ddl.auto=update
+				<!-- hibernate.cache.use_second_level_cache=true -->
+                <!-- hibernate.cache.provider_class=org.hibernate.cache.EhCacheProvider-->
+                <!-- 如果要使用查询缓存，需要先开启才行 -->
+                <!-- hibernate.cache.cache.use_query_cache=true-->
+                <!--  hibernate.cache.provider_configuration_file_resource_path=/WEB-INF/ehcache.xml-->
+			</value>
+		</property>
+	</bean>
+	
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	 
+	<bean id="txManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	</beans>
+	
+</beans>

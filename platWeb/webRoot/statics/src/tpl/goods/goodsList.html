@@ -1,0 +1,40 @@
+<!-- 商品套餐列表 -->
+<thead>
+	<tr>
+		<td width="20%">套餐名称</td>
+		<td width="20%">标准价格</td>
+		<td width="20%">套餐办理数量</td>
+		<td width="20%">备注</td>
+		<td width="20%">操作</td>
+	</tr>
+</thead>
+<tbody>
+	{{if list}}
+		{{each list}}
+			<tr list>
+				<td>{{$value.comboname}}</td>
+				<td>{{$value.combomoney}}</td>
+				<td>{{$value.buycount}}</td>
+				<td>{{$value.combonote}}</td>
+				<td>
+					<p  class="ba-mb-10">
+						<a class="btn btn-normal" href="{{getRoute ['goods/addCombo']}}?gid={{$value.pk_combo}}">套餐修改</a>
+					</p>
+					<p  class="ba-mb-10">
+						<a class="btn btn-normal" href="{{getRoute ['goods/packageEdit']}}?pkCombo={{$value.pk_combo}}&comboname={{$value.comboname}}&combomoney={{$value.combomoney}}">店铺属性</a>
+					</p>
+					<p  class="ba-mb-10">
+						<a class="btn btn-normal" href="javascript:;" get-sale pid="{{$value.pk_combo}}">选择抵用券</a>
+					</p>
+					<p>
+						<a class="btn btn-normal" href="{{getRoute ['content/addEdit']}}?pkType={{$value.pk_combo}}&contenttype=combo">内容维护</a>
+					</p>
+				</td>
+			</tr>
+		{{/each}}
+	{{else}}
+		<tr>
+			<td colspan="5">暂无数据</td>
+		</tr>
+	{{/if}}
+</tbody>

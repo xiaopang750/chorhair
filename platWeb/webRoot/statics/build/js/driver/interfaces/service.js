@@ -1,0 +1,2 @@
+/*! company 罗格斯达 version 1.0.0 2015-06-17 */
+define("driver/interfaces/service",[],function(e,t,i){i.exports={list:R.uri.reqPrefix+"service/list",validate:R.uri.reqPrefix+"service/validate",add:R.uri.reqPrefix+"service/add",edit:R.uri.reqPrefix+"service/edit",remove:R.uri.reqPrefix+"service/remove",regist:R.uri.reqPrefix+"service/regist"}});

@@ -1,0 +1,63 @@
+/**
+ *description:底部弹出选择框
+ *author:wangweicheng
+ *date:2015/2/6
+ */
+
+@import "../../config/config.less";
+@import "../../config/func.less";
+@import "../../extend/css3.less";
+
+.upload-type{
+	position: fixed;
+	bottom: -300px;
+	left: 0;
+	z-index: 11;
+	width: 100%;
+	background: #ededed;
+	-webkit-transition: 0.5s all ease;
+	transition: 0.5s all ease;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	
+	&.show{
+		-webkit-transform: translateY(-300px);
+		transform: translateY(-300px);
+	}
+
+	& ul{
+		
+		padding: 1.5em;
+
+		& li{
+			height: 2.5em;
+			line-height: 2.5em;
+			background: @white;
+			border: 1px solid @input-border-color;
+			margin-bottom: 0.6em;
+			text-align: center;
+			border-radius: 5px;
+			font-size: 0.5rem;
+
+			&:active{
+				background: #ccc;
+				border: 1px solid #bbb;
+			}
+		}
+
+		& :last-child{
+			margin-bottom: 0;
+		}
+
+	}
+}
+
+.body-mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	background: @black;
+	opacity: 0.5;
+}

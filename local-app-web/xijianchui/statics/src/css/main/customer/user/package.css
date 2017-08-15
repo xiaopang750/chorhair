@@ -1,0 +1,59 @@
+/**
+ *description:套餐信息
+ *author:fanwei
+ *date:2015/01/23
+ */
+/**
+ *description:网站全局less变量-配置
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* use-most-var */
+/* color */
+/* a-link */
+/* font-family */
+/* h-size */
+/* btn */
+/* layer */
+/* site-config */
+/**
+ *description:网站全局less函数-pc
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* line-height */
+/* font-size */
+/* margin */
+/* padding */
+/* opacity */
+/* trangle */
+/**
+ *description:css3-pc
+ *author:fanwei
+ *date:2014/10/31
+ */
+.package-list-wrap li {
+  background: #fff;
+  border: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  color: #585858;
+  font-size: 1.2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.package-list-wrap li dl dt {
+  height: 2.8em;
+  line-height: 2.8em;
+  font-size: 1.1em;
+  border-bottom: 1px solid #dddddd;
+}
+.package-list-wrap li dl dd {
+  padding: 0.8em 0;
+}
+.package-list-wrap li dl dd table td {
+  float: left;
+  padding: 0.2em 0;
+  vertical-align: top;
+  line-height: 1.3em;
+}

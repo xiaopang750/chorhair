@@ -1,0 +1,21 @@
+<!-- 业绩tab页面 -->
+<div class="ba-mb-20">
+	{{if title == '店面收入'}}
+		<a href="javascript:;" class="btn btn-warning ba-default active">
+        	店面收入
+        </a>
+	{{else}}
+	<a href="{{views['performance/index'].url}}" class="btn btn-warning">
+    	店面收入
+    </a>
+    {{/if}}
+	{{if title == '店面人流情况'}}
+		<a href="javascript:;" class="btn btn-warning ba-default active">
+        	店面人流情况
+        </a>
+	{{else}}
+	<a href="{{views['performance/people'].url}}" class="btn btn-warning">
+    	店面人流情况
+    </a>
+    {{/if}}
+</div>

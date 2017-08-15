@@ -1,0 +1,2 @@
+/*! company 罗格斯达 version 1.0.0 2015-06-17 */
+define("util/http/bodyParse",[],function(){function e(){var e,t,r,i,n,o,a;if(window.location.search){for(e=decodeURIComponent(window.location.search.split("?")[1]),t=e.split("&"),i=t.length,a={},o=0;i>o;o++)r=t[o].split("="),n=r.length,a[r[0]]=r[1];return a}return{}}return e});

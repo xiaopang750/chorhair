@@ -1,0 +1,56 @@
+/**
+ *description:消息列表
+ *author:fanwei
+ *date:2015/01/21
+ */
+
+@import "../../../config/config.less";
+@import "../../../config/func.less";
+@import "../../../extend/css3.less";
+
+.msg-list {
+
+	ul {
+
+		& li {
+			
+			width: 100%;
+			background: #fff;
+			padding: 1em 0;
+			border-bottom:1px solid @input-border-color;
+
+			& dl {
+				width: 95%;
+				margin:0 auto;
+
+				& dt {
+					width: 20%;
+		
+					& img {
+						width: 100%@i;
+						height: auto@i;
+					}
+				}
+
+				& dd {
+					width: 38%;
+
+					&.text {
+						font-size: 1.1em;
+					}
+				}
+
+				& [look] {
+					width: 75%;
+				}
+			}
+
+			& .btn {
+				border:1px solid @input-border-color;
+			}
+
+		}
+
+	}
+
+}

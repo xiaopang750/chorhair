@@ -1,0 +1,39 @@
+/**
+ *description:网站重置样式
+ *author:wangwc
+ *date:2015/4/02
+ */
+/**
+ *description:网站全局less变量-配置
+ *author:wangwc
+ *date:2015/4/2
+ */
+/* color */
+/* site-config */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+}
+body {
+  font-family: 'Microsoft Yahei';
+  font-size: 14px;
+  background: #ebf0f3;
+  color: #444444;
+  overflow-x: hidden;
+  padding: 10px;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #444444;
+}
+input {
+  -webkit-user-select: auto;
+}

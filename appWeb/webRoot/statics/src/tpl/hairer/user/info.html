@@ -1,0 +1,79 @@
+<!-- 用户信息 -->
+<li user-header>
+	<dl class="ba-clearfix">
+		<dt class="ba-fl ba-mt-15">头像</dt>
+		<dd class="ba-fr">
+			<div class="ba-fr">
+				<span class="header-pic">
+					<img src="{{headshorturl}}" header-img>
+				</span>
+				<span class="icon icon-right"></span>
+			</div>
+		</dd>
+	</dl>
+</li>
+<li nick-name>
+	<dl class="ba-clearfix">
+		<dt class="ba-fl">昵称</dt>
+		<dd class="ba-fr">
+			<span class="data">{{nickname}}</span>
+			<span class="icon icon-right ba-vt-m"></span>
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl class="ba-clearfix">
+		<dt class="ba-fl">联系方式</dt>
+		<dd class="ba-fr">
+			<span class="data">{{cellphone}}</span>
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl class="ba-clearfix">
+		<dt class="ba-fl">性别</dt>
+		<dd class="ba-fr">
+			<span class="data">
+				{{if sex == 1}}
+				男
+				{{else if sex == 2}}
+				女
+				{{else}}
+				{{/if}}
+			</span>
+		</dd>
+	</dl>
+</li>
+<li user-package>
+	<dl class="ba-clearfix">
+		<dt class="ba-fl">店铺名称</dt>
+		<dd class="ba-fr">
+			<span class="data">{{shopname}}</span>
+		</dd>
+	</dl>
+</li>
+<li user-package>
+	<dl class="ba-clearfix">
+		<dt class="ba-fl">服务能力</dt>
+		<dd class="ba-fr">
+			<span class="data">
+				{{each skills}}
+					<span class="ba-mr-5">{{$value.skillname}}</span>
+				{{/each}}
+			</span>
+		</dd>
+	</dl>
+</li>
+<li user-package>
+	<a href="{{downLoadUrl}}">
+		<dl class="ba-clearfix">
+			<dt class="ba-fl">推荐下载</dt>
+			<dd class="ba-fr">
+				<span class="data">
+					<span class="icon icon-qcode"></span>
+				</span>
+				<span class="icon icon-right ba-vt-m"></span>
+			</dd>
+		</dl>
+	</a>
+</li>

@@ -1,0 +1,26 @@
+{
+    "$schema": "comboaward#",
+    "description": "套餐提成",
+    "type": "object",
+    "properties": {
+        "datas":
+         {
+            "type": "array",
+            "items":{
+	                "type":"object",
+	                "properties":{
+		                "awardmoney":{"required":true},
+		                "israte":{"type": "integer","minimum":1,"maximum":2,"required":true},
+		                "pkFairer":{"required":true},
+		                "fairername":{"required":true},
+		                "awardname":{"required":true}
+		            }
+	         },
+	         "minItems":1,
+	         "maxItems":3
+         }
+    }
+}
+
+
+

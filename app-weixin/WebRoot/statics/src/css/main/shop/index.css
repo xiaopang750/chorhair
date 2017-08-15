@@ -1,0 +1,75 @@
+/**
+ *description:网站全局less变量-配置
+ *author:wangwc
+ *date:2015/4/2
+ */
+/* color */
+/* site-config */
+.shop-head {
+  background: #04cbd2;
+  overflow: hidden;
+}
+.shop-head .shop-bg {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+.shop-head .shop-bg img {
+  display: block;
+  width: 100%;
+}
+.shop-head .shop-title {
+  position: relative;
+  width: 50%;
+  float: right;
+  color: #f0f0f0;
+  padding-top: 14%;
+  padding-bottom: 14%;
+  text-align: center;
+}
+.shop-head .shop-title .cn {
+  font-size: 36px;
+}
+.shop-head .shop-title .en {
+  font-size: 18px;
+}
+.shop-list li {
+  overflow: hidden;
+}
+.shop-list li .name {
+  width: 80%;
+  font-size: 16px;
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.shop-list li:nth-child(odd) {
+  background: #3a3a3a;
+}
+.shop-list li:nth-child(odd) .text {
+  width: 50%;
+  float: left;
+  text-align: center;
+  color: #fff;
+}
+.shop-list li:nth-child(odd) .img {
+  width: 50%;
+  float: right;
+}
+.shop-list li:nth-child(even) {
+  background: #222;
+}
+.shop-list li:nth-child(even) .text {
+  width: 50%;
+  float: right;
+  text-align: center;
+  color: #fff;
+}
+.shop-list li:nth-child(even) .img {
+  width: 50%;
+  float: left;
+}
+.shop-list img {
+  width: 100%;
+  display: block;
+}

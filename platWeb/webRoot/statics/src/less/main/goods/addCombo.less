@@ -1,0 +1,170 @@
+/**
+ *description:新增商品
+ *author:wangweicheng
+ *date:2015/3/11
+ */
+
+@import "../../config/config.less";
+@import "../../config/func.less";
+@import "../../extend/css3.less";
+
+.main-content{
+	
+	.item-wrap{
+		width: 400px;
+		margin: 0 auto;
+	}
+
+	.item{
+		width: 90px;
+		float: left;
+		line-height: 30px;
+	}
+
+	.form-control{
+		float: left;
+		width: 300px;
+	}
+
+	.count{
+		width: 150px;
+		margin-right: 20px;
+	}
+	
+	.no-count-wrap{
+		position: relative;
+		top: 5px;
+		cursor: pointer;
+	}
+
+	.no-count{
+		margin-right: 5px;
+	}
+
+	.combocount{
+		display: none;
+	}
+
+}
+
+
+.selected-goods, .selected-shop{
+	
+	float: left;
+	width: 310px;
+
+	span{
+		float: left;
+		padding: 5px 10px;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		background: #fff;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+
+	.item-wrap{
+		overflow: hidden;
+		display: none;
+	}
+}
+
+.goods-box{
+	width: 400px;
+	height: 500px;
+	padding: 20px;
+
+	.item{
+		float: left;
+		line-height: 30px;
+	}
+	
+	.goodsname{
+		width: 300px;
+		float: left;
+	}
+
+	.selected-wrap{
+		margin-top: 30px;
+	}
+
+	.goods-list-wrap{
+		position: absolute;
+		display: none;
+		top: 29px;
+		left: 60px;
+		z-index: 99;
+		width: 278px;
+		max-height: 200px;
+		padding: 5px 10px;
+		overflow: auto;
+		background: #fff;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+
+		li{
+			line-height: 22px;
+			text-align: left;
+		}
+	}
+
+	.selected-wrap{
+
+		.selected-goods-list{
+			margin-top: 10px;
+			background: #f7f7f7;
+			padding: 10px;
+			padding-bottom: 0;
+			height: 350px;
+			overflow: auto;
+
+			li{
+				padding-bottom: 5px;
+				margin-bottom: 5px;
+				overflow: hidden;
+				border-bottom: 1px dotted #ccc;
+			}
+		}
+
+		.goods-name{
+			float: left;
+			margin-right: 10px;
+			line-height: 30px;
+		}
+	}
+
+}
+
+.shop-box{
+	width: 600px;
+	height: 310px;
+	padding: 20px;
+	
+	label{
+		cursor: pointer;
+	}
+
+	.shop-list{
+		
+		background: #f7f7f7;
+		padding: 10px;
+		height: 150px;
+		overflow: auto;
+
+		li{
+			float: left;
+			margin-right: 20px;
+			margin-bottom: 10px;
+
+			span{
+				cursor: pointer;
+			}
+		}
+	}
+
+	.all-select{
+		span{
+			cursor: pointer;
+		}
+	}
+}

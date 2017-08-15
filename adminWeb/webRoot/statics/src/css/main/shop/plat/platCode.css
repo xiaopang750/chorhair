@@ -1,0 +1,80 @@
+/**
+ *description:二维码管理
+ *author:wangweicheng
+ *date:2015/4/16
+ */
+/**
+ *description:网站全局less变量-配置
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* use-most-var */
+/* color */
+/* a-link */
+/* font-family */
+/* h-size */
+/* btn */
+/* layer */
+/* site-config */
+/**
+ *description:网站全局less函数-pc
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* line-height */
+/* font-size */
+/* margin */
+/* padding */
+/* opacity */
+/* trangle */
+/**
+ *description:css3-pc
+ *author:fanwei
+ *date:2014/10/31
+ */
+.publish-box {
+  width: 500px;
+  height: 200px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #000;
+  border-radius: 5px;
+}
+.download-box {
+  width: 400px;
+  height: 250px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #000;
+  border-radius: 5px;
+}
+.download-box table {
+  width: 100%;
+}
+.download-box table th {
+  padding-bottom: 15px;
+}
+.download-box table td {
+  padding: 5px;
+  text-align: center;
+}
+.related-select {
+  float: left;
+  margin-right: 10px;
+  width: 100px;
+}
+.shop-select {
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+}
+.field input {
+  width: 200px;
+}
+.select-area,
+.field,
+.generate {
+  display: none;
+}

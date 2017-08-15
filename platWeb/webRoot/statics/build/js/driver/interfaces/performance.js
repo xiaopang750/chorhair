@@ -1,0 +1,2 @@
+/*! company 罗格斯达 version 1.0.0 2015-06-17 */
+define("driver/interfaces/performance",[],function(e,t,i){i.exports={getAllList:R.uri.reqPrefix+"performance/getAllList",getHairList:R.uri.reqPrefix+"performance/getHairList",getHistoryList:R.uri.reqPrefix+"performance/getHistoryList",getIncome:R.uri.reqPrefix+"performance/getIncome",getAvgincome:R.uri.reqPrefix+"performance/getAvgincome",getPeopleCount:R.uri.reqPrefix+"performance/getPeopleCount"}});

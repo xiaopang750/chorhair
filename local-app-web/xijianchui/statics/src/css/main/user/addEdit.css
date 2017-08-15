@@ -1,0 +1,18 @@
+.layer-main {
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.no-computer {
+  border-top: 1px solid #ccc;
+  padding: 20px;
+}
+.no-computer .inner {
+  text-align: center;
+  font-size: 16px;
+}
+.continue-btn {
+  display: none;
+}
+.continue-btn.show {
+  display: inline-block;
+}

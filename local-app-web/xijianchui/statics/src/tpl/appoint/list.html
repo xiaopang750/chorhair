@@ -1,0 +1,44 @@
+<!-- 我的订单 -->
+{{each data}}
+	<li>
+		<div class="list-head">
+			<div class="col-11 ba-auto">服务编号：{{$value.orderno}}</div>
+		</div>
+		<dl pkOrder="{{$value.pkOrder}}" class="col-11 ba-auto ba-clearfix">
+			<!-- <dt class="ba-fl ba-mt-10">
+				<img src="http://pic.rs07.com/group1/M00/00/6E/wKgKHVTUMEWALt6lAAMp8-d2G_k841.jpg">
+			</dt> -->
+			<dd class="ba-fl">
+				<table width="100%">
+					<tr>
+						<td>服务内容：</td>
+						<td>{{$value.comboname}}</td>
+					</tr>
+					<tr>
+						<td>订单类型：</td>
+						<td>
+							{{if $value.iscombo == 'Y'}}
+							套餐订单
+							{{else}}
+							服务订单
+							{{/if}}
+						</td>
+					</tr>
+					<tr>
+						<td>付款方式：</td>
+						<td>
+							{{if $value.paymode == ''}}
+							到店支付
+							{{/if}}
+						</td>	
+					</tr>
+					<tr>
+						<td>支付金额：</td>
+						<td>{{$value.ordermoney}}元</td>
+					</tr>
+				</table>
+			</dd>
+		</dl>
+		<span class="icon icon-right"></span>
+	</li>
+{{/each}}

@@ -1,0 +1,142 @@
+/**
+ *description:网站布局框架
+ *author:fanwei
+ *date:2014/11/04
+ */
+
+@import "../config/config.less";
+@import "../config/func.less";
+@import "../extend/css3.less"; 
+
+html {
+	font-size: 36px;
+}
+
+html,body {
+	width: 100%;
+}
+
+//header
+
+@header-bg: #f5f6f6;
+@header-height: 1.5rem;
+@title-size: 1.7em; //标题大小
+@other-size: 1.4em; //两侧字体大小
+
+.header {
+	width: 100%;
+	height: @header-height;
+	border-bottom: 1px solid @input-border-color;
+	color: @white;
+	background: @header-bg;	
+	line-height: @header-height;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9;
+
+	& section {
+		float: left;
+		height: @header-height;
+	}
+
+	& .header-left {
+		width:20%;
+		color: @dark-gray;
+		font-size: @other-size;
+
+		& a {
+			color: @dark-gray;
+		}
+	}
+
+	& .header-center {
+		width:60%;
+		font-size: @title-size;
+		text-align: center;
+		color:@pink;
+		.dot();
+	}
+
+	& .header-right {
+		width:20%;
+		color: @dark-gray;
+		font-size: @other-size;
+
+		& a {
+			color: @dark-gray;
+		}
+	}
+}
+
+.index-footer {
+	height: 1.7rem;
+	width: 100%;
+	position: fixed;
+	left:0;
+	bottom:0;
+	background: #fafafa;
+	border-top:1px solid #c5c5c5;
+	
+	
+	& ul {
+		.flex-box();
+		height: 100%;
+		margin-top: 1em;
+
+		& li {
+			height: 100%;
+			text-align: center;
+			color:@dark-gray;
+			.flex(1);
+
+			& a {
+				display: block;
+				width: 100%;
+				height: 100%;
+
+				&:active {
+					color:@pink;
+				}
+			}
+
+			& p {
+				font-size: 1em;
+				margin-top: 0.1em;
+			}
+
+			& .icon {
+				display: block;
+				font-size: 1.8em;
+			}
+
+			&.active a{
+				color:@pink;
+			}
+
+		}
+
+	}
+
+	
+}
+
+.level1-content {
+	margin-bottom: 1.8rem;
+}
+
+.page-loading{
+	text-align: center;
+	padding: 1rem;
+}
+
+.loading-wrap{
+	display: none;
+}
+
+.iosNavFix {
+	position: relative;
+	top:-8px;
+}
+

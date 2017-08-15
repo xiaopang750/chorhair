@@ -1,0 +1,55 @@
+<!-- 用户信息 -->
+<li class="show-active" user-header>
+	<dl class="ba-clearfix">
+		<dt class="ba-fl ba-mt-15">头像</dt>
+		<dd class="ba-fr">
+			<div class="ba-fr" gallery-wrap>
+				<span class="header-pic">
+					<a href="{{headurl}}"><img src="{{headshorturl}}" header-img></a>
+				</span>
+				<span class="icon icon-right"></span>
+			</div>
+		</dd>
+	</dl>
+</li>
+<li class="show-active" nick-name>
+	<dl class="ba-clearfix">
+		<dt class="ba-fl">昵称</dt>
+		<dd class="ba-fr">
+			<span class="data">{{nickname}}</span>
+			<span class="icon icon-right ba-vt-m"></span>
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl class="ba-clearfix">
+		<dt class="ba-fl">联系方式</dt>
+		<dd class="ba-fr">
+			<span class="data">{{cellphone}}</span>
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl class="ba-clearfix">
+		<dt class="ba-fl">性别</dt>
+		<dd class="ba-fr">
+			<span class="data">
+				{{if sex == 1}}
+				男
+				{{else if sex == 2}}
+				女
+				{{else}}
+				{{/if}}
+			</span>
+		</dd>
+	</dl>
+</li>
+<li class="show-active" user-package>
+	<dl class="ba-clearfix">
+		<dt class="ba-fl">套餐信息</dt>
+		<dd class="ba-fr">
+			<span class="data"></span>
+			<span class="icon icon-right ba-vt-m"></span>
+		</dd>
+	</dl>
+</li>

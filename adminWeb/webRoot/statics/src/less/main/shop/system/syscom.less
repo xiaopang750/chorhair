@@ -1,0 +1,141 @@
+/**
+ *description:档案管理公共样式
+ *author:fanwei
+ *date:2015/3/24
+ */
+@import "../../../config/config.less";
+@import "../../../config/func.less";
+@import "../../../extend/css3.less";
+
+@borderColor: #ccc;
+
+.sys-wrap {
+	width: 700px;
+	border:1px solid @borderColor;
+	margin:0 auto;
+	overflow: hidden;
+	background: #fff;
+	font-size: 14px;
+
+	& .sys-left-bar {
+		width: 200px;
+		border-right: 1px solid @borderColor;
+		float: left;
+		padding-bottom: 5000px;
+		margin-bottom: -5000px;
+
+		& ul {
+			
+			& li {
+				padding-left:10px;
+			}
+
+			& li .item {
+				height: 40px;
+				line-height: 40px;
+
+				& .hover-item {
+					
+					&:hover {
+						color:#ccc;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+
+		& > ul > li {
+			
+			& .sub-wrap {
+				display: none;
+			}
+
+			border-bottom:1px solid @borderColor;
+
+			& .fa-angle-up {
+				display: none;
+			}
+
+			&.active {
+
+				& .fa-angle-up {
+					display: inherit;
+				}
+
+				& .fa-angle-down {
+					display: none;
+				}
+
+				& .sub-wrap {
+					display: block;
+				}
+			}
+
+		}
+
+		& .group-add {
+			width: 100%;
+			height: 30px;
+			line-height: 30px;
+			cursor: pointer;
+
+			&:hover {
+				color:#fff;
+				background: #57b382;
+			}
+		}
+
+		& .sub-add {
+
+			&:hover {
+				color:#ccc;
+				cursor: pointer;
+			}
+		}
+
+		& .func-icon {
+			display: none;
+		}
+	}
+
+	& .sys-right-bar {
+		float: left;
+		width: 479px;
+		padding:10px;
+	}	
+
+	& .func-icon {
+		margin-left:10px;
+
+		& .fa {
+			font-size: 18px;
+			margin-right: 2px;
+		}
+	}
+}
+
+.add-group {
+	width: 300px;
+	height: 120px;
+	background: #fff;
+}
+
+.sys-right-bar {
+
+	& .fa-plus {
+		
+		cursor: pointer;
+		font-size: 16px;
+
+		&:hover {
+			color:#ccc;
+		}
+
+	}
+
+}
+
+
+
+
+

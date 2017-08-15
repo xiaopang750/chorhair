@@ -1,0 +1,4 @@
+/*TMODJS:{"version":60,"md5":"3a95ff26a656a6c5d7554d4d8cdcc683"}*/
+define(function(require) {
+    return require("../templates")("goods/selectGoods", ' <div class="dialog-box goods-box" goods-box> <span class="fa fa-close" sc="close"></span> <div class="ba-clearfix ba-rel"> <span class="item">商品名称：</span> <input class="form-control goodsname" type="text" goods-list-input> <div class="goods-list-wrap" goods-list-wrap> <ul goods-list></ul> </div> </div> <div class="selected-wrap"> <p>已选商品：</p> <ul class="selected-goods-list" selected-goods-list></ul> </div> <div class="ba-mt-20 ba-clearfix ba-tc"> <a href="javascript:;" class="btn btn-primary ba-mr-10" sc="confirm" confirm-select-goods>确认</a> <a href="javascript:;" class="btn btn-danger" sc="close" cancel-select-goods>取消</a> </div> </div>');
+});

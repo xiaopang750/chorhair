@@ -1,0 +1,361 @@
+/**
+ *description: 搜索首页
+ *author:fanwei
+ *date:2015/01/22
+ */
+/**
+ *description:网站全局less变量-配置
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* use-most-var */
+/* color */
+/* a-link */
+/* font-family */
+/* h-size */
+/* btn */
+/* layer */
+/* site-config */
+/**
+ *description:网站全局less函数-pc
+ *author:fanwei
+ *date:2014/10/30
+ */
+/* line-height */
+/* font-size */
+/* margin */
+/* padding */
+/* opacity */
+/* trangle */
+/**
+ *description:css3-pc
+ *author:fanwei
+ *date:2014/10/31
+ */
+/**
+ *description:首页
+ *author:fanwei
+ *date:2015/01/20
+ */
+/**
+ *description:焦点图
+ *author:fanwei
+ *date:2015/2/7
+ */
+[widget-role=focus-wrap] {
+  position: relative;
+  overflow: hidden;
+  outline: 0;
+  width: 100%;
+}
+[widget-role=focus-wrap] [widget-role=focus-data-wrap] {
+  white-space: nowrap;
+  display: none;
+  font-size: 0;
+}
+[widget-role=focus-wrap] [widget-role=focus-data-wrap] div {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+}
+[widget-role=focus-wrap] [widget-role=focus-data-wrap] div img {
+  width: 100%;
+}
+/**
+ *description:瀑布流
+ *author:fanwei
+ *date:2015/02/04
+ */
+.main-content ul {
+  width: 47.92%;
+}
+.main-content ul li {
+  margin-bottom: 1.1em;
+  position: relative;
+}
+.main-content ul li .info-area {
+  width: 100%;
+  height: 1.2rem;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+}
+.main-content ul li .info-area .inner {
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  padding: 0 5px;
+}
+.main-content ul li .info-area .inner .hairer {
+  width: 30px;
+  height: 30px;
+  margin: 8px 5px 0 0;
+  float: left;
+}
+.main-content ul li .info-area .inner .hairer img {
+  border-radius: 50%;
+  border: 1px solid #f14c76;
+}
+.main-content ul li .info-area .inner .namer {
+  float: left;
+  margin-top: 13px;
+  width: 60%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.main-content ul li .info-area .inner .assit {
+  width: 40%;
+}
+.main-content ul:nth-child(1) {
+  float: left;
+}
+.main-content ul:nth-child(2) {
+  float: right;
+}
+.main-content img {
+  width: 100% !important;
+  display: block;
+}
+.falls-loading {
+  position: relative;
+  top: -1.5rem;
+  width: 200px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 auto;
+  background: #fff;
+  color: #f14c76;
+  border-radius: 2px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.falls-loading img {
+  margin-top: 0.65em;
+}
+.falls-loading:active {
+  background: #f5f5f5;
+}
+.falls-loading-first {
+  background: none;
+}
+.focus {
+  margin-bottom: 1em;
+}
+.focus img {
+  width: 100%;
+}
+.my-beauty {
+  width: 19%;
+  line-height: 2;
+  text-align: right;
+}
+.my-beauty .search-btn {
+  color: #fff;
+}
+.index-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  height: 1.5rem;
+  background: #f14c76;
+  color: #ffffff;
+  font-size: 1.3em;
+}
+.index-header .header-wrap {
+  padding-top: 0.27rem;
+}
+.index-header .header-wrap .search-area {
+  background: #d0365c;
+  border: 1px solid #d0365c;
+  width: 81%;
+  border-radius: 10px;
+  height: 2.2em;
+  padding-left: 0.5em;
+}
+.index-header .header-wrap .search-area span {
+  margin-top: 1px;
+}
+.index-header .header-wrap .search-area form {
+  height: 100%;
+}
+.index-header .header-wrap .search-area input[type=text] {
+  border: none;
+  width: 90%;
+  background: none;
+  padding-left: 4px;
+  height: 100%;
+  font-size: 14px;
+}
+.index-header .header-wrap .search-area input[type=text]::-moz-placeholder {
+  color: #ecafbe;
+  opacity: 1;
+  font-size: 14px;
+}
+.index-header .header-wrap .search-area input[type=text]:-ms-input-placeholder {
+  color: #ecafbe;
+  font-size: 14px;
+}
+.index-header .header-wrap .search-area input[type=text]::-webkit-input-placeholder {
+  color: #ecafbe;
+  font-size: 14px;
+}
+.index-header .header-wrap .search-area .icon {
+  color: #ecafbe;
+  position: relative;
+  top: 1px;
+}
+.index-header.search {
+  background: #f5f6f6;
+  border-bottom: 1px solid #dddddd;
+}
+.index-header.search .search-area {
+  width: 86%;
+  background: #fff;
+  border: 1px solid #dddddd;
+}
+.index-header.search .search-area input[type=text] {
+  width: 90%;
+}
+.index-header.search .search-area input[type=text]::-moz-placeholder {
+  color: #cccccc;
+  opacity: 1;
+  font-size: 14px;
+}
+.index-header.search .search-area input[type=text]:-ms-input-placeholder {
+  color: #cccccc;
+  font-size: 14px;
+}
+.index-header.search .search-area input[type=text]::-webkit-input-placeholder {
+  color: #cccccc;
+  font-size: 14px;
+}
+.index-header.search .search-area .icon {
+  color: #f14c76;
+}
+.index-header.search .my-beauty {
+  width: 14%;
+}
+.index-header.search .my-beauty .search-btn {
+  color: #f14c76;
+}
+.index-header.search1 {
+  background: #f5f6f6;
+  border-bottom: 1px solid #dddddd;
+}
+.index-header.search1 .search-area {
+  width: 63%;
+  margin-left: 2%;
+  background: #fff;
+  border: 1px solid #dddddd;
+}
+.index-header.search1 .search-area input[type=text] {
+  width: 90%;
+}
+.index-header.search1 .search-area input[type=text]::-moz-placeholder {
+  color: #cccccc;
+  opacity: 1;
+  font-size: 14px;
+}
+.index-header.search1 .search-area input[type=text]:-ms-input-placeholder {
+  color: #cccccc;
+  font-size: 14px;
+}
+.index-header.search1 .search-area input[type=text]::-webkit-input-placeholder {
+  color: #cccccc;
+  font-size: 14px;
+}
+.index-header.search1 .search-area .icon {
+  color: #f14c76;
+}
+.index-header.search1 .return-index {
+  line-height: 2;
+  width: 16%;
+  margin-left: 2%;
+}
+.index-header.search1 .my-beauty {
+  width: 12%;
+  margin-right: 4%;
+}
+.index-header.search1 .my-beauty .search-btn {
+  color: #f14c76;
+}
+.info-tip {
+  position: relative;
+}
+.info-tip [tip-num] {
+  position: absolute;
+  right: -10px;
+  top: -5px;
+  background: #ffcc00;
+  border-radius: 100%;
+  color: #fff;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  font-size: 12px;
+}
+.search-list {
+  position: fixed;
+  z-index: 10;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 54px;
+  left: 0;
+  background: #fff;
+  opacity: 0.97;
+}
+.search-list li {
+  font-size: 1.2em;
+  border-bottom: 1px solid #dddddd;
+  padding: 0.8em 0;
+}
+.search-list li dd {
+  word-break: break-all;
+}
+.search-list li dd span {
+  display: inline-block;
+  padding: 4px 8px;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.search-list li dd span:active {
+  background: #eee;
+}
+.search-list {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  top: 54px;
+  left: 0;
+}
+.search-list li {
+  font-size: 1.2em;
+  border-bottom: 1px solid #dddddd;
+  padding: 0.8em 0;
+}
+.search-list li dd {
+  word-break: break-all;
+}
+.search-list li dd span {
+  display: inline-block;
+  padding: 4px 8px;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.search-list li dd span:active {
+  background: #eee;
+}

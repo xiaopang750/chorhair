@@ -1,0 +1,19 @@
+{
+    "$schema": "evaluatedetail#",
+    "description": "评价明细得分",
+    "type": "object",
+    "properties": {
+         "datas":
+               {
+	                "type":"object",
+	                "properties":{
+		                "servicegoal":{"pattern":"(^$)|([1-5]{1})"},
+		                "fairergoal":{"pattern":"(^$)|([1-5]{1})"},
+		                "shopgoal":{"pattern":"(^$)|([1-5]{1})"}
+	                }
+	            }       
+            }
+      }
+
+
+

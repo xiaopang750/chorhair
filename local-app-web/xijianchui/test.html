@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			document.addEventListener('plusready', function(){
+			
+				var rootUrl = '_www';
+				plus.io.resolveLocalFileSystemURL(rootUrl,function(entry){
+					var deji = entry.toLocalURL();
+					alert(deji)
+				},function(e){
+					outLine("读取Logo文件错误："+e.message);
+				});
+
+			})
+		</script>
+	</body>
+</html>

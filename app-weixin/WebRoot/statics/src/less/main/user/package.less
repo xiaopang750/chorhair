@@ -1,0 +1,91 @@
+@import "../../config/config.less";
+
+.package-wrap{
+	position: relative;
+}
+
+.package-bg{
+	height: 100px;
+	background: #ccc;
+	overflow: hidden;
+
+	img{
+		display: block;
+		width: 100%;
+	}
+}
+
+.package-tab{
+	position: absolute;
+	left: 0;
+	bottom: -30px;
+	width: 100%;
+	text-align: center;
+
+	.package-tab-item{
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		line-height: 42px;
+		color: #fff;
+		background: rgba(255,255,255,0.6);
+		margin: 6px;
+		border-radius: 50%;
+
+		span{
+			display: inline-block;
+			width: 42px;
+			height: 42px;
+			margin: 4px auto;
+			background: #5e5e5e;
+			border-radius: 50%;
+		}
+
+		&.active{
+			span{
+				background: @pink;
+			}
+		}
+	}
+}
+
+.package-list{
+	margin-top: 35px;
+
+	li{
+		padding: 10px 15px;
+		background: #fff;
+		margin-bottom: 10px;
+
+		p{
+			color: @base-text-color;
+			line-height: 22px;
+			overflow: hidden;
+
+			&.package-name{
+				color: @base-title-color;
+				font-size: 16px;
+				margin-bottom: 10px;
+			}
+
+			span{
+				float: left;
+			}
+		}
+
+		.package-content{
+			float: left;
+			width: 72%;
+			span{
+				display: block;
+				float: none;
+			}
+		}
+	}
+}
+
+.no-result{
+	margin-top: 70px;
+	text-align: center;
+	color: #999;
+}

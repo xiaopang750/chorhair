@@ -1,0 +1,83 @@
+@import "../../config/config.less";
+
+.appoint-wrap{
+	position: relative;
+}
+
+.appoint-bg{
+	height: 100px;
+	background: #ccc;
+	overflow: hidden;
+
+	img{
+		display: block;
+		width: 100%;
+	}
+}
+
+.appoint-tab{
+	position: absolute;
+	left: 0;
+	bottom: -45px;
+	width: 100%;
+	text-align: center;
+
+	.appoint-tab-item{
+		display: inline-block;
+		width: 70px;
+		height: 70px;
+		line-height: 62px;
+		color: #fff;
+		background: rgba(255,255,255,0.6);
+		margin: 10px;
+		border-radius: 50%;
+
+		span{
+			display: inline-block;
+			width: 62px;
+			height: 62px;
+			margin: 4px auto;
+			background: #5e5e5e;
+			border-radius: 50%;
+		}
+
+		&.active{
+			span{
+				background: @pink;
+			}
+		}
+	}
+}
+
+.appoint-list{
+	margin-top: 45px;
+
+	li{
+		padding: 10px 15px;
+		background: #fff;
+		margin-bottom: 10px;
+		position: relative;
+
+		p{
+			color: @base-text-color;
+			line-height: 22px;
+			overflow: hidden;
+
+			&.appoint-num{
+				color: @base-title-color;
+				font-size: 16px;
+				margin-bottom: 10px;
+			}
+
+			span{
+				float: left;
+			}
+		}
+	}
+}
+
+.no-result{
+	margin-top: 70px;
+	text-align: center;
+	color: #999;
+}

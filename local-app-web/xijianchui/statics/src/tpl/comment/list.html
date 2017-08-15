@@ -1,0 +1,18 @@
+<!-- 评论列表 -->
+{{each list}}
+	<li comment-item>
+		<dl class="ba-clearfix">
+			<dt class="ba-fl">
+				<!-- <img data-src="holder.js/80x80/social"> -->
+				<img src="{{$value.img}}" alt="">
+			</dt>
+			<dd class="ba-fr">
+				<div class="ba-clearfix ba-mt-4 ba-mb-5">
+					<h5 class="ba-fl" comment-user>{{$value.user}}</h5>
+					<span class="comment-time">{{$value.time}}</span>
+				</div>
+				<p>{{$value.content}}</p>
+			</dd>
+		</dl>
+	</li>
+{{/each}}

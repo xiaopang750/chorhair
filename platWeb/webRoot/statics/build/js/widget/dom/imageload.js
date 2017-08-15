@@ -1,0 +1,2 @@
+/*! company 罗格斯达 version 1.0.0 2015-06-17 */
+define("widget/dom/imageload",[],function(){function e(e,t,r){var i,n,o;for(n=e.length,o=0,r&&r(),i=0;n>i;i++){var a=new Image;a.onload=function(){o++,o==n&&t&&t()},a.onerror=function(){o++,o==n&&t&&t(n)},a.src=e[i]}}return e});
